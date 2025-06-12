@@ -44,5 +44,16 @@ namespace DbR3.Properties {
                 return ((string)(this["WolfApproveR3ConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=172.168.1.4;Initial Catalog=WolfApproveCore.TechconsbizR3;User ID=sa;" +
+            "Password=1n1t1al0!;TrustServerCertificate=True")]
+        public string WolfApproveCore_TechconsbizR3ConnectionString {
+            get {
+                return ((string)(this["WolfApproveCore_TechconsbizR3ConnectionString"]));
+            }
+        }
     }
 }

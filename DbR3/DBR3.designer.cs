@@ -22,7 +22,7 @@ namespace DbR3
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="WolfApproveR3")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="WolfApproveCore.TechconsbizR3")]
 	public partial class DBR3DataContext : System.Data.Linq.DataContext
 	{
 		
@@ -30,36 +30,12 @@ namespace DbR3
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertTRNAttachFile(TRNAttachFile instance);
-    partial void UpdateTRNAttachFile(TRNAttachFile instance);
-    partial void DeleteTRNAttachFile(TRNAttachFile instance);
-    partial void InsertTRNMemo(TRNMemo instance);
-    partial void UpdateTRNMemo(TRNMemo instance);
-    partial void DeleteTRNMemo(TRNMemo instance);
-    partial void InsertTRNMemoData(TRNMemoData instance);
-    partial void UpdateTRNMemoData(TRNMemoData instance);
-    partial void DeleteTRNMemoData(TRNMemoData instance);
-    partial void InsertTRNMemoDataHistory(TRNMemoDataHistory instance);
-    partial void UpdateTRNMemoDataHistory(TRNMemoDataHistory instance);
-    partial void DeleteTRNMemoDataHistory(TRNMemoDataHistory instance);
-    partial void InsertTRNMemoTableData(TRNMemoTableData instance);
-    partial void UpdateTRNMemoTableData(TRNMemoTableData instance);
-    partial void DeleteTRNMemoTableData(TRNMemoTableData instance);
-    partial void InsertTRNMemoTableDataHistory(TRNMemoTableDataHistory instance);
-    partial void UpdateTRNMemoTableDataHistory(TRNMemoTableDataHistory instance);
-    partial void DeleteTRNMemoTableDataHistory(TRNMemoTableDataHistory instance);
-    partial void InsertTRNDelegate(TRNDelegate instance);
-    partial void UpdateTRNDelegate(TRNDelegate instance);
-    partial void DeleteTRNDelegate(TRNDelegate instance);
-    partial void InsertTRNDelegateDetail(TRNDelegateDetail instance);
-    partial void UpdateTRNDelegateDetail(TRNDelegateDetail instance);
-    partial void DeleteTRNDelegateDetail(TRNDelegateDetail instance);
-    partial void InsertTRNSessionData(TRNSessionData instance);
-    partial void UpdateTRNSessionData(TRNSessionData instance);
-    partial void DeleteTRNSessionData(TRNSessionData instance);
     partial void InsertLAlignment(LAlignment instance);
     partial void UpdateLAlignment(LAlignment instance);
     partial void DeleteLAlignment(LAlignment instance);
+    partial void InsertTRNSessionData(TRNSessionData instance);
+    partial void UpdateTRNSessionData(TRNSessionData instance);
+    partial void DeleteTRNSessionData(TRNSessionData instance);
     partial void InsertLAttachGroup(LAttachGroup instance);
     partial void UpdateLAttachGroup(LAttachGroup instance);
     partial void DeleteLAttachGroup(LAttachGroup instance);
@@ -105,6 +81,12 @@ namespace DbR3
     partial void InsertLDisplaySignatureWord(LDisplaySignatureWord instance);
     partial void UpdateLDisplaySignatureWord(LDisplaySignatureWord instance);
     partial void DeleteLDisplaySignatureWord(LDisplaySignatureWord instance);
+    partial void InsertLDisplaySpecificType(LDisplaySpecificType instance);
+    partial void UpdateLDisplaySpecificType(LDisplaySpecificType instance);
+    partial void DeleteLDisplaySpecificType(LDisplaySpecificType instance);
+    partial void InsertLFont(LFont instance);
+    partial void UpdateLFont(LFont instance);
+    partial void DeleteLFont(LFont instance);
     partial void InsertLInterfaceMapType(LInterfaceMapType instance);
     partial void UpdateLInterfaceMapType(LInterfaceMapType instance);
     partial void DeleteLInterfaceMapType(LInterfaceMapType instance);
@@ -120,6 +102,9 @@ namespace DbR3
     partial void InsertLOperator(LOperator instance);
     partial void UpdateLOperator(LOperator instance);
     partial void DeleteLOperator(LOperator instance);
+    partial void InsertLPDFPageSize(LPDFPageSize instance);
+    partial void UpdateLPDFPageSize(LPDFPageSize instance);
+    partial void DeleteLPDFPageSize(LPDFPageSize instance);
     partial void InsertLSystemSiteLanguage(LSystemSiteLanguage instance);
     partial void UpdateLSystemSiteLanguage(LSystemSiteLanguage instance);
     partial void DeleteLSystemSiteLanguage(LSystemSiteLanguage instance);
@@ -132,6 +117,9 @@ namespace DbR3
     partial void InsertMSTAnnualLeave(MSTAnnualLeave instance);
     partial void UpdateMSTAnnualLeave(MSTAnnualLeave instance);
     partial void DeleteMSTAnnualLeave(MSTAnnualLeave instance);
+    partial void InsertMSTAnnualLeaveRole(MSTAnnualLeaveRole instance);
+    partial void UpdateMSTAnnualLeaveRole(MSTAnnualLeaveRole instance);
+    partial void DeleteMSTAnnualLeaveRole(MSTAnnualLeaveRole instance);
     partial void InsertMSTApiService(MSTApiService instance);
     partial void UpdateMSTApiService(MSTApiService instance);
     partial void DeleteMSTApiService(MSTApiService instance);
@@ -270,6 +258,18 @@ namespace DbR3
     partial void InsertMSTMimeType(MSTMimeType instance);
     partial void UpdateMSTMimeType(MSTMimeType instance);
     partial void DeleteMSTMimeType(MSTMimeType instance);
+    partial void InsertMSTPDFDesignConfig(MSTPDFDesignConfig instance);
+    partial void UpdateMSTPDFDesignConfig(MSTPDFDesignConfig instance);
+    partial void DeleteMSTPDFDesignConfig(MSTPDFDesignConfig instance);
+    partial void InsertMSTPDFDesignItem(MSTPDFDesignItem instance);
+    partial void UpdateMSTPDFDesignItem(MSTPDFDesignItem instance);
+    partial void DeleteMSTPDFDesignItem(MSTPDFDesignItem instance);
+    partial void InsertMSTPDFDesignSection(MSTPDFDesignSection instance);
+    partial void UpdateMSTPDFDesignSection(MSTPDFDesignSection instance);
+    partial void DeleteMSTPDFDesignSection(MSTPDFDesignSection instance);
+    partial void InsertMSTPDFDesignSystemConfig(MSTPDFDesignSystemConfig instance);
+    partial void UpdateMSTPDFDesignSystemConfig(MSTPDFDesignSystemConfig instance);
+    partial void DeleteMSTPDFDesignSystemConfig(MSTPDFDesignSystemConfig instance);
     partial void InsertMSTPDFTemplate(MSTPDFTemplate instance);
     partial void UpdateMSTPDFTemplate(MSTPDFTemplate instance);
     partial void DeleteMSTPDFTemplate(MSTPDFTemplate instance);
@@ -303,9 +303,21 @@ namespace DbR3
     partial void InsertMSTSignatureWord(MSTSignatureWord instance);
     partial void UpdateMSTSignatureWord(MSTSignatureWord instance);
     partial void DeleteMSTSignatureWord(MSTSignatureWord instance);
+    partial void InsertMSTSpecificType(MSTSpecificType instance);
+    partial void UpdateMSTSpecificType(MSTSpecificType instance);
+    partial void DeleteMSTSpecificType(MSTSpecificType instance);
     partial void InsertMSTTableColumn(MSTTableColumn instance);
     partial void UpdateMSTTableColumn(MSTTableColumn instance);
     partial void DeleteMSTTableColumn(MSTTableColumn instance);
+    partial void InsertMSTTemConditionLogic(MSTTemConditionLogic instance);
+    partial void UpdateMSTTemConditionLogic(MSTTemConditionLogic instance);
+    partial void DeleteMSTTemConditionLogic(MSTTemConditionLogic instance);
+    partial void InsertMSTTemConditionLogicItem(MSTTemConditionLogicItem instance);
+    partial void UpdateMSTTemConditionLogicItem(MSTTemConditionLogicItem instance);
+    partial void DeleteMSTTemConditionLogicItem(MSTTemConditionLogicItem instance);
+    partial void InsertMSTTemLineApprove(MSTTemLineApprove instance);
+    partial void UpdateMSTTemLineApprove(MSTTemLineApprove instance);
+    partial void DeleteMSTTemLineApprove(MSTTemLineApprove instance);
     partial void InsertMSTTemplate(MSTTemplate instance);
     partial void UpdateMSTTemplate(MSTTemplate instance);
     partial void DeleteMSTTemplate(MSTTemplate instance);
@@ -339,45 +351,42 @@ namespace DbR3
     partial void InsertMSTUserPermission(MSTUserPermission instance);
     partial void UpdateMSTUserPermission(MSTUserPermission instance);
     partial void DeleteMSTUserPermission(MSTUserPermission instance);
-    partial void InsertMSTVendor(MSTVendor instance);
-    partial void UpdateMSTVendor(MSTVendor instance);
-    partial void DeleteMSTVendor(MSTVendor instance);
     partial void InsertTRNActionHistory(TRNActionHistory instance);
     partial void UpdateTRNActionHistory(TRNActionHistory instance);
     partial void DeleteTRNActionHistory(TRNActionHistory instance);
-    partial void InsertTRNAttachFile1(TRNAttachFile1 instance);
-    partial void UpdateTRNAttachFile1(TRNAttachFile1 instance);
-    partial void DeleteTRNAttachFile1(TRNAttachFile1 instance);
+    partial void InsertTRNAttachFile(TRNAttachFile instance);
+    partial void UpdateTRNAttachFile(TRNAttachFile instance);
+    partial void DeleteTRNAttachFile(TRNAttachFile instance);
     partial void InsertTRNControlRunning(TRNControlRunning instance);
     partial void UpdateTRNControlRunning(TRNControlRunning instance);
     partial void DeleteTRNControlRunning(TRNControlRunning instance);
-    partial void InsertTRNDelegate1(TRNDelegate1 instance);
-    partial void UpdateTRNDelegate1(TRNDelegate1 instance);
-    partial void DeleteTRNDelegate1(TRNDelegate1 instance);
-    partial void InsertTRNDelegateDetail1(TRNDelegateDetail1 instance);
-    partial void UpdateTRNDelegateDetail1(TRNDelegateDetail1 instance);
-    partial void DeleteTRNDelegateDetail1(TRNDelegateDetail1 instance);
+    partial void InsertTRNDelegate(TRNDelegate instance);
+    partial void UpdateTRNDelegate(TRNDelegate instance);
+    partial void DeleteTRNDelegate(TRNDelegate instance);
+    partial void InsertTRNDelegateDetail(TRNDelegateDetail instance);
+    partial void UpdateTRNDelegateDetail(TRNDelegateDetail instance);
+    partial void DeleteTRNDelegateDetail(TRNDelegateDetail instance);
     partial void InsertTRNLeaveBalance(TRNLeaveBalance instance);
     partial void UpdateTRNLeaveBalance(TRNLeaveBalance instance);
     partial void DeleteTRNLeaveBalance(TRNLeaveBalance instance);
     partial void InsertTRNLineApprove(TRNLineApprove instance);
     partial void UpdateTRNLineApprove(TRNLineApprove instance);
     partial void DeleteTRNLineApprove(TRNLineApprove instance);
-    partial void InsertTRNMemo1(TRNMemo1 instance);
-    partial void UpdateTRNMemo1(TRNMemo1 instance);
-    partial void DeleteTRNMemo1(TRNMemo1 instance);
-    partial void InsertTRNMemoData1(TRNMemoData1 instance);
-    partial void UpdateTRNMemoData1(TRNMemoData1 instance);
-    partial void DeleteTRNMemoData1(TRNMemoData1 instance);
-    partial void InsertTRNMemoDataHistory1(TRNMemoDataHistory1 instance);
-    partial void UpdateTRNMemoDataHistory1(TRNMemoDataHistory1 instance);
-    partial void DeleteTRNMemoDataHistory1(TRNMemoDataHistory1 instance);
-    partial void InsertTRNMemoTableData1(TRNMemoTableData1 instance);
-    partial void UpdateTRNMemoTableData1(TRNMemoTableData1 instance);
-    partial void DeleteTRNMemoTableData1(TRNMemoTableData1 instance);
-    partial void InsertTRNMemoTableDataHistory1(TRNMemoTableDataHistory1 instance);
-    partial void UpdateTRNMemoTableDataHistory1(TRNMemoTableDataHistory1 instance);
-    partial void DeleteTRNMemoTableDataHistory1(TRNMemoTableDataHistory1 instance);
+    partial void InsertTRNMemo(TRNMemo instance);
+    partial void UpdateTRNMemo(TRNMemo instance);
+    partial void DeleteTRNMemo(TRNMemo instance);
+    partial void InsertTRNMemoData(TRNMemoData instance);
+    partial void UpdateTRNMemoData(TRNMemoData instance);
+    partial void DeleteTRNMemoData(TRNMemoData instance);
+    partial void InsertTRNMemoDataHistory(TRNMemoDataHistory instance);
+    partial void UpdateTRNMemoDataHistory(TRNMemoDataHistory instance);
+    partial void DeleteTRNMemoDataHistory(TRNMemoDataHistory instance);
+    partial void InsertTRNMemoTableData(TRNMemoTableData instance);
+    partial void UpdateTRNMemoTableData(TRNMemoTableData instance);
+    partial void DeleteTRNMemoTableData(TRNMemoTableData instance);
+    partial void InsertTRNMemoTableDataHistory(TRNMemoTableDataHistory instance);
+    partial void UpdateTRNMemoTableDataHistory(TRNMemoTableDataHistory instance);
+    partial void DeleteTRNMemoTableDataHistory(TRNMemoTableDataHistory instance);
     partial void InsertTRNReadMemo(TRNReadMemo instance);
     partial void UpdateTRNReadMemo(TRNReadMemo instance);
     partial void DeleteTRNReadMemo(TRNReadMemo instance);
@@ -393,7 +402,7 @@ namespace DbR3
     #endregion
 		
 		public DBR3DataContext() : 
-				base(global::DbR3.Properties.Settings.Default.WolfApproveR3ConnectionString1, mappingSource)
+				base(global::DbR3.Properties.Settings.Default.WolfApproveCore_TechconsbizR3ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -422,67 +431,11 @@ namespace DbR3
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<TRNAttachFile> TRNAttachFiles
+		public System.Data.Linq.Table<LAlignment> LAlignments
 		{
 			get
 			{
-				return this.GetTable<TRNAttachFile>();
-			}
-		}
-		
-		public System.Data.Linq.Table<TRNMemo> TRNMemos
-		{
-			get
-			{
-				return this.GetTable<TRNMemo>();
-			}
-		}
-		
-		public System.Data.Linq.Table<TRNMemoData> TRNMemoDatas
-		{
-			get
-			{
-				return this.GetTable<TRNMemoData>();
-			}
-		}
-		
-		public System.Data.Linq.Table<TRNMemoDataHistory> TRNMemoDataHistories
-		{
-			get
-			{
-				return this.GetTable<TRNMemoDataHistory>();
-			}
-		}
-		
-		public System.Data.Linq.Table<TRNMemoTableData> TRNMemoTableDatas
-		{
-			get
-			{
-				return this.GetTable<TRNMemoTableData>();
-			}
-		}
-		
-		public System.Data.Linq.Table<TRNMemoTableDataHistory> TRNMemoTableDataHistories
-		{
-			get
-			{
-				return this.GetTable<TRNMemoTableDataHistory>();
-			}
-		}
-		
-		public System.Data.Linq.Table<TRNDelegate> TRNDelegates
-		{
-			get
-			{
-				return this.GetTable<TRNDelegate>();
-			}
-		}
-		
-		public System.Data.Linq.Table<TRNDelegateDetail> TRNDelegateDetails
-		{
-			get
-			{
-				return this.GetTable<TRNDelegateDetail>();
+				return this.GetTable<LAlignment>();
 			}
 		}
 		
@@ -491,14 +444,6 @@ namespace DbR3
 			get
 			{
 				return this.GetTable<TRNSessionData>();
-			}
-		}
-		
-		public System.Data.Linq.Table<LAlignment> LAlignments
-		{
-			get
-			{
-				return this.GetTable<LAlignment>();
 			}
 		}
 		
@@ -638,6 +583,22 @@ namespace DbR3
 			}
 		}
 		
+		public System.Data.Linq.Table<LDisplaySpecificType> LDisplaySpecificTypes
+		{
+			get
+			{
+				return this.GetTable<LDisplaySpecificType>();
+			}
+		}
+		
+		public System.Data.Linq.Table<LFont> LFonts
+		{
+			get
+			{
+				return this.GetTable<LFont>();
+			}
+		}
+		
 		public System.Data.Linq.Table<LInterfaceMapType> LInterfaceMapTypes
 		{
 			get
@@ -686,6 +647,14 @@ namespace DbR3
 			}
 		}
 		
+		public System.Data.Linq.Table<LPDFPageSize> LPDFPageSizes
+		{
+			get
+			{
+				return this.GetTable<LPDFPageSize>();
+			}
+		}
+		
 		public System.Data.Linq.Table<LSystemSiteLanguage> LSystemSiteLanguages
 		{
 			get
@@ -715,6 +684,14 @@ namespace DbR3
 			get
 			{
 				return this.GetTable<MSTAnnualLeave>();
+			}
+		}
+		
+		public System.Data.Linq.Table<MSTAnnualLeaveRole> MSTAnnualLeaveRoles
+		{
+			get
+			{
+				return this.GetTable<MSTAnnualLeaveRole>();
 			}
 		}
 		
@@ -1086,6 +1063,38 @@ namespace DbR3
 			}
 		}
 		
+		public System.Data.Linq.Table<MSTPDFDesignConfig> MSTPDFDesignConfigs
+		{
+			get
+			{
+				return this.GetTable<MSTPDFDesignConfig>();
+			}
+		}
+		
+		public System.Data.Linq.Table<MSTPDFDesignItem> MSTPDFDesignItems
+		{
+			get
+			{
+				return this.GetTable<MSTPDFDesignItem>();
+			}
+		}
+		
+		public System.Data.Linq.Table<MSTPDFDesignSection> MSTPDFDesignSections
+		{
+			get
+			{
+				return this.GetTable<MSTPDFDesignSection>();
+			}
+		}
+		
+		public System.Data.Linq.Table<MSTPDFDesignSystemConfig> MSTPDFDesignSystemConfigs
+		{
+			get
+			{
+				return this.GetTable<MSTPDFDesignSystemConfig>();
+			}
+		}
+		
 		public System.Data.Linq.Table<MSTPDFTemplate> MSTPDFTemplates
 		{
 			get
@@ -1182,11 +1191,35 @@ namespace DbR3
 			}
 		}
 		
+		public System.Data.Linq.Table<MSTSpecificType> MSTSpecificTypes
+		{
+			get
+			{
+				return this.GetTable<MSTSpecificType>();
+			}
+		}
+		
 		public System.Data.Linq.Table<MSTTableColumn> MSTTableColumns
 		{
 			get
 			{
 				return this.GetTable<MSTTableColumn>();
+			}
+		}
+		
+		public System.Data.Linq.Table<MSTTemConditionLogic> MSTTemConditionLogics
+		{
+			get
+			{
+				return this.GetTable<MSTTemConditionLogic>();
+			}
+		}
+		
+		public System.Data.Linq.Table<MSTTemConditionLogicItem> MSTTemConditionLogicItems
+		{
+			get
+			{
+				return this.GetTable<MSTTemConditionLogicItem>();
 			}
 		}
 		
@@ -1286,14 +1319,6 @@ namespace DbR3
 			}
 		}
 		
-		public System.Data.Linq.Table<MSTVendor> MSTVendors
-		{
-			get
-			{
-				return this.GetTable<MSTVendor>();
-			}
-		}
-		
 		public System.Data.Linq.Table<TRNActionHistory> TRNActionHistories
 		{
 			get
@@ -1302,11 +1327,11 @@ namespace DbR3
 			}
 		}
 		
-		public System.Data.Linq.Table<TRNAttachFile1> TRNAttachFile1s
+		public System.Data.Linq.Table<TRNAttachFile> TRNAttachFiles
 		{
 			get
 			{
-				return this.GetTable<TRNAttachFile1>();
+				return this.GetTable<TRNAttachFile>();
 			}
 		}
 		
@@ -1318,19 +1343,19 @@ namespace DbR3
 			}
 		}
 		
-		public System.Data.Linq.Table<TRNDelegate1> TRNDelegate1s
+		public System.Data.Linq.Table<TRNDelegate> TRNDelegates
 		{
 			get
 			{
-				return this.GetTable<TRNDelegate1>();
+				return this.GetTable<TRNDelegate>();
 			}
 		}
 		
-		public System.Data.Linq.Table<TRNDelegateDetail1> TRNDelegateDetail1s
+		public System.Data.Linq.Table<TRNDelegateDetail> TRNDelegateDetails
 		{
 			get
 			{
-				return this.GetTable<TRNDelegateDetail1>();
+				return this.GetTable<TRNDelegateDetail>();
 			}
 		}
 		
@@ -1350,43 +1375,43 @@ namespace DbR3
 			}
 		}
 		
-		public System.Data.Linq.Table<TRNMemo1> TRNMemo1s
+		public System.Data.Linq.Table<TRNMemo> TRNMemos
 		{
 			get
 			{
-				return this.GetTable<TRNMemo1>();
+				return this.GetTable<TRNMemo>();
 			}
 		}
 		
-		public System.Data.Linq.Table<TRNMemoData1> TRNMemoData1s
+		public System.Data.Linq.Table<TRNMemoData> TRNMemoDatas
 		{
 			get
 			{
-				return this.GetTable<TRNMemoData1>();
+				return this.GetTable<TRNMemoData>();
 			}
 		}
 		
-		public System.Data.Linq.Table<TRNMemoDataHistory1> TRNMemoDataHistory1s
+		public System.Data.Linq.Table<TRNMemoDataHistory> TRNMemoDataHistories
 		{
 			get
 			{
-				return this.GetTable<TRNMemoDataHistory1>();
+				return this.GetTable<TRNMemoDataHistory>();
 			}
 		}
 		
-		public System.Data.Linq.Table<TRNMemoTableData1> TRNMemoTableData1s
+		public System.Data.Linq.Table<TRNMemoTableData> TRNMemoTableDatas
 		{
 			get
 			{
-				return this.GetTable<TRNMemoTableData1>();
+				return this.GetTable<TRNMemoTableData>();
 			}
 		}
 		
-		public System.Data.Linq.Table<TRNMemoTableDataHistory1> TRNMemoTableDataHistory1s
+		public System.Data.Linq.Table<TRNMemoTableDataHistory> TRNMemoTableDataHistories
 		{
 			get
 			{
-				return this.GetTable<TRNMemoTableDataHistory1>();
+				return this.GetTable<TRNMemoTableDataHistory>();
 			}
 		}
 		
@@ -1419,3517 +1444,6 @@ namespace DbR3
 			get
 			{
 				return this.GetTable<TRNSendMail>();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNAttachFile")]
-	public partial class TRNAttachFile : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _AttachId;
-		
-		private System.Nullable<int> _AttachGroupId;
-		
-		private System.Nullable<int> _ActorId;
-		
-		private string _ActorName;
-		
-		private string _FileOriginalName;
-		
-		private string _FileName;
-		
-		private string _FilePath;
-		
-		private string _Description;
-		
-		private System.Nullable<int> _MimeTypeId;
-		
-		private System.Nullable<int> _MemoId;
-		
-		private bool _IsMergePDF;
-		
-		private int _MergeSeq;
-		
-		private System.Nullable<int> _CreatedBy;
-		
-		private System.Nullable<System.DateTime> _CreatedDate;
-		
-		private System.Nullable<int> _ModifiedBy;
-		
-		private System.Nullable<System.DateTime> _ModifiedDate;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnAttachIdChanging(int value);
-    partial void OnAttachIdChanged();
-    partial void OnAttachGroupIdChanging(System.Nullable<int> value);
-    partial void OnAttachGroupIdChanged();
-    partial void OnActorIdChanging(System.Nullable<int> value);
-    partial void OnActorIdChanged();
-    partial void OnActorNameChanging(string value);
-    partial void OnActorNameChanged();
-    partial void OnFileOriginalNameChanging(string value);
-    partial void OnFileOriginalNameChanged();
-    partial void OnFileNameChanging(string value);
-    partial void OnFileNameChanged();
-    partial void OnFilePathChanging(string value);
-    partial void OnFilePathChanged();
-    partial void OnDescriptionChanging(string value);
-    partial void OnDescriptionChanged();
-    partial void OnMimeTypeIdChanging(System.Nullable<int> value);
-    partial void OnMimeTypeIdChanged();
-    partial void OnMemoIdChanging(System.Nullable<int> value);
-    partial void OnMemoIdChanged();
-    partial void OnIsMergePDFChanging(bool value);
-    partial void OnIsMergePDFChanged();
-    partial void OnMergeSeqChanging(int value);
-    partial void OnMergeSeqChanged();
-    partial void OnCreatedByChanging(System.Nullable<int> value);
-    partial void OnCreatedByChanged();
-    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreatedDateChanged();
-    partial void OnModifiedByChanging(System.Nullable<int> value);
-    partial void OnModifiedByChanged();
-    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnModifiedDateChanged();
-    #endregion
-		
-		public TRNAttachFile()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AttachId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int AttachId
-		{
-			get
-			{
-				return this._AttachId;
-			}
-			set
-			{
-				if ((this._AttachId != value))
-				{
-					this.OnAttachIdChanging(value);
-					this.SendPropertyChanging();
-					this._AttachId = value;
-					this.SendPropertyChanged("AttachId");
-					this.OnAttachIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AttachGroupId", DbType="Int")]
-		public System.Nullable<int> AttachGroupId
-		{
-			get
-			{
-				return this._AttachGroupId;
-			}
-			set
-			{
-				if ((this._AttachGroupId != value))
-				{
-					this.OnAttachGroupIdChanging(value);
-					this.SendPropertyChanging();
-					this._AttachGroupId = value;
-					this.SendPropertyChanged("AttachGroupId");
-					this.OnAttachGroupIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ActorId", DbType="Int")]
-		public System.Nullable<int> ActorId
-		{
-			get
-			{
-				return this._ActorId;
-			}
-			set
-			{
-				if ((this._ActorId != value))
-				{
-					this.OnActorIdChanging(value);
-					this.SendPropertyChanging();
-					this._ActorId = value;
-					this.SendPropertyChanged("ActorId");
-					this.OnActorIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ActorName", DbType="NVarChar(500)")]
-		public string ActorName
-		{
-			get
-			{
-				return this._ActorName;
-			}
-			set
-			{
-				if ((this._ActorName != value))
-				{
-					this.OnActorNameChanging(value);
-					this.SendPropertyChanging();
-					this._ActorName = value;
-					this.SendPropertyChanged("ActorName");
-					this.OnActorNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FileOriginalName", DbType="NVarChar(500)")]
-		public string FileOriginalName
-		{
-			get
-			{
-				return this._FileOriginalName;
-			}
-			set
-			{
-				if ((this._FileOriginalName != value))
-				{
-					this.OnFileOriginalNameChanging(value);
-					this.SendPropertyChanging();
-					this._FileOriginalName = value;
-					this.SendPropertyChanged("FileOriginalName");
-					this.OnFileOriginalNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FileName", DbType="NVarChar(500)")]
-		public string FileName
-		{
-			get
-			{
-				return this._FileName;
-			}
-			set
-			{
-				if ((this._FileName != value))
-				{
-					this.OnFileNameChanging(value);
-					this.SendPropertyChanging();
-					this._FileName = value;
-					this.SendPropertyChanged("FileName");
-					this.OnFileNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FilePath", DbType="NVarChar(500)")]
-		public string FilePath
-		{
-			get
-			{
-				return this._FilePath;
-			}
-			set
-			{
-				if ((this._FilePath != value))
-				{
-					this.OnFilePathChanging(value);
-					this.SendPropertyChanging();
-					this._FilePath = value;
-					this.SendPropertyChanged("FilePath");
-					this.OnFilePathChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="NVarChar(500)")]
-		public string Description
-		{
-			get
-			{
-				return this._Description;
-			}
-			set
-			{
-				if ((this._Description != value))
-				{
-					this.OnDescriptionChanging(value);
-					this.SendPropertyChanging();
-					this._Description = value;
-					this.SendPropertyChanged("Description");
-					this.OnDescriptionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MimeTypeId", DbType="Int")]
-		public System.Nullable<int> MimeTypeId
-		{
-			get
-			{
-				return this._MimeTypeId;
-			}
-			set
-			{
-				if ((this._MimeTypeId != value))
-				{
-					this.OnMimeTypeIdChanging(value);
-					this.SendPropertyChanging();
-					this._MimeTypeId = value;
-					this.SendPropertyChanged("MimeTypeId");
-					this.OnMimeTypeIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="Int")]
-		public System.Nullable<int> MemoId
-		{
-			get
-			{
-				return this._MemoId;
-			}
-			set
-			{
-				if ((this._MemoId != value))
-				{
-					this.OnMemoIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoId = value;
-					this.SendPropertyChanged("MemoId");
-					this.OnMemoIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsMergePDF", DbType="Bit NOT NULL")]
-		public bool IsMergePDF
-		{
-			get
-			{
-				return this._IsMergePDF;
-			}
-			set
-			{
-				if ((this._IsMergePDF != value))
-				{
-					this.OnIsMergePDFChanging(value);
-					this.SendPropertyChanging();
-					this._IsMergePDF = value;
-					this.SendPropertyChanged("IsMergePDF");
-					this.OnIsMergePDFChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MergeSeq", DbType="Int NOT NULL")]
-		public int MergeSeq
-		{
-			get
-			{
-				return this._MergeSeq;
-			}
-			set
-			{
-				if ((this._MergeSeq != value))
-				{
-					this.OnMergeSeqChanging(value);
-					this.SendPropertyChanging();
-					this._MergeSeq = value;
-					this.SendPropertyChanged("MergeSeq");
-					this.OnMergeSeqChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
-		public System.Nullable<int> CreatedBy
-		{
-			get
-			{
-				return this._CreatedBy;
-			}
-			set
-			{
-				if ((this._CreatedBy != value))
-				{
-					this.OnCreatedByChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedBy = value;
-					this.SendPropertyChanged("CreatedBy");
-					this.OnCreatedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CreatedDate
-		{
-			get
-			{
-				return this._CreatedDate;
-			}
-			set
-			{
-				if ((this._CreatedDate != value))
-				{
-					this.OnCreatedDateChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedDate = value;
-					this.SendPropertyChanged("CreatedDate");
-					this.OnCreatedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
-		public System.Nullable<int> ModifiedBy
-		{
-			get
-			{
-				return this._ModifiedBy;
-			}
-			set
-			{
-				if ((this._ModifiedBy != value))
-				{
-					this.OnModifiedByChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedBy = value;
-					this.SendPropertyChanged("ModifiedBy");
-					this.OnModifiedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> ModifiedDate
-		{
-			get
-			{
-				return this._ModifiedDate;
-			}
-			set
-			{
-				if ((this._ModifiedDate != value))
-				{
-					this.OnModifiedDateChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedDate = value;
-					this.SendPropertyChanged("ModifiedDate");
-					this.OnModifiedDateChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNMemo")]
-	public partial class TRNMemo : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private long _MemoId;
-		
-		private string _DocumentNo;
-		
-		private System.Nullable<int> _TemplateId;
-		
-		private System.Nullable<int> _ControlVersionId;
-		
-		private System.Nullable<bool> _IsPublic;
-		
-		private string _ReportLang;
-		
-		private string _TemplateDetail;
-		
-		private string _ToPerson;
-		
-		private string _CcPerson;
-		
-		private string _MemoSubject;
-		
-		private string _MTextForm;
-		
-		private System.Nullable<int> _MemoStatusId;
-		
-		private System.Nullable<int> _CurrentApprovalLevel;
-		
-		private System.Nullable<decimal> _Amount;
-		
-		private System.Nullable<int> _LastStatusId;
-		
-		private System.Nullable<int> _PersonWaitingId;
-		
-		private System.Nullable<int> _AccountId;
-		
-		private System.Nullable<int> _CompanyId;
-		
-		private System.Nullable<int> _ProjectId;
-		
-		private System.Nullable<bool> _IsRead;
-		
-		private string _TemplateApproveId;
-		
-		private System.Nullable<int> _Processing;
-		
-		private System.Nullable<bool> _IsProcess;
-		
-		private System.Nullable<System.DateTime> _SLAStartDate;
-		
-		private System.Nullable<System.DateTime> _SLACompletedDate;
-		
-		private System.Nullable<System.DateTime> _CompletedDate;
-		
-		private System.Nullable<int> _CreatorId;
-		
-		private System.Nullable<int> _RequestorId;
-		
-		private System.Nullable<System.DateTime> _RequestDate;
-		
-		private System.Nullable<int> _CreatedBy;
-		
-		private System.Nullable<System.DateTime> _CreatedDate;
-		
-		private System.Nullable<int> _ModifiedBy;
-		
-		private System.Nullable<System.DateTime> _ModifiedDate;
-		
-		private System.Nullable<int> _LastActionBy;
-		
-		private EntitySet<TRNMemoData> _TRNMemoDatas;
-		
-		private EntitySet<TRNMemoDataHistory> _TRNMemoDataHistories;
-		
-		private EntitySet<TRNMemoTableData> _TRNMemoTableDatas;
-		
-		private EntitySet<TRNMemoTableDataHistory> _TRNMemoTableDataHistories;
-		
-		private EntitySet<TRNMemoData1> _TRNMemoData1s;
-		
-		private EntitySet<TRNMemoDataHistory1> _TRNMemoDataHistory1s;
-		
-		private EntitySet<TRNMemoTableData1> _TRNMemoTableData1s;
-		
-		private EntitySet<TRNMemoTableDataHistory1> _TRNMemoTableDataHistory1s;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMemoIdChanging(long value);
-    partial void OnMemoIdChanged();
-    partial void OnDocumentNoChanging(string value);
-    partial void OnDocumentNoChanged();
-    partial void OnTemplateIdChanging(System.Nullable<int> value);
-    partial void OnTemplateIdChanged();
-    partial void OnControlVersionIdChanging(System.Nullable<int> value);
-    partial void OnControlVersionIdChanged();
-    partial void OnIsPublicChanging(System.Nullable<bool> value);
-    partial void OnIsPublicChanged();
-    partial void OnReportLangChanging(string value);
-    partial void OnReportLangChanged();
-    partial void OnTemplateDetailChanging(string value);
-    partial void OnTemplateDetailChanged();
-    partial void OnToPersonChanging(string value);
-    partial void OnToPersonChanged();
-    partial void OnCcPersonChanging(string value);
-    partial void OnCcPersonChanged();
-    partial void OnMemoSubjectChanging(string value);
-    partial void OnMemoSubjectChanged();
-    partial void OnMTextFormChanging(string value);
-    partial void OnMTextFormChanged();
-    partial void OnMemoStatusIdChanging(System.Nullable<int> value);
-    partial void OnMemoStatusIdChanged();
-    partial void OnCurrentApprovalLevelChanging(System.Nullable<int> value);
-    partial void OnCurrentApprovalLevelChanged();
-    partial void OnAmountChanging(System.Nullable<decimal> value);
-    partial void OnAmountChanged();
-    partial void OnLastStatusIdChanging(System.Nullable<int> value);
-    partial void OnLastStatusIdChanged();
-    partial void OnPersonWaitingIdChanging(System.Nullable<int> value);
-    partial void OnPersonWaitingIdChanged();
-    partial void OnAccountIdChanging(System.Nullable<int> value);
-    partial void OnAccountIdChanged();
-    partial void OnCompanyIdChanging(System.Nullable<int> value);
-    partial void OnCompanyIdChanged();
-    partial void OnProjectIdChanging(System.Nullable<int> value);
-    partial void OnProjectIdChanged();
-    partial void OnIsReadChanging(System.Nullable<bool> value);
-    partial void OnIsReadChanged();
-    partial void OnTemplateApproveIdChanging(string value);
-    partial void OnTemplateApproveIdChanged();
-    partial void OnProcessingChanging(System.Nullable<int> value);
-    partial void OnProcessingChanged();
-    partial void OnIsProcessChanging(System.Nullable<bool> value);
-    partial void OnIsProcessChanged();
-    partial void OnSLAStartDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnSLAStartDateChanged();
-    partial void OnSLACompletedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnSLACompletedDateChanged();
-    partial void OnCompletedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnCompletedDateChanged();
-    partial void OnCreatorIdChanging(System.Nullable<int> value);
-    partial void OnCreatorIdChanged();
-    partial void OnRequestorIdChanging(System.Nullable<int> value);
-    partial void OnRequestorIdChanged();
-    partial void OnRequestDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnRequestDateChanged();
-    partial void OnCreatedByChanging(System.Nullable<int> value);
-    partial void OnCreatedByChanged();
-    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreatedDateChanged();
-    partial void OnModifiedByChanging(System.Nullable<int> value);
-    partial void OnModifiedByChanged();
-    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnModifiedDateChanged();
-    partial void OnLastActionByChanging(System.Nullable<int> value);
-    partial void OnLastActionByChanged();
-    #endregion
-		
-		public TRNMemo()
-		{
-			this._TRNMemoDatas = new EntitySet<TRNMemoData>(new Action<TRNMemoData>(this.attach_TRNMemoDatas), new Action<TRNMemoData>(this.detach_TRNMemoDatas));
-			this._TRNMemoDataHistories = new EntitySet<TRNMemoDataHistory>(new Action<TRNMemoDataHistory>(this.attach_TRNMemoDataHistories), new Action<TRNMemoDataHistory>(this.detach_TRNMemoDataHistories));
-			this._TRNMemoTableDatas = new EntitySet<TRNMemoTableData>(new Action<TRNMemoTableData>(this.attach_TRNMemoTableDatas), new Action<TRNMemoTableData>(this.detach_TRNMemoTableDatas));
-			this._TRNMemoTableDataHistories = new EntitySet<TRNMemoTableDataHistory>(new Action<TRNMemoTableDataHistory>(this.attach_TRNMemoTableDataHistories), new Action<TRNMemoTableDataHistory>(this.detach_TRNMemoTableDataHistories));
-			this._TRNMemoData1s = new EntitySet<TRNMemoData1>(new Action<TRNMemoData1>(this.attach_TRNMemoData1s), new Action<TRNMemoData1>(this.detach_TRNMemoData1s));
-			this._TRNMemoDataHistory1s = new EntitySet<TRNMemoDataHistory1>(new Action<TRNMemoDataHistory1>(this.attach_TRNMemoDataHistory1s), new Action<TRNMemoDataHistory1>(this.detach_TRNMemoDataHistory1s));
-			this._TRNMemoTableData1s = new EntitySet<TRNMemoTableData1>(new Action<TRNMemoTableData1>(this.attach_TRNMemoTableData1s), new Action<TRNMemoTableData1>(this.detach_TRNMemoTableData1s));
-			this._TRNMemoTableDataHistory1s = new EntitySet<TRNMemoTableDataHistory1>(new Action<TRNMemoTableDataHistory1>(this.attach_TRNMemoTableDataHistory1s), new Action<TRNMemoTableDataHistory1>(this.detach_TRNMemoTableDataHistory1s));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long MemoId
-		{
-			get
-			{
-				return this._MemoId;
-			}
-			set
-			{
-				if ((this._MemoId != value))
-				{
-					this.OnMemoIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoId = value;
-					this.SendPropertyChanged("MemoId");
-					this.OnMemoIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DocumentNo", DbType="NVarChar(50)")]
-		public string DocumentNo
-		{
-			get
-			{
-				return this._DocumentNo;
-			}
-			set
-			{
-				if ((this._DocumentNo != value))
-				{
-					this.OnDocumentNoChanging(value);
-					this.SendPropertyChanging();
-					this._DocumentNo = value;
-					this.SendPropertyChanged("DocumentNo");
-					this.OnDocumentNoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemplateId", DbType="Int")]
-		public System.Nullable<int> TemplateId
-		{
-			get
-			{
-				return this._TemplateId;
-			}
-			set
-			{
-				if ((this._TemplateId != value))
-				{
-					this.OnTemplateIdChanging(value);
-					this.SendPropertyChanging();
-					this._TemplateId = value;
-					this.SendPropertyChanged("TemplateId");
-					this.OnTemplateIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlVersionId", DbType="Int")]
-		public System.Nullable<int> ControlVersionId
-		{
-			get
-			{
-				return this._ControlVersionId;
-			}
-			set
-			{
-				if ((this._ControlVersionId != value))
-				{
-					this.OnControlVersionIdChanging(value);
-					this.SendPropertyChanging();
-					this._ControlVersionId = value;
-					this.SendPropertyChanged("ControlVersionId");
-					this.OnControlVersionIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsPublic", DbType="Bit")]
-		public System.Nullable<bool> IsPublic
-		{
-			get
-			{
-				return this._IsPublic;
-			}
-			set
-			{
-				if ((this._IsPublic != value))
-				{
-					this.OnIsPublicChanging(value);
-					this.SendPropertyChanging();
-					this._IsPublic = value;
-					this.SendPropertyChanged("IsPublic");
-					this.OnIsPublicChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReportLang", DbType="NVarChar(2)")]
-		public string ReportLang
-		{
-			get
-			{
-				return this._ReportLang;
-			}
-			set
-			{
-				if ((this._ReportLang != value))
-				{
-					this.OnReportLangChanging(value);
-					this.SendPropertyChanging();
-					this._ReportLang = value;
-					this.SendPropertyChanged("ReportLang");
-					this.OnReportLangChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemplateDetail", DbType="NVarChar(100)")]
-		public string TemplateDetail
-		{
-			get
-			{
-				return this._TemplateDetail;
-			}
-			set
-			{
-				if ((this._TemplateDetail != value))
-				{
-					this.OnTemplateDetailChanging(value);
-					this.SendPropertyChanging();
-					this._TemplateDetail = value;
-					this.SendPropertyChanged("TemplateDetail");
-					this.OnTemplateDetailChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ToPerson", DbType="NVarChar(MAX)")]
-		public string ToPerson
-		{
-			get
-			{
-				return this._ToPerson;
-			}
-			set
-			{
-				if ((this._ToPerson != value))
-				{
-					this.OnToPersonChanging(value);
-					this.SendPropertyChanging();
-					this._ToPerson = value;
-					this.SendPropertyChanged("ToPerson");
-					this.OnToPersonChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CcPerson", DbType="NVarChar(MAX)")]
-		public string CcPerson
-		{
-			get
-			{
-				return this._CcPerson;
-			}
-			set
-			{
-				if ((this._CcPerson != value))
-				{
-					this.OnCcPersonChanging(value);
-					this.SendPropertyChanging();
-					this._CcPerson = value;
-					this.SendPropertyChanged("CcPerson");
-					this.OnCcPersonChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoSubject", DbType="NVarChar(500)")]
-		public string MemoSubject
-		{
-			get
-			{
-				return this._MemoSubject;
-			}
-			set
-			{
-				if ((this._MemoSubject != value))
-				{
-					this.OnMemoSubjectChanging(value);
-					this.SendPropertyChanging();
-					this._MemoSubject = value;
-					this.SendPropertyChanged("MemoSubject");
-					this.OnMemoSubjectChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MTextForm", DbType="NVarChar(MAX)")]
-		public string MTextForm
-		{
-			get
-			{
-				return this._MTextForm;
-			}
-			set
-			{
-				if ((this._MTextForm != value))
-				{
-					this.OnMTextFormChanging(value);
-					this.SendPropertyChanging();
-					this._MTextForm = value;
-					this.SendPropertyChanged("MTextForm");
-					this.OnMTextFormChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoStatusId", DbType="Int")]
-		public System.Nullable<int> MemoStatusId
-		{
-			get
-			{
-				return this._MemoStatusId;
-			}
-			set
-			{
-				if ((this._MemoStatusId != value))
-				{
-					this.OnMemoStatusIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoStatusId = value;
-					this.SendPropertyChanged("MemoStatusId");
-					this.OnMemoStatusIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CurrentApprovalLevel", DbType="Int")]
-		public System.Nullable<int> CurrentApprovalLevel
-		{
-			get
-			{
-				return this._CurrentApprovalLevel;
-			}
-			set
-			{
-				if ((this._CurrentApprovalLevel != value))
-				{
-					this.OnCurrentApprovalLevelChanging(value);
-					this.SendPropertyChanging();
-					this._CurrentApprovalLevel = value;
-					this.SendPropertyChanged("CurrentApprovalLevel");
-					this.OnCurrentApprovalLevelChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Amount", DbType="Decimal(18,2)")]
-		public System.Nullable<decimal> Amount
-		{
-			get
-			{
-				return this._Amount;
-			}
-			set
-			{
-				if ((this._Amount != value))
-				{
-					this.OnAmountChanging(value);
-					this.SendPropertyChanging();
-					this._Amount = value;
-					this.SendPropertyChanged("Amount");
-					this.OnAmountChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastStatusId", DbType="Int")]
-		public System.Nullable<int> LastStatusId
-		{
-			get
-			{
-				return this._LastStatusId;
-			}
-			set
-			{
-				if ((this._LastStatusId != value))
-				{
-					this.OnLastStatusIdChanging(value);
-					this.SendPropertyChanging();
-					this._LastStatusId = value;
-					this.SendPropertyChanged("LastStatusId");
-					this.OnLastStatusIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PersonWaitingId", DbType="Int")]
-		public System.Nullable<int> PersonWaitingId
-		{
-			get
-			{
-				return this._PersonWaitingId;
-			}
-			set
-			{
-				if ((this._PersonWaitingId != value))
-				{
-					this.OnPersonWaitingIdChanging(value);
-					this.SendPropertyChanging();
-					this._PersonWaitingId = value;
-					this.SendPropertyChanged("PersonWaitingId");
-					this.OnPersonWaitingIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountId", DbType="Int")]
-		public System.Nullable<int> AccountId
-		{
-			get
-			{
-				return this._AccountId;
-			}
-			set
-			{
-				if ((this._AccountId != value))
-				{
-					this.OnAccountIdChanging(value);
-					this.SendPropertyChanging();
-					this._AccountId = value;
-					this.SendPropertyChanged("AccountId");
-					this.OnAccountIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CompanyId", DbType="Int")]
-		public System.Nullable<int> CompanyId
-		{
-			get
-			{
-				return this._CompanyId;
-			}
-			set
-			{
-				if ((this._CompanyId != value))
-				{
-					this.OnCompanyIdChanging(value);
-					this.SendPropertyChanging();
-					this._CompanyId = value;
-					this.SendPropertyChanged("CompanyId");
-					this.OnCompanyIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProjectId", DbType="Int")]
-		public System.Nullable<int> ProjectId
-		{
-			get
-			{
-				return this._ProjectId;
-			}
-			set
-			{
-				if ((this._ProjectId != value))
-				{
-					this.OnProjectIdChanging(value);
-					this.SendPropertyChanging();
-					this._ProjectId = value;
-					this.SendPropertyChanged("ProjectId");
-					this.OnProjectIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsRead", DbType="Bit")]
-		public System.Nullable<bool> IsRead
-		{
-			get
-			{
-				return this._IsRead;
-			}
-			set
-			{
-				if ((this._IsRead != value))
-				{
-					this.OnIsReadChanging(value);
-					this.SendPropertyChanging();
-					this._IsRead = value;
-					this.SendPropertyChanged("IsRead");
-					this.OnIsReadChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemplateApproveId", DbType="NVarChar(10)")]
-		public string TemplateApproveId
-		{
-			get
-			{
-				return this._TemplateApproveId;
-			}
-			set
-			{
-				if ((this._TemplateApproveId != value))
-				{
-					this.OnTemplateApproveIdChanging(value);
-					this.SendPropertyChanging();
-					this._TemplateApproveId = value;
-					this.SendPropertyChanged("TemplateApproveId");
-					this.OnTemplateApproveIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Processing", DbType="Int")]
-		public System.Nullable<int> Processing
-		{
-			get
-			{
-				return this._Processing;
-			}
-			set
-			{
-				if ((this._Processing != value))
-				{
-					this.OnProcessingChanging(value);
-					this.SendPropertyChanging();
-					this._Processing = value;
-					this.SendPropertyChanged("Processing");
-					this.OnProcessingChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsProcess", DbType="Bit")]
-		public System.Nullable<bool> IsProcess
-		{
-			get
-			{
-				return this._IsProcess;
-			}
-			set
-			{
-				if ((this._IsProcess != value))
-				{
-					this.OnIsProcessChanging(value);
-					this.SendPropertyChanging();
-					this._IsProcess = value;
-					this.SendPropertyChanged("IsProcess");
-					this.OnIsProcessChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SLAStartDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> SLAStartDate
-		{
-			get
-			{
-				return this._SLAStartDate;
-			}
-			set
-			{
-				if ((this._SLAStartDate != value))
-				{
-					this.OnSLAStartDateChanging(value);
-					this.SendPropertyChanging();
-					this._SLAStartDate = value;
-					this.SendPropertyChanged("SLAStartDate");
-					this.OnSLAStartDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SLACompletedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> SLACompletedDate
-		{
-			get
-			{
-				return this._SLACompletedDate;
-			}
-			set
-			{
-				if ((this._SLACompletedDate != value))
-				{
-					this.OnSLACompletedDateChanging(value);
-					this.SendPropertyChanging();
-					this._SLACompletedDate = value;
-					this.SendPropertyChanged("SLACompletedDate");
-					this.OnSLACompletedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CompletedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CompletedDate
-		{
-			get
-			{
-				return this._CompletedDate;
-			}
-			set
-			{
-				if ((this._CompletedDate != value))
-				{
-					this.OnCompletedDateChanging(value);
-					this.SendPropertyChanging();
-					this._CompletedDate = value;
-					this.SendPropertyChanged("CompletedDate");
-					this.OnCompletedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatorId", DbType="Int")]
-		public System.Nullable<int> CreatorId
-		{
-			get
-			{
-				return this._CreatorId;
-			}
-			set
-			{
-				if ((this._CreatorId != value))
-				{
-					this.OnCreatorIdChanging(value);
-					this.SendPropertyChanging();
-					this._CreatorId = value;
-					this.SendPropertyChanged("CreatorId");
-					this.OnCreatorIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RequestorId", DbType="Int")]
-		public System.Nullable<int> RequestorId
-		{
-			get
-			{
-				return this._RequestorId;
-			}
-			set
-			{
-				if ((this._RequestorId != value))
-				{
-					this.OnRequestorIdChanging(value);
-					this.SendPropertyChanging();
-					this._RequestorId = value;
-					this.SendPropertyChanged("RequestorId");
-					this.OnRequestorIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RequestDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> RequestDate
-		{
-			get
-			{
-				return this._RequestDate;
-			}
-			set
-			{
-				if ((this._RequestDate != value))
-				{
-					this.OnRequestDateChanging(value);
-					this.SendPropertyChanging();
-					this._RequestDate = value;
-					this.SendPropertyChanged("RequestDate");
-					this.OnRequestDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
-		public System.Nullable<int> CreatedBy
-		{
-			get
-			{
-				return this._CreatedBy;
-			}
-			set
-			{
-				if ((this._CreatedBy != value))
-				{
-					this.OnCreatedByChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedBy = value;
-					this.SendPropertyChanged("CreatedBy");
-					this.OnCreatedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CreatedDate
-		{
-			get
-			{
-				return this._CreatedDate;
-			}
-			set
-			{
-				if ((this._CreatedDate != value))
-				{
-					this.OnCreatedDateChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedDate = value;
-					this.SendPropertyChanged("CreatedDate");
-					this.OnCreatedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
-		public System.Nullable<int> ModifiedBy
-		{
-			get
-			{
-				return this._ModifiedBy;
-			}
-			set
-			{
-				if ((this._ModifiedBy != value))
-				{
-					this.OnModifiedByChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedBy = value;
-					this.SendPropertyChanged("ModifiedBy");
-					this.OnModifiedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> ModifiedDate
-		{
-			get
-			{
-				return this._ModifiedDate;
-			}
-			set
-			{
-				if ((this._ModifiedDate != value))
-				{
-					this.OnModifiedDateChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedDate = value;
-					this.SendPropertyChanged("ModifiedDate");
-					this.OnModifiedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastActionBy", DbType="Int")]
-		public System.Nullable<int> LastActionBy
-		{
-			get
-			{
-				return this._LastActionBy;
-			}
-			set
-			{
-				if ((this._LastActionBy != value))
-				{
-					this.OnLastActionByChanging(value);
-					this.SendPropertyChanging();
-					this._LastActionBy = value;
-					this.SendPropertyChanged("LastActionBy");
-					this.OnLastActionByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoData", Storage="_TRNMemoDatas", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoData> TRNMemoDatas
-		{
-			get
-			{
-				return this._TRNMemoDatas;
-			}
-			set
-			{
-				this._TRNMemoDatas.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoDataHistory", Storage="_TRNMemoDataHistories", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoDataHistory> TRNMemoDataHistories
-		{
-			get
-			{
-				return this._TRNMemoDataHistories;
-			}
-			set
-			{
-				this._TRNMemoDataHistories.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableData", Storage="_TRNMemoTableDatas", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoTableData> TRNMemoTableDatas
-		{
-			get
-			{
-				return this._TRNMemoTableDatas;
-			}
-			set
-			{
-				this._TRNMemoTableDatas.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableDataHistory", Storage="_TRNMemoTableDataHistories", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoTableDataHistory> TRNMemoTableDataHistories
-		{
-			get
-			{
-				return this._TRNMemoTableDataHistories;
-			}
-			set
-			{
-				this._TRNMemoTableDataHistories.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoData1", Storage="_TRNMemoData1s", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoData1> TRNMemoData1s
-		{
-			get
-			{
-				return this._TRNMemoData1s;
-			}
-			set
-			{
-				this._TRNMemoData1s.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoDataHistory1", Storage="_TRNMemoDataHistory1s", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoDataHistory1> TRNMemoDataHistory1s
-		{
-			get
-			{
-				return this._TRNMemoDataHistory1s;
-			}
-			set
-			{
-				this._TRNMemoDataHistory1s.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableData1", Storage="_TRNMemoTableData1s", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoTableData1> TRNMemoTableData1s
-		{
-			get
-			{
-				return this._TRNMemoTableData1s;
-			}
-			set
-			{
-				this._TRNMemoTableData1s.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableDataHistory1", Storage="_TRNMemoTableDataHistory1s", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoTableDataHistory1> TRNMemoTableDataHistory1s
-		{
-			get
-			{
-				return this._TRNMemoTableDataHistory1s;
-			}
-			set
-			{
-				this._TRNMemoTableDataHistory1s.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_TRNMemoDatas(TRNMemoData entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = this;
-		}
-		
-		private void detach_TRNMemoDatas(TRNMemoData entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = null;
-		}
-		
-		private void attach_TRNMemoDataHistories(TRNMemoDataHistory entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = this;
-		}
-		
-		private void detach_TRNMemoDataHistories(TRNMemoDataHistory entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = null;
-		}
-		
-		private void attach_TRNMemoTableDatas(TRNMemoTableData entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = this;
-		}
-		
-		private void detach_TRNMemoTableDatas(TRNMemoTableData entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = null;
-		}
-		
-		private void attach_TRNMemoTableDataHistories(TRNMemoTableDataHistory entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = this;
-		}
-		
-		private void detach_TRNMemoTableDataHistories(TRNMemoTableDataHistory entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = null;
-		}
-		
-		private void attach_TRNMemoData1s(TRNMemoData1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = this;
-		}
-		
-		private void detach_TRNMemoData1s(TRNMemoData1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = null;
-		}
-		
-		private void attach_TRNMemoDataHistory1s(TRNMemoDataHistory1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = this;
-		}
-		
-		private void detach_TRNMemoDataHistory1s(TRNMemoDataHistory1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = null;
-		}
-		
-		private void attach_TRNMemoTableData1s(TRNMemoTableData1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = this;
-		}
-		
-		private void detach_TRNMemoTableData1s(TRNMemoTableData1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = null;
-		}
-		
-		private void attach_TRNMemoTableDataHistory1s(TRNMemoTableDataHistory1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = this;
-		}
-		
-		private void detach_TRNMemoTableDataHistory1s(TRNMemoTableDataHistory1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNMemoData")]
-	public partial class TRNMemoData : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private long _MemoDataId;
-		
-		private long _MemoId;
-		
-		private System.Nullable<int> _ControlId;
-		
-		private string _Value;
-		
-		private EntityRef<TRNMemo> _TRNMemo;
-		
-		private EntityRef<TRNMemo1> _TRNMemo1;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMemoDataIdChanging(long value);
-    partial void OnMemoDataIdChanged();
-    partial void OnMemoIdChanging(long value);
-    partial void OnMemoIdChanged();
-    partial void OnControlIdChanging(System.Nullable<int> value);
-    partial void OnControlIdChanged();
-    partial void OnValueChanging(string value);
-    partial void OnValueChanged();
-    #endregion
-		
-		public TRNMemoData()
-		{
-			this._TRNMemo = default(EntityRef<TRNMemo>);
-			this._TRNMemo1 = default(EntityRef<TRNMemo1>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoDataId", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long MemoDataId
-		{
-			get
-			{
-				return this._MemoDataId;
-			}
-			set
-			{
-				if ((this._MemoDataId != value))
-				{
-					this.OnMemoDataIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoDataId = value;
-					this.SendPropertyChanged("MemoDataId");
-					this.OnMemoDataIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="BigInt NOT NULL")]
-		public long MemoId
-		{
-			get
-			{
-				return this._MemoId;
-			}
-			set
-			{
-				if ((this._MemoId != value))
-				{
-					if ((this._TRNMemo.HasLoadedOrAssignedValue || this._TRNMemo1.HasLoadedOrAssignedValue))
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnMemoIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoId = value;
-					this.SendPropertyChanged("MemoId");
-					this.OnMemoIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlId", DbType="Int")]
-		public System.Nullable<int> ControlId
-		{
-			get
-			{
-				return this._ControlId;
-			}
-			set
-			{
-				if ((this._ControlId != value))
-				{
-					this.OnControlIdChanging(value);
-					this.SendPropertyChanging();
-					this._ControlId = value;
-					this.SendPropertyChanged("ControlId");
-					this.OnControlIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Value", DbType="NVarChar(MAX)")]
-		public string Value
-		{
-			get
-			{
-				return this._Value;
-			}
-			set
-			{
-				if ((this._Value != value))
-				{
-					this.OnValueChanging(value);
-					this.SendPropertyChanging();
-					this._Value = value;
-					this.SendPropertyChanged("Value");
-					this.OnValueChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoData", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo TRNMemo
-		{
-			get
-			{
-				return this._TRNMemo.Entity;
-			}
-			set
-			{
-				TRNMemo previousValue = this._TRNMemo.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo.Entity = null;
-						previousValue.TRNMemoDatas.Remove(this);
-					}
-					this._TRNMemo.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoDatas.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoData", Storage="_TRNMemo1", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo1 TRNMemo1
-		{
-			get
-			{
-				return this._TRNMemo1.Entity;
-			}
-			set
-			{
-				TRNMemo1 previousValue = this._TRNMemo1.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo1.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo1.Entity = null;
-						previousValue.TRNMemoDatas.Remove(this);
-					}
-					this._TRNMemo1.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoDatas.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo1");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNMemoDataHistory")]
-	public partial class TRNMemoDataHistory : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private long _MemoDataHisId;
-		
-		private int _ActionId;
-		
-		private long _MemoId;
-		
-		private System.Nullable<int> _ControlId;
-		
-		private string _Oldvalue;
-		
-		private string _Value;
-		
-		private System.Nullable<bool> _IsEdited;
-		
-		private EntityRef<TRNMemo> _TRNMemo;
-		
-		private EntityRef<MSTControl> _MSTControl;
-		
-		private EntityRef<TRNMemo1> _TRNMemo1;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMemoDataHisIdChanging(long value);
-    partial void OnMemoDataHisIdChanged();
-    partial void OnActionIdChanging(int value);
-    partial void OnActionIdChanged();
-    partial void OnMemoIdChanging(long value);
-    partial void OnMemoIdChanged();
-    partial void OnControlIdChanging(System.Nullable<int> value);
-    partial void OnControlIdChanged();
-    partial void OnOldvalueChanging(string value);
-    partial void OnOldvalueChanged();
-    partial void OnValueChanging(string value);
-    partial void OnValueChanged();
-    partial void OnIsEditedChanging(System.Nullable<bool> value);
-    partial void OnIsEditedChanged();
-    #endregion
-		
-		public TRNMemoDataHistory()
-		{
-			this._TRNMemo = default(EntityRef<TRNMemo>);
-			this._MSTControl = default(EntityRef<MSTControl>);
-			this._TRNMemo1 = default(EntityRef<TRNMemo1>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoDataHisId", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long MemoDataHisId
-		{
-			get
-			{
-				return this._MemoDataHisId;
-			}
-			set
-			{
-				if ((this._MemoDataHisId != value))
-				{
-					this.OnMemoDataHisIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoDataHisId = value;
-					this.SendPropertyChanged("MemoDataHisId");
-					this.OnMemoDataHisIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ActionId", DbType="Int NOT NULL")]
-		public int ActionId
-		{
-			get
-			{
-				return this._ActionId;
-			}
-			set
-			{
-				if ((this._ActionId != value))
-				{
-					this.OnActionIdChanging(value);
-					this.SendPropertyChanging();
-					this._ActionId = value;
-					this.SendPropertyChanged("ActionId");
-					this.OnActionIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="BigInt NOT NULL")]
-		public long MemoId
-		{
-			get
-			{
-				return this._MemoId;
-			}
-			set
-			{
-				if ((this._MemoId != value))
-				{
-					if ((this._TRNMemo.HasLoadedOrAssignedValue || this._TRNMemo1.HasLoadedOrAssignedValue))
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnMemoIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoId = value;
-					this.SendPropertyChanged("MemoId");
-					this.OnMemoIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlId", DbType="Int")]
-		public System.Nullable<int> ControlId
-		{
-			get
-			{
-				return this._ControlId;
-			}
-			set
-			{
-				if ((this._ControlId != value))
-				{
-					if (this._MSTControl.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnControlIdChanging(value);
-					this.SendPropertyChanging();
-					this._ControlId = value;
-					this.SendPropertyChanged("ControlId");
-					this.OnControlIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Oldvalue", DbType="NVarChar(MAX)")]
-		public string Oldvalue
-		{
-			get
-			{
-				return this._Oldvalue;
-			}
-			set
-			{
-				if ((this._Oldvalue != value))
-				{
-					this.OnOldvalueChanging(value);
-					this.SendPropertyChanging();
-					this._Oldvalue = value;
-					this.SendPropertyChanged("Oldvalue");
-					this.OnOldvalueChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Value", DbType="NVarChar(MAX)")]
-		public string Value
-		{
-			get
-			{
-				return this._Value;
-			}
-			set
-			{
-				if ((this._Value != value))
-				{
-					this.OnValueChanging(value);
-					this.SendPropertyChanging();
-					this._Value = value;
-					this.SendPropertyChanged("Value");
-					this.OnValueChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsEdited", DbType="Bit")]
-		public System.Nullable<bool> IsEdited
-		{
-			get
-			{
-				return this._IsEdited;
-			}
-			set
-			{
-				if ((this._IsEdited != value))
-				{
-					this.OnIsEditedChanging(value);
-					this.SendPropertyChanging();
-					this._IsEdited = value;
-					this.SendPropertyChanged("IsEdited");
-					this.OnIsEditedChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoDataHistory", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo TRNMemo
-		{
-			get
-			{
-				return this._TRNMemo.Entity;
-			}
-			set
-			{
-				TRNMemo previousValue = this._TRNMemo.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo.Entity = null;
-						previousValue.TRNMemoDataHistories.Remove(this);
-					}
-					this._TRNMemo.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoDataHistories.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTControl_TRNMemoDataHistory", Storage="_MSTControl", ThisKey="ControlId", OtherKey="ControlId", IsForeignKey=true)]
-		public MSTControl MSTControl
-		{
-			get
-			{
-				return this._MSTControl.Entity;
-			}
-			set
-			{
-				MSTControl previousValue = this._MSTControl.Entity;
-				if (((previousValue != value) 
-							|| (this._MSTControl.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._MSTControl.Entity = null;
-						previousValue.TRNMemoDataHistories.Remove(this);
-					}
-					this._MSTControl.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoDataHistories.Add(this);
-						this._ControlId = value.ControlId;
-					}
-					else
-					{
-						this._ControlId = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("MSTControl");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoDataHistory", Storage="_TRNMemo1", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo1 TRNMemo1
-		{
-			get
-			{
-				return this._TRNMemo1.Entity;
-			}
-			set
-			{
-				TRNMemo1 previousValue = this._TRNMemo1.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo1.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo1.Entity = null;
-						previousValue.TRNMemoDataHistories.Remove(this);
-					}
-					this._TRNMemo1.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoDataHistories.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo1");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNMemoTableData")]
-	public partial class TRNMemoTableData : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private long _MemoTableDataId;
-		
-		private long _MemoId;
-		
-		private int _ColumnControlId;
-		
-		private int _TableControlId;
-		
-		private string _Value;
-		
-		private System.Nullable<decimal> _RowNumber;
-		
-		private EntityRef<TRNMemo> _TRNMemo;
-		
-		private EntityRef<TRNMemo1> _TRNMemo1;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMemoTableDataIdChanging(long value);
-    partial void OnMemoTableDataIdChanged();
-    partial void OnMemoIdChanging(long value);
-    partial void OnMemoIdChanged();
-    partial void OnColumnControlIdChanging(int value);
-    partial void OnColumnControlIdChanged();
-    partial void OnTableControlIdChanging(int value);
-    partial void OnTableControlIdChanged();
-    partial void OnValueChanging(string value);
-    partial void OnValueChanged();
-    partial void OnRowNumberChanging(System.Nullable<decimal> value);
-    partial void OnRowNumberChanged();
-    #endregion
-		
-		public TRNMemoTableData()
-		{
-			this._TRNMemo = default(EntityRef<TRNMemo>);
-			this._TRNMemo1 = default(EntityRef<TRNMemo1>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoTableDataId", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long MemoTableDataId
-		{
-			get
-			{
-				return this._MemoTableDataId;
-			}
-			set
-			{
-				if ((this._MemoTableDataId != value))
-				{
-					this.OnMemoTableDataIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoTableDataId = value;
-					this.SendPropertyChanged("MemoTableDataId");
-					this.OnMemoTableDataIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="BigInt NOT NULL")]
-		public long MemoId
-		{
-			get
-			{
-				return this._MemoId;
-			}
-			set
-			{
-				if ((this._MemoId != value))
-				{
-					if ((this._TRNMemo.HasLoadedOrAssignedValue || this._TRNMemo1.HasLoadedOrAssignedValue))
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnMemoIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoId = value;
-					this.SendPropertyChanged("MemoId");
-					this.OnMemoIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ColumnControlId", DbType="Int NOT NULL")]
-		public int ColumnControlId
-		{
-			get
-			{
-				return this._ColumnControlId;
-			}
-			set
-			{
-				if ((this._ColumnControlId != value))
-				{
-					this.OnColumnControlIdChanging(value);
-					this.SendPropertyChanging();
-					this._ColumnControlId = value;
-					this.SendPropertyChanged("ColumnControlId");
-					this.OnColumnControlIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TableControlId", DbType="Int NOT NULL")]
-		public int TableControlId
-		{
-			get
-			{
-				return this._TableControlId;
-			}
-			set
-			{
-				if ((this._TableControlId != value))
-				{
-					this.OnTableControlIdChanging(value);
-					this.SendPropertyChanging();
-					this._TableControlId = value;
-					this.SendPropertyChanged("TableControlId");
-					this.OnTableControlIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Value", DbType="NVarChar(MAX)")]
-		public string Value
-		{
-			get
-			{
-				return this._Value;
-			}
-			set
-			{
-				if ((this._Value != value))
-				{
-					this.OnValueChanging(value);
-					this.SendPropertyChanging();
-					this._Value = value;
-					this.SendPropertyChanged("Value");
-					this.OnValueChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RowNumber", DbType="Decimal(18,3)")]
-		public System.Nullable<decimal> RowNumber
-		{
-			get
-			{
-				return this._RowNumber;
-			}
-			set
-			{
-				if ((this._RowNumber != value))
-				{
-					this.OnRowNumberChanging(value);
-					this.SendPropertyChanging();
-					this._RowNumber = value;
-					this.SendPropertyChanged("RowNumber");
-					this.OnRowNumberChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableData", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo TRNMemo
-		{
-			get
-			{
-				return this._TRNMemo.Entity;
-			}
-			set
-			{
-				TRNMemo previousValue = this._TRNMemo.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo.Entity = null;
-						previousValue.TRNMemoTableDatas.Remove(this);
-					}
-					this._TRNMemo.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoTableDatas.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoTableData", Storage="_TRNMemo1", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo1 TRNMemo1
-		{
-			get
-			{
-				return this._TRNMemo1.Entity;
-			}
-			set
-			{
-				TRNMemo1 previousValue = this._TRNMemo1.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo1.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo1.Entity = null;
-						previousValue.TRNMemoTableDatas.Remove(this);
-					}
-					this._TRNMemo1.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoTableDatas.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo1");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNMemoTableDataHistory")]
-	public partial class TRNMemoTableDataHistory : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private long _MemoTableDataHisId;
-		
-		private int _ActionId;
-		
-		private long _MemoId;
-		
-		private int _ColumnControlId;
-		
-		private int _TableControlId;
-		
-		private string _Value;
-		
-		private System.Nullable<decimal> _RowNumber;
-		
-		private System.Nullable<bool> _IsInserted;
-		
-		private System.Nullable<bool> _IsEdited;
-		
-		private System.Nullable<bool> _IsDeleted;
-		
-		private EntityRef<TRNMemo> _TRNMemo;
-		
-		private EntityRef<TRNMemo1> _TRNMemo1;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMemoTableDataHisIdChanging(long value);
-    partial void OnMemoTableDataHisIdChanged();
-    partial void OnActionIdChanging(int value);
-    partial void OnActionIdChanged();
-    partial void OnMemoIdChanging(long value);
-    partial void OnMemoIdChanged();
-    partial void OnColumnControlIdChanging(int value);
-    partial void OnColumnControlIdChanged();
-    partial void OnTableControlIdChanging(int value);
-    partial void OnTableControlIdChanged();
-    partial void OnValueChanging(string value);
-    partial void OnValueChanged();
-    partial void OnRowNumberChanging(System.Nullable<decimal> value);
-    partial void OnRowNumberChanged();
-    partial void OnIsInsertedChanging(System.Nullable<bool> value);
-    partial void OnIsInsertedChanged();
-    partial void OnIsEditedChanging(System.Nullable<bool> value);
-    partial void OnIsEditedChanged();
-    partial void OnIsDeletedChanging(System.Nullable<bool> value);
-    partial void OnIsDeletedChanged();
-    #endregion
-		
-		public TRNMemoTableDataHistory()
-		{
-			this._TRNMemo = default(EntityRef<TRNMemo>);
-			this._TRNMemo1 = default(EntityRef<TRNMemo1>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoTableDataHisId", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long MemoTableDataHisId
-		{
-			get
-			{
-				return this._MemoTableDataHisId;
-			}
-			set
-			{
-				if ((this._MemoTableDataHisId != value))
-				{
-					this.OnMemoTableDataHisIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoTableDataHisId = value;
-					this.SendPropertyChanged("MemoTableDataHisId");
-					this.OnMemoTableDataHisIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ActionId", DbType="Int NOT NULL")]
-		public int ActionId
-		{
-			get
-			{
-				return this._ActionId;
-			}
-			set
-			{
-				if ((this._ActionId != value))
-				{
-					this.OnActionIdChanging(value);
-					this.SendPropertyChanging();
-					this._ActionId = value;
-					this.SendPropertyChanged("ActionId");
-					this.OnActionIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="BigInt NOT NULL")]
-		public long MemoId
-		{
-			get
-			{
-				return this._MemoId;
-			}
-			set
-			{
-				if ((this._MemoId != value))
-				{
-					if ((this._TRNMemo.HasLoadedOrAssignedValue || this._TRNMemo1.HasLoadedOrAssignedValue))
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnMemoIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoId = value;
-					this.SendPropertyChanged("MemoId");
-					this.OnMemoIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ColumnControlId", DbType="Int NOT NULL")]
-		public int ColumnControlId
-		{
-			get
-			{
-				return this._ColumnControlId;
-			}
-			set
-			{
-				if ((this._ColumnControlId != value))
-				{
-					this.OnColumnControlIdChanging(value);
-					this.SendPropertyChanging();
-					this._ColumnControlId = value;
-					this.SendPropertyChanged("ColumnControlId");
-					this.OnColumnControlIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TableControlId", DbType="Int NOT NULL")]
-		public int TableControlId
-		{
-			get
-			{
-				return this._TableControlId;
-			}
-			set
-			{
-				if ((this._TableControlId != value))
-				{
-					this.OnTableControlIdChanging(value);
-					this.SendPropertyChanging();
-					this._TableControlId = value;
-					this.SendPropertyChanged("TableControlId");
-					this.OnTableControlIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Value", DbType="NVarChar(MAX)")]
-		public string Value
-		{
-			get
-			{
-				return this._Value;
-			}
-			set
-			{
-				if ((this._Value != value))
-				{
-					this.OnValueChanging(value);
-					this.SendPropertyChanging();
-					this._Value = value;
-					this.SendPropertyChanged("Value");
-					this.OnValueChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RowNumber", DbType="Decimal(18,3)")]
-		public System.Nullable<decimal> RowNumber
-		{
-			get
-			{
-				return this._RowNumber;
-			}
-			set
-			{
-				if ((this._RowNumber != value))
-				{
-					this.OnRowNumberChanging(value);
-					this.SendPropertyChanging();
-					this._RowNumber = value;
-					this.SendPropertyChanged("RowNumber");
-					this.OnRowNumberChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsInserted", DbType="Bit")]
-		public System.Nullable<bool> IsInserted
-		{
-			get
-			{
-				return this._IsInserted;
-			}
-			set
-			{
-				if ((this._IsInserted != value))
-				{
-					this.OnIsInsertedChanging(value);
-					this.SendPropertyChanging();
-					this._IsInserted = value;
-					this.SendPropertyChanged("IsInserted");
-					this.OnIsInsertedChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsEdited", DbType="Bit")]
-		public System.Nullable<bool> IsEdited
-		{
-			get
-			{
-				return this._IsEdited;
-			}
-			set
-			{
-				if ((this._IsEdited != value))
-				{
-					this.OnIsEditedChanging(value);
-					this.SendPropertyChanging();
-					this._IsEdited = value;
-					this.SendPropertyChanged("IsEdited");
-					this.OnIsEditedChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Bit")]
-		public System.Nullable<bool> IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this.OnIsDeletedChanging(value);
-					this.SendPropertyChanging();
-					this._IsDeleted = value;
-					this.SendPropertyChanged("IsDeleted");
-					this.OnIsDeletedChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableDataHistory", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo TRNMemo
-		{
-			get
-			{
-				return this._TRNMemo.Entity;
-			}
-			set
-			{
-				TRNMemo previousValue = this._TRNMemo.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo.Entity = null;
-						previousValue.TRNMemoTableDataHistories.Remove(this);
-					}
-					this._TRNMemo.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoTableDataHistories.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoTableDataHistory", Storage="_TRNMemo1", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo1 TRNMemo1
-		{
-			get
-			{
-				return this._TRNMemo1.Entity;
-			}
-			set
-			{
-				TRNMemo1 previousValue = this._TRNMemo1.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo1.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo1.Entity = null;
-						previousValue.TRNMemoTableDataHistories.Remove(this);
-					}
-					this._TRNMemo1.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoTableDataHistories.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo1");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNDelegate")]
-	public partial class TRNDelegate : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _DelegateId;
-		
-		private System.Nullable<int> _ApproverId;
-		
-		private System.Nullable<int> _DelegateToId;
-		
-		private System.Nullable<System.DateTime> _DateFrom;
-		
-		private System.Nullable<System.DateTime> _DateTo;
-		
-		private string _Remark;
-		
-		private System.Nullable<System.DateTime> _CreatedDate;
-		
-		private string _CreatedBy;
-		
-		private System.Nullable<System.DateTime> _ModifiedDate;
-		
-		private string _ModifiedBy;
-		
-		private System.Nullable<bool> _IsActive;
-		
-		private System.Nullable<int> _AccountId;
-		
-		private System.Nullable<int> _DelegateToRole;
-		
-		private System.Nullable<bool> _IsApplySomeForm;
-		
-		private System.Nullable<System.DateTime> _TransferredDate;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnDelegateIdChanging(int value);
-    partial void OnDelegateIdChanged();
-    partial void OnApproverIdChanging(System.Nullable<int> value);
-    partial void OnApproverIdChanged();
-    partial void OnDelegateToIdChanging(System.Nullable<int> value);
-    partial void OnDelegateToIdChanged();
-    partial void OnDateFromChanging(System.Nullable<System.DateTime> value);
-    partial void OnDateFromChanged();
-    partial void OnDateToChanging(System.Nullable<System.DateTime> value);
-    partial void OnDateToChanged();
-    partial void OnRemarkChanging(string value);
-    partial void OnRemarkChanged();
-    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreatedDateChanged();
-    partial void OnCreatedByChanging(string value);
-    partial void OnCreatedByChanged();
-    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnModifiedDateChanged();
-    partial void OnModifiedByChanging(string value);
-    partial void OnModifiedByChanged();
-    partial void OnIsActiveChanging(System.Nullable<bool> value);
-    partial void OnIsActiveChanged();
-    partial void OnAccountIdChanging(System.Nullable<int> value);
-    partial void OnAccountIdChanged();
-    partial void OnDelegateToRoleChanging(System.Nullable<int> value);
-    partial void OnDelegateToRoleChanged();
-    partial void OnIsApplySomeFormChanging(System.Nullable<bool> value);
-    partial void OnIsApplySomeFormChanged();
-    partial void OnTransferredDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnTransferredDateChanged();
-    #endregion
-		
-		public TRNDelegate()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DelegateId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int DelegateId
-		{
-			get
-			{
-				return this._DelegateId;
-			}
-			set
-			{
-				if ((this._DelegateId != value))
-				{
-					this.OnDelegateIdChanging(value);
-					this.SendPropertyChanging();
-					this._DelegateId = value;
-					this.SendPropertyChanged("DelegateId");
-					this.OnDelegateIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ApproverId", DbType="Int")]
-		public System.Nullable<int> ApproverId
-		{
-			get
-			{
-				return this._ApproverId;
-			}
-			set
-			{
-				if ((this._ApproverId != value))
-				{
-					this.OnApproverIdChanging(value);
-					this.SendPropertyChanging();
-					this._ApproverId = value;
-					this.SendPropertyChanged("ApproverId");
-					this.OnApproverIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DelegateToId", DbType="Int")]
-		public System.Nullable<int> DelegateToId
-		{
-			get
-			{
-				return this._DelegateToId;
-			}
-			set
-			{
-				if ((this._DelegateToId != value))
-				{
-					this.OnDelegateToIdChanging(value);
-					this.SendPropertyChanging();
-					this._DelegateToId = value;
-					this.SendPropertyChanged("DelegateToId");
-					this.OnDelegateToIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DateFrom", DbType="DateTime")]
-		public System.Nullable<System.DateTime> DateFrom
-		{
-			get
-			{
-				return this._DateFrom;
-			}
-			set
-			{
-				if ((this._DateFrom != value))
-				{
-					this.OnDateFromChanging(value);
-					this.SendPropertyChanging();
-					this._DateFrom = value;
-					this.SendPropertyChanged("DateFrom");
-					this.OnDateFromChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DateTo", DbType="DateTime")]
-		public System.Nullable<System.DateTime> DateTo
-		{
-			get
-			{
-				return this._DateTo;
-			}
-			set
-			{
-				if ((this._DateTo != value))
-				{
-					this.OnDateToChanging(value);
-					this.SendPropertyChanging();
-					this._DateTo = value;
-					this.SendPropertyChanged("DateTo");
-					this.OnDateToChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remark", DbType="NText", UpdateCheck=UpdateCheck.Never)]
-		public string Remark
-		{
-			get
-			{
-				return this._Remark;
-			}
-			set
-			{
-				if ((this._Remark != value))
-				{
-					this.OnRemarkChanging(value);
-					this.SendPropertyChanging();
-					this._Remark = value;
-					this.SendPropertyChanged("Remark");
-					this.OnRemarkChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CreatedDate
-		{
-			get
-			{
-				return this._CreatedDate;
-			}
-			set
-			{
-				if ((this._CreatedDate != value))
-				{
-					this.OnCreatedDateChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedDate = value;
-					this.SendPropertyChanged("CreatedDate");
-					this.OnCreatedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="NVarChar(500)")]
-		public string CreatedBy
-		{
-			get
-			{
-				return this._CreatedBy;
-			}
-			set
-			{
-				if ((this._CreatedBy != value))
-				{
-					this.OnCreatedByChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedBy = value;
-					this.SendPropertyChanged("CreatedBy");
-					this.OnCreatedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> ModifiedDate
-		{
-			get
-			{
-				return this._ModifiedDate;
-			}
-			set
-			{
-				if ((this._ModifiedDate != value))
-				{
-					this.OnModifiedDateChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedDate = value;
-					this.SendPropertyChanged("ModifiedDate");
-					this.OnModifiedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="NVarChar(500)")]
-		public string ModifiedBy
-		{
-			get
-			{
-				return this._ModifiedBy;
-			}
-			set
-			{
-				if ((this._ModifiedBy != value))
-				{
-					this.OnModifiedByChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedBy = value;
-					this.SendPropertyChanged("ModifiedBy");
-					this.OnModifiedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsActive", DbType="Bit")]
-		public System.Nullable<bool> IsActive
-		{
-			get
-			{
-				return this._IsActive;
-			}
-			set
-			{
-				if ((this._IsActive != value))
-				{
-					this.OnIsActiveChanging(value);
-					this.SendPropertyChanging();
-					this._IsActive = value;
-					this.SendPropertyChanged("IsActive");
-					this.OnIsActiveChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountId", DbType="Int")]
-		public System.Nullable<int> AccountId
-		{
-			get
-			{
-				return this._AccountId;
-			}
-			set
-			{
-				if ((this._AccountId != value))
-				{
-					this.OnAccountIdChanging(value);
-					this.SendPropertyChanging();
-					this._AccountId = value;
-					this.SendPropertyChanged("AccountId");
-					this.OnAccountIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DelegateToRole", DbType="Int")]
-		public System.Nullable<int> DelegateToRole
-		{
-			get
-			{
-				return this._DelegateToRole;
-			}
-			set
-			{
-				if ((this._DelegateToRole != value))
-				{
-					this.OnDelegateToRoleChanging(value);
-					this.SendPropertyChanging();
-					this._DelegateToRole = value;
-					this.SendPropertyChanged("DelegateToRole");
-					this.OnDelegateToRoleChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsApplySomeForm", DbType="Bit")]
-		public System.Nullable<bool> IsApplySomeForm
-		{
-			get
-			{
-				return this._IsApplySomeForm;
-			}
-			set
-			{
-				if ((this._IsApplySomeForm != value))
-				{
-					this.OnIsApplySomeFormChanging(value);
-					this.SendPropertyChanging();
-					this._IsApplySomeForm = value;
-					this.SendPropertyChanged("IsApplySomeForm");
-					this.OnIsApplySomeFormChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TransferredDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> TransferredDate
-		{
-			get
-			{
-				return this._TransferredDate;
-			}
-			set
-			{
-				if ((this._TransferredDate != value))
-				{
-					this.OnTransferredDateChanging(value);
-					this.SendPropertyChanging();
-					this._TransferredDate = value;
-					this.SendPropertyChanged("TransferredDate");
-					this.OnTransferredDateChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNDelegateDetail")]
-	public partial class TRNDelegateDetail : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _DelegateDetialId;
-		
-		private System.Nullable<int> _DelegateId;
-		
-		private System.Nullable<int> _TemplateId;
-		
-		private System.Nullable<int> _MemoId;
-		
-		private System.Nullable<bool> _IsActive;
-		
-		private System.Nullable<System.DateTime> _CreatedDate;
-		
-		private string _CreatedBy;
-		
-		private System.Nullable<System.DateTime> _ModifiedDate;
-		
-		private string _ModifiedBy;
-		
-		private System.Nullable<int> _AccountId;
-		
-		private System.Nullable<System.DateTime> _TransferredDate;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnDelegateDetialIdChanging(int value);
-    partial void OnDelegateDetialIdChanged();
-    partial void OnDelegateIdChanging(System.Nullable<int> value);
-    partial void OnDelegateIdChanged();
-    partial void OnTemplateIdChanging(System.Nullable<int> value);
-    partial void OnTemplateIdChanged();
-    partial void OnMemoIdChanging(System.Nullable<int> value);
-    partial void OnMemoIdChanged();
-    partial void OnIsActiveChanging(System.Nullable<bool> value);
-    partial void OnIsActiveChanged();
-    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreatedDateChanged();
-    partial void OnCreatedByChanging(string value);
-    partial void OnCreatedByChanged();
-    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnModifiedDateChanged();
-    partial void OnModifiedByChanging(string value);
-    partial void OnModifiedByChanged();
-    partial void OnAccountIdChanging(System.Nullable<int> value);
-    partial void OnAccountIdChanged();
-    partial void OnTransferredDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnTransferredDateChanged();
-    #endregion
-		
-		public TRNDelegateDetail()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DelegateDetialId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int DelegateDetialId
-		{
-			get
-			{
-				return this._DelegateDetialId;
-			}
-			set
-			{
-				if ((this._DelegateDetialId != value))
-				{
-					this.OnDelegateDetialIdChanging(value);
-					this.SendPropertyChanging();
-					this._DelegateDetialId = value;
-					this.SendPropertyChanged("DelegateDetialId");
-					this.OnDelegateDetialIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DelegateId", DbType="Int")]
-		public System.Nullable<int> DelegateId
-		{
-			get
-			{
-				return this._DelegateId;
-			}
-			set
-			{
-				if ((this._DelegateId != value))
-				{
-					this.OnDelegateIdChanging(value);
-					this.SendPropertyChanging();
-					this._DelegateId = value;
-					this.SendPropertyChanged("DelegateId");
-					this.OnDelegateIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemplateId", DbType="Int")]
-		public System.Nullable<int> TemplateId
-		{
-			get
-			{
-				return this._TemplateId;
-			}
-			set
-			{
-				if ((this._TemplateId != value))
-				{
-					this.OnTemplateIdChanging(value);
-					this.SendPropertyChanging();
-					this._TemplateId = value;
-					this.SendPropertyChanged("TemplateId");
-					this.OnTemplateIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="Int")]
-		public System.Nullable<int> MemoId
-		{
-			get
-			{
-				return this._MemoId;
-			}
-			set
-			{
-				if ((this._MemoId != value))
-				{
-					this.OnMemoIdChanging(value);
-					this.SendPropertyChanging();
-					this._MemoId = value;
-					this.SendPropertyChanged("MemoId");
-					this.OnMemoIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsActive", DbType="Bit")]
-		public System.Nullable<bool> IsActive
-		{
-			get
-			{
-				return this._IsActive;
-			}
-			set
-			{
-				if ((this._IsActive != value))
-				{
-					this.OnIsActiveChanging(value);
-					this.SendPropertyChanging();
-					this._IsActive = value;
-					this.SendPropertyChanged("IsActive");
-					this.OnIsActiveChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CreatedDate
-		{
-			get
-			{
-				return this._CreatedDate;
-			}
-			set
-			{
-				if ((this._CreatedDate != value))
-				{
-					this.OnCreatedDateChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedDate = value;
-					this.SendPropertyChanged("CreatedDate");
-					this.OnCreatedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="NVarChar(500)")]
-		public string CreatedBy
-		{
-			get
-			{
-				return this._CreatedBy;
-			}
-			set
-			{
-				if ((this._CreatedBy != value))
-				{
-					this.OnCreatedByChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedBy = value;
-					this.SendPropertyChanged("CreatedBy");
-					this.OnCreatedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> ModifiedDate
-		{
-			get
-			{
-				return this._ModifiedDate;
-			}
-			set
-			{
-				if ((this._ModifiedDate != value))
-				{
-					this.OnModifiedDateChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedDate = value;
-					this.SendPropertyChanged("ModifiedDate");
-					this.OnModifiedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="NVarChar(500)")]
-		public string ModifiedBy
-		{
-			get
-			{
-				return this._ModifiedBy;
-			}
-			set
-			{
-				if ((this._ModifiedBy != value))
-				{
-					this.OnModifiedByChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedBy = value;
-					this.SendPropertyChanged("ModifiedBy");
-					this.OnModifiedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountId", DbType="Int")]
-		public System.Nullable<int> AccountId
-		{
-			get
-			{
-				return this._AccountId;
-			}
-			set
-			{
-				if ((this._AccountId != value))
-				{
-					this.OnAccountIdChanging(value);
-					this.SendPropertyChanging();
-					this._AccountId = value;
-					this.SendPropertyChanged("AccountId");
-					this.OnAccountIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TransferredDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> TransferredDate
-		{
-			get
-			{
-				return this._TransferredDate;
-			}
-			set
-			{
-				if ((this._TransferredDate != value))
-				{
-					this.OnTransferredDateChanging(value);
-					this.SendPropertyChanging();
-					this._TransferredDate = value;
-					this.SendPropertyChanged("TransferredDate");
-					this.OnTransferredDateChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNSessionData")]
-	public partial class TRNSessionData : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private string _Id;
-		
-		private System.Data.Linq.Binary _Value;
-		
-		private System.DateTimeOffset _ExpiresAtTime;
-		
-		private System.Nullable<long> _SlidingExpirationInSeconds;
-		
-		private System.Nullable<System.DateTimeOffset> _AbsoluteExpiration;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIdChanging(string value);
-    partial void OnIdChanged();
-    partial void OnValueChanging(System.Data.Linq.Binary value);
-    partial void OnValueChanged();
-    partial void OnExpiresAtTimeChanging(System.DateTimeOffset value);
-    partial void OnExpiresAtTimeChanged();
-    partial void OnSlidingExpirationInSecondsChanging(System.Nullable<long> value);
-    partial void OnSlidingExpirationInSecondsChanged();
-    partial void OnAbsoluteExpirationChanging(System.Nullable<System.DateTimeOffset> value);
-    partial void OnAbsoluteExpirationChanged();
-    #endregion
-		
-		public TRNSessionData()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="NVarChar(449) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string Id
-		{
-			get
-			{
-				return this._Id;
-			}
-			set
-			{
-				if ((this._Id != value))
-				{
-					this.OnIdChanging(value);
-					this.SendPropertyChanging();
-					this._Id = value;
-					this.SendPropertyChanged("Id");
-					this.OnIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Value", DbType="VarBinary(MAX) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
-		public System.Data.Linq.Binary Value
-		{
-			get
-			{
-				return this._Value;
-			}
-			set
-			{
-				if ((this._Value != value))
-				{
-					this.OnValueChanging(value);
-					this.SendPropertyChanging();
-					this._Value = value;
-					this.SendPropertyChanged("Value");
-					this.OnValueChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ExpiresAtTime", DbType="DateTimeOffset NOT NULL")]
-		public System.DateTimeOffset ExpiresAtTime
-		{
-			get
-			{
-				return this._ExpiresAtTime;
-			}
-			set
-			{
-				if ((this._ExpiresAtTime != value))
-				{
-					this.OnExpiresAtTimeChanging(value);
-					this.SendPropertyChanging();
-					this._ExpiresAtTime = value;
-					this.SendPropertyChanged("ExpiresAtTime");
-					this.OnExpiresAtTimeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SlidingExpirationInSeconds", DbType="BigInt")]
-		public System.Nullable<long> SlidingExpirationInSeconds
-		{
-			get
-			{
-				return this._SlidingExpirationInSeconds;
-			}
-			set
-			{
-				if ((this._SlidingExpirationInSeconds != value))
-				{
-					this.OnSlidingExpirationInSecondsChanging(value);
-					this.SendPropertyChanging();
-					this._SlidingExpirationInSeconds = value;
-					this.SendPropertyChanged("SlidingExpirationInSeconds");
-					this.OnSlidingExpirationInSecondsChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AbsoluteExpiration", DbType="DateTimeOffset")]
-		public System.Nullable<System.DateTimeOffset> AbsoluteExpiration
-		{
-			get
-			{
-				return this._AbsoluteExpiration;
-			}
-			set
-			{
-				if ((this._AbsoluteExpiration != value))
-				{
-					this.OnAbsoluteExpirationChanging(value);
-					this.SendPropertyChanging();
-					this._AbsoluteExpiration = value;
-					this.SendPropertyChanged("AbsoluteExpiration");
-					this.OnAbsoluteExpirationChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -5115,6 +1629,164 @@ namespace DbR3
 					this._ModifiedDate = value;
 					this.SendPropertyChanged("ModifiedDate");
 					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNSessionData")]
+	public partial class TRNSessionData : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _Id;
+		
+		private System.Data.Linq.Binary _Value;
+		
+		private System.DateTimeOffset _ExpiresAtTime;
+		
+		private System.Nullable<long> _SlidingExpirationInSeconds;
+		
+		private System.Nullable<System.DateTimeOffset> _AbsoluteExpiration;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(string value);
+    partial void OnIdChanged();
+    partial void OnValueChanging(System.Data.Linq.Binary value);
+    partial void OnValueChanged();
+    partial void OnExpiresAtTimeChanging(System.DateTimeOffset value);
+    partial void OnExpiresAtTimeChanged();
+    partial void OnSlidingExpirationInSecondsChanging(System.Nullable<long> value);
+    partial void OnSlidingExpirationInSecondsChanged();
+    partial void OnAbsoluteExpirationChanging(System.Nullable<System.DateTimeOffset> value);
+    partial void OnAbsoluteExpirationChanged();
+    #endregion
+		
+		public TRNSessionData()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="NVarChar(449) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Value", DbType="VarBinary(MAX) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary Value
+		{
+			get
+			{
+				return this._Value;
+			}
+			set
+			{
+				if ((this._Value != value))
+				{
+					this.OnValueChanging(value);
+					this.SendPropertyChanging();
+					this._Value = value;
+					this.SendPropertyChanged("Value");
+					this.OnValueChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ExpiresAtTime", DbType="DateTimeOffset NOT NULL")]
+		public System.DateTimeOffset ExpiresAtTime
+		{
+			get
+			{
+				return this._ExpiresAtTime;
+			}
+			set
+			{
+				if ((this._ExpiresAtTime != value))
+				{
+					this.OnExpiresAtTimeChanging(value);
+					this.SendPropertyChanging();
+					this._ExpiresAtTime = value;
+					this.SendPropertyChanged("ExpiresAtTime");
+					this.OnExpiresAtTimeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SlidingExpirationInSeconds", DbType="BigInt")]
+		public System.Nullable<long> SlidingExpirationInSeconds
+		{
+			get
+			{
+				return this._SlidingExpirationInSeconds;
+			}
+			set
+			{
+				if ((this._SlidingExpirationInSeconds != value))
+				{
+					this.OnSlidingExpirationInSecondsChanging(value);
+					this.SendPropertyChanging();
+					this._SlidingExpirationInSeconds = value;
+					this.SendPropertyChanged("SlidingExpirationInSeconds");
+					this.OnSlidingExpirationInSecondsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AbsoluteExpiration", DbType="DateTimeOffset")]
+		public System.Nullable<System.DateTimeOffset> AbsoluteExpiration
+		{
+			get
+			{
+				return this._AbsoluteExpiration;
+			}
+			set
+			{
+				if ((this._AbsoluteExpiration != value))
+				{
+					this.OnAbsoluteExpirationChanging(value);
+					this.SendPropertyChanging();
+					this._AbsoluteExpiration = value;
+					this.SendPropertyChanged("AbsoluteExpiration");
+					this.OnAbsoluteExpirationChanged();
 				}
 			}
 		}
@@ -8626,6 +5298,346 @@ namespace DbR3
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LDisplaySpecificType")]
+	public partial class LDisplaySpecificType : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _DSpecificTypeId;
+		
+		private System.Nullable<int> _SpecificTypeId;
+		
+		private string _LanguageCode;
+		
+		private string _Name;
+		
+		private System.Nullable<int> _CreatedBy;
+		
+		private System.Nullable<System.DateTime> _CreatedDate;
+		
+		private System.Nullable<int> _ModifiedBy;
+		
+		private System.Nullable<System.DateTime> _ModifiedDate;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnDSpecificTypeIdChanging(int value);
+    partial void OnDSpecificTypeIdChanged();
+    partial void OnSpecificTypeIdChanging(System.Nullable<int> value);
+    partial void OnSpecificTypeIdChanged();
+    partial void OnLanguageCodeChanging(string value);
+    partial void OnLanguageCodeChanged();
+    partial void OnNameChanging(string value);
+    partial void OnNameChanged();
+    partial void OnCreatedByChanging(System.Nullable<int> value);
+    partial void OnCreatedByChanged();
+    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreatedDateChanged();
+    partial void OnModifiedByChanging(System.Nullable<int> value);
+    partial void OnModifiedByChanged();
+    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnModifiedDateChanged();
+    #endregion
+		
+		public LDisplaySpecificType()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DSpecificTypeId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int DSpecificTypeId
+		{
+			get
+			{
+				return this._DSpecificTypeId;
+			}
+			set
+			{
+				if ((this._DSpecificTypeId != value))
+				{
+					this.OnDSpecificTypeIdChanging(value);
+					this.SendPropertyChanging();
+					this._DSpecificTypeId = value;
+					this.SendPropertyChanged("DSpecificTypeId");
+					this.OnDSpecificTypeIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SpecificTypeId", DbType="Int")]
+		public System.Nullable<int> SpecificTypeId
+		{
+			get
+			{
+				return this._SpecificTypeId;
+			}
+			set
+			{
+				if ((this._SpecificTypeId != value))
+				{
+					this.OnSpecificTypeIdChanging(value);
+					this.SendPropertyChanging();
+					this._SpecificTypeId = value;
+					this.SendPropertyChanged("SpecificTypeId");
+					this.OnSpecificTypeIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LanguageCode", DbType="NVarChar(10) NOT NULL", CanBeNull=false)]
+		public string LanguageCode
+		{
+			get
+			{
+				return this._LanguageCode;
+			}
+			set
+			{
+				if ((this._LanguageCode != value))
+				{
+					this.OnLanguageCodeChanging(value);
+					this.SendPropertyChanging();
+					this._LanguageCode = value;
+					this.SendPropertyChanged("LanguageCode");
+					this.OnLanguageCodeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(500) NOT NULL", CanBeNull=false)]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this.OnNameChanging(value);
+					this.SendPropertyChanging();
+					this._Name = value;
+					this.SendPropertyChanged("Name");
+					this.OnNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
+		public System.Nullable<int> CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CreatedDate
+		{
+			get
+			{
+				return this._CreatedDate;
+			}
+			set
+			{
+				if ((this._CreatedDate != value))
+				{
+					this.OnCreatedDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedDate = value;
+					this.SendPropertyChanged("CreatedDate");
+					this.OnCreatedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
+		public System.Nullable<int> ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ModifiedDate
+		{
+			get
+			{
+				return this._ModifiedDate;
+			}
+			set
+			{
+				if ((this._ModifiedDate != value))
+				{
+					this.OnModifiedDateChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedDate = value;
+					this.SendPropertyChanged("ModifiedDate");
+					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LFont")]
+	public partial class LFont : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _Category;
+		
+		private string _FontName;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnCategoryChanging(string value);
+    partial void OnCategoryChanged();
+    partial void OnFontNameChanging(string value);
+    partial void OnFontNameChanged();
+    #endregion
+		
+		public LFont()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Category", DbType="VarChar(50)")]
+		public string Category
+		{
+			get
+			{
+				return this._Category;
+			}
+			set
+			{
+				if ((this._Category != value))
+				{
+					this.OnCategoryChanging(value);
+					this.SendPropertyChanging();
+					this._Category = value;
+					this.SendPropertyChanged("Category");
+					this.OnCategoryChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FontName", DbType="VarChar(100)")]
+		public string FontName
+		{
+			get
+			{
+				return this._FontName;
+			}
+			set
+			{
+				if ((this._FontName != value))
+				{
+					this.OnFontNameChanging(value);
+					this.SendPropertyChanging();
+					this._FontName = value;
+					this.SendPropertyChanged("FontName");
+					this.OnFontNameChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LInterfaceMapType")]
 	public partial class LInterfaceMapType : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -9917,6 +6929,140 @@ namespace DbR3
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LPDFPageSize")]
+	public partial class LPDFPageSize : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _Pagename;
+		
+		private System.Nullable<int> _H;
+		
+		private System.Nullable<int> _W;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnPagenameChanging(string value);
+    partial void OnPagenameChanged();
+    partial void OnHChanging(System.Nullable<int> value);
+    partial void OnHChanged();
+    partial void OnWChanging(System.Nullable<int> value);
+    partial void OnWChanged();
+    #endregion
+		
+		public LPDFPageSize()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Pagename", DbType="NVarChar(250)")]
+		public string Pagename
+		{
+			get
+			{
+				return this._Pagename;
+			}
+			set
+			{
+				if ((this._Pagename != value))
+				{
+					this.OnPagenameChanging(value);
+					this.SendPropertyChanging();
+					this._Pagename = value;
+					this.SendPropertyChanged("Pagename");
+					this.OnPagenameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_H", DbType="Int")]
+		public System.Nullable<int> H
+		{
+			get
+			{
+				return this._H;
+			}
+			set
+			{
+				if ((this._H != value))
+				{
+					this.OnHChanging(value);
+					this.SendPropertyChanging();
+					this._H = value;
+					this.SendPropertyChanged("H");
+					this.OnHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_W", DbType="Int")]
+		public System.Nullable<int> W
+		{
+			get
+			{
+				return this._W;
+			}
+			set
+			{
+				if ((this._W != value))
+				{
+					this.OnWChanging(value);
+					this.SendPropertyChanging();
+					this._W = value;
+					this.SendPropertyChanged("W");
+					this.OnWChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LSystemSiteLanguage")]
 	public partial class LSystemSiteLanguage : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -10653,6 +7799,8 @@ namespace DbR3
 		
 		private string _Description;
 		
+		private System.Nullable<int> _Seq;
+		
 		private System.Nullable<int> _CreateBy;
 		
 		private System.Nullable<System.DateTime> _CreateDate;
@@ -10681,6 +7829,8 @@ namespace DbR3
     partial void OnDepartmentIdChanged();
     partial void OnDescriptionChanging(string value);
     partial void OnDescriptionChanged();
+    partial void OnSeqChanging(System.Nullable<int> value);
+    partial void OnSeqChanged();
     partial void OnCreateByChanging(System.Nullable<int> value);
     partial void OnCreateByChanged();
     partial void OnCreateDateChanging(System.Nullable<System.DateTime> value);
@@ -10856,6 +8006,26 @@ namespace DbR3
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Seq", DbType="Int")]
+		public System.Nullable<int> Seq
+		{
+			get
+			{
+				return this._Seq;
+			}
+			set
+			{
+				if ((this._Seq != value))
+				{
+					this.OnSeqChanging(value);
+					this.SendPropertyChanging();
+					this._Seq = value;
+					this.SendPropertyChanged("Seq");
+					this.OnSeqChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreateBy", DbType="Int")]
 		public System.Nullable<int> CreateBy
 		{
@@ -10932,6 +8102,140 @@ namespace DbR3
 					this._ModifiedDate = value;
 					this.SendPropertyChanged("ModifiedDate");
 					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTAnnualLeaveRole")]
+	public partial class MSTAnnualLeaveRole : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ALRId;
+		
+		private int _LeaveTypeId;
+		
+		private int _EmployeeId;
+		
+		private System.Nullable<bool> _IsActive;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnALRIdChanging(int value);
+    partial void OnALRIdChanged();
+    partial void OnLeaveTypeIdChanging(int value);
+    partial void OnLeaveTypeIdChanged();
+    partial void OnEmployeeIdChanging(int value);
+    partial void OnEmployeeIdChanged();
+    partial void OnIsActiveChanging(System.Nullable<bool> value);
+    partial void OnIsActiveChanged();
+    #endregion
+		
+		public MSTAnnualLeaveRole()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ALRId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ALRId
+		{
+			get
+			{
+				return this._ALRId;
+			}
+			set
+			{
+				if ((this._ALRId != value))
+				{
+					this.OnALRIdChanging(value);
+					this.SendPropertyChanging();
+					this._ALRId = value;
+					this.SendPropertyChanged("ALRId");
+					this.OnALRIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LeaveTypeId", DbType="Int NOT NULL")]
+		public int LeaveTypeId
+		{
+			get
+			{
+				return this._LeaveTypeId;
+			}
+			set
+			{
+				if ((this._LeaveTypeId != value))
+				{
+					this.OnLeaveTypeIdChanging(value);
+					this.SendPropertyChanging();
+					this._LeaveTypeId = value;
+					this.SendPropertyChanged("LeaveTypeId");
+					this.OnLeaveTypeIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmployeeId", DbType="Int NOT NULL")]
+		public int EmployeeId
+		{
+			get
+			{
+				return this._EmployeeId;
+			}
+			set
+			{
+				if ((this._EmployeeId != value))
+				{
+					this.OnEmployeeIdChanging(value);
+					this.SendPropertyChanging();
+					this._EmployeeId = value;
+					this.SendPropertyChanged("EmployeeId");
+					this.OnEmployeeIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsActive", DbType="Bit")]
+		public System.Nullable<bool> IsActive
+		{
+			get
+			{
+				return this._IsActive;
+			}
+			set
+			{
+				if ((this._IsActive != value))
+				{
+					this.OnIsActiveChanging(value);
+					this.SendPropertyChanging();
+					this._IsActive = value;
+					this.SendPropertyChanged("IsActive");
+					this.OnIsActiveChanged();
 				}
 			}
 		}
@@ -12591,6 +9895,8 @@ namespace DbR3
 		
 		private string _Format;
 		
+		private string _Condition;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -12603,6 +9909,8 @@ namespace DbR3
     partial void OnSeqChanged();
     partial void OnFormatChanging(string value);
     partial void OnFormatChanged();
+    partial void OnConditionChanging(string value);
+    partial void OnConditionChanged();
     #endregion
 		
 		public MSTAutoNumberFormat()
@@ -12686,6 +9994,26 @@ namespace DbR3
 					this._Format = value;
 					this.SendPropertyChanged("Format");
 					this.OnFormatChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Condition", DbType="NVarChar(MAX)")]
+		public string Condition
+		{
+			get
+			{
+				return this._Condition;
+			}
+			set
+			{
+				if ((this._Condition != value))
+				{
+					this.OnConditionChanging(value);
+					this.SendPropertyChanging();
+					this._Condition = value;
+					this.SendPropertyChanged("Condition");
+					this.OnConditionChanged();
 				}
 			}
 		}
@@ -13637,9 +10965,19 @@ namespace DbR3
 		
 		private System.Nullable<System.DateTime> _ModifiedDate;
 		
-		private EntitySet<TRNMemoDataHistory> _TRNMemoDataHistories;
+		private System.Nullable<bool> _AddRow;
 		
-		private EntitySet<TRNMemoDataHistory1> _TRNMemoDataHistory1s;
+		private System.Nullable<bool> _InsertRow;
+		
+		private System.Nullable<bool> _MoveRow;
+		
+		private System.Nullable<bool> _DuplicateRow;
+		
+		private System.Nullable<bool> _DeleteRow;
+		
+		private string _TextColor;
+		
+		private EntitySet<TRNMemoDataHistory> _TRNMemoDataHistories;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -13741,12 +11079,23 @@ namespace DbR3
     partial void OnModifiedByChanged();
     partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
     partial void OnModifiedDateChanged();
+    partial void OnAddRowChanging(System.Nullable<bool> value);
+    partial void OnAddRowChanged();
+    partial void OnInsertRowChanging(System.Nullable<bool> value);
+    partial void OnInsertRowChanged();
+    partial void OnMoveRowChanging(System.Nullable<bool> value);
+    partial void OnMoveRowChanged();
+    partial void OnDuplicateRowChanging(System.Nullable<bool> value);
+    partial void OnDuplicateRowChanged();
+    partial void OnDeleteRowChanging(System.Nullable<bool> value);
+    partial void OnDeleteRowChanged();
+    partial void OnTextColorChanging(string value);
+    partial void OnTextColorChanged();
     #endregion
 		
 		public MSTControl()
 		{
 			this._TRNMemoDataHistories = new EntitySet<TRNMemoDataHistory>(new Action<TRNMemoDataHistory>(this.attach_TRNMemoDataHistories), new Action<TRNMemoDataHistory>(this.detach_TRNMemoDataHistories));
-			this._TRNMemoDataHistory1s = new EntitySet<TRNMemoDataHistory1>(new Action<TRNMemoDataHistory1>(this.attach_TRNMemoDataHistory1s), new Action<TRNMemoDataHistory1>(this.detach_TRNMemoDataHistory1s));
 			OnCreated();
 		}
 		
@@ -14270,7 +11619,7 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Symbol", DbType="NVarChar(10)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Symbol", DbType="NVarChar(20)")]
 		public string Symbol
 		{
 			get
@@ -14710,6 +12059,126 @@ namespace DbR3
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AddRow", DbType="Bit")]
+		public System.Nullable<bool> AddRow
+		{
+			get
+			{
+				return this._AddRow;
+			}
+			set
+			{
+				if ((this._AddRow != value))
+				{
+					this.OnAddRowChanging(value);
+					this.SendPropertyChanging();
+					this._AddRow = value;
+					this.SendPropertyChanged("AddRow");
+					this.OnAddRowChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InsertRow", DbType="Bit")]
+		public System.Nullable<bool> InsertRow
+		{
+			get
+			{
+				return this._InsertRow;
+			}
+			set
+			{
+				if ((this._InsertRow != value))
+				{
+					this.OnInsertRowChanging(value);
+					this.SendPropertyChanging();
+					this._InsertRow = value;
+					this.SendPropertyChanged("InsertRow");
+					this.OnInsertRowChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoveRow", DbType="Bit")]
+		public System.Nullable<bool> MoveRow
+		{
+			get
+			{
+				return this._MoveRow;
+			}
+			set
+			{
+				if ((this._MoveRow != value))
+				{
+					this.OnMoveRowChanging(value);
+					this.SendPropertyChanging();
+					this._MoveRow = value;
+					this.SendPropertyChanged("MoveRow");
+					this.OnMoveRowChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DuplicateRow", DbType="Bit")]
+		public System.Nullable<bool> DuplicateRow
+		{
+			get
+			{
+				return this._DuplicateRow;
+			}
+			set
+			{
+				if ((this._DuplicateRow != value))
+				{
+					this.OnDuplicateRowChanging(value);
+					this.SendPropertyChanging();
+					this._DuplicateRow = value;
+					this.SendPropertyChanged("DuplicateRow");
+					this.OnDuplicateRowChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DeleteRow", DbType="Bit")]
+		public System.Nullable<bool> DeleteRow
+		{
+			get
+			{
+				return this._DeleteRow;
+			}
+			set
+			{
+				if ((this._DeleteRow != value))
+				{
+					this.OnDeleteRowChanging(value);
+					this.SendPropertyChanging();
+					this._DeleteRow = value;
+					this.SendPropertyChanged("DeleteRow");
+					this.OnDeleteRowChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TextColor", DbType="NVarChar(7)")]
+		public string TextColor
+		{
+			get
+			{
+				return this._TextColor;
+			}
+			set
+			{
+				if ((this._TextColor != value))
+				{
+					this.OnTextColorChanging(value);
+					this.SendPropertyChanging();
+					this._TextColor = value;
+					this.SendPropertyChanged("TextColor");
+					this.OnTextColorChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTControl_TRNMemoDataHistory", Storage="_TRNMemoDataHistories", ThisKey="ControlId", OtherKey="ControlId")]
 		public EntitySet<TRNMemoDataHistory> TRNMemoDataHistories
 		{
@@ -14720,19 +12189,6 @@ namespace DbR3
 			set
 			{
 				this._TRNMemoDataHistories.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTControl_TRNMemoDataHistory1", Storage="_TRNMemoDataHistory1s", ThisKey="ControlId", OtherKey="ControlId")]
-		public EntitySet<TRNMemoDataHistory1> TRNMemoDataHistory1s
-		{
-			get
-			{
-				return this._TRNMemoDataHistory1s;
-			}
-			set
-			{
-				this._TRNMemoDataHistory1s.Assign(value);
 			}
 		}
 		
@@ -14763,18 +12219,6 @@ namespace DbR3
 		}
 		
 		private void detach_TRNMemoDataHistories(TRNMemoDataHistory entity)
-		{
-			this.SendPropertyChanging();
-			entity.MSTControl = null;
-		}
-		
-		private void attach_TRNMemoDataHistory1s(TRNMemoDataHistory1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.MSTControl = this;
-		}
-		
-		private void detach_TRNMemoDataHistory1s(TRNMemoDataHistory1 entity)
 		{
 			this.SendPropertyChanging();
 			entity.MSTControl = null;
@@ -20015,6 +17459,10 @@ namespace DbR3
 		
 		private string _LogicCondition;
 		
+		private System.Nullable<int> _ControlKey;
+		
+		private string _Value;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -20025,6 +17473,10 @@ namespace DbR3
     partial void OnLogicIdChanged();
     partial void OnLogicConditionChanging(string value);
     partial void OnLogicConditionChanged();
+    partial void OnControlKeyChanging(System.Nullable<int> value);
+    partial void OnControlKeyChanged();
+    partial void OnValueChanging(string value);
+    partial void OnValueChanged();
     #endregion
 		
 		public MSTLogicConditionGroup()
@@ -20092,6 +17544,46 @@ namespace DbR3
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlKey", DbType="Int")]
+		public System.Nullable<int> ControlKey
+		{
+			get
+			{
+				return this._ControlKey;
+			}
+			set
+			{
+				if ((this._ControlKey != value))
+				{
+					this.OnControlKeyChanging(value);
+					this.SendPropertyChanging();
+					this._ControlKey = value;
+					this.SendPropertyChanged("ControlKey");
+					this.OnControlKeyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Value", DbType="VarChar(255)")]
+		public string Value
+		{
+			get
+			{
+				return this._Value;
+			}
+			set
+			{
+				if ((this._Value != value))
+				{
+					this.OnValueChanging(value);
+					this.SendPropertyChanging();
+					this._Value = value;
+					this.SendPropertyChanged("Value");
+					this.OnValueChanged();
+				}
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -20147,6 +17639,8 @@ namespace DbR3
 		
 		private System.Nullable<System.DateTime> _ModifiedDate;
 		
+		private string _NextRowRelation;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -20179,6 +17673,8 @@ namespace DbR3
     partial void OnModifiedByChanged();
     partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
     partial void OnModifiedDateChanged();
+    partial void OnNextRowRelationChanging(string value);
+    partial void OnNextRowRelationChanged();
     #endregion
 		
 		public MSTLogicConditionItem()
@@ -20466,6 +17962,26 @@ namespace DbR3
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NextRowRelation", DbType="NVarChar(10)")]
+		public string NextRowRelation
+		{
+			get
+			{
+				return this._NextRowRelation;
+			}
+			set
+			{
+				if ((this._NextRowRelation != value))
+				{
+					this.OnNextRowRelationChanging(value);
+					this.SendPropertyChanging();
+					this._NextRowRelation = value;
+					this.SendPropertyChanged("NextRowRelation");
+					this.OnNextRowRelationChanged();
+				}
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -20493,7 +18009,7 @@ namespace DbR3
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _LogicOrdeyId;
+		private int _LogicOrderById;
 		
 		private int _LogicId;
 		
@@ -20507,8 +18023,8 @@ namespace DbR3
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnLogicOrdeyIdChanging(int value);
-    partial void OnLogicOrdeyIdChanged();
+    partial void OnLogicOrderByIdChanging(int value);
+    partial void OnLogicOrderByIdChanged();
     partial void OnLogicIdChanging(int value);
     partial void OnLogicIdChanged();
     partial void OnFieldNameChanging(string value);
@@ -20524,22 +18040,22 @@ namespace DbR3
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LogicOrdeyId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int LogicOrdeyId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LogicOrderById", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int LogicOrderById
 		{
 			get
 			{
-				return this._LogicOrdeyId;
+				return this._LogicOrderById;
 			}
 			set
 			{
-				if ((this._LogicOrdeyId != value))
+				if ((this._LogicOrderById != value))
 				{
-					this.OnLogicOrdeyIdChanging(value);
+					this.OnLogicOrderByIdChanging(value);
 					this.SendPropertyChanging();
-					this._LogicOrdeyId = value;
-					this.SendPropertyChanged("LogicOrdeyId");
-					this.OnLogicOrdeyIdChanged();
+					this._LogicOrderById = value;
+					this.SendPropertyChanged("LogicOrderById");
+					this.OnLogicOrderByIdChanged();
 				}
 			}
 		}
@@ -21833,6 +19349,2117 @@ namespace DbR3
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTPDFDesignConfig")]
+	public partial class MSTPDFDesignConfig : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _LayoutID;
+		
+		private int _TemplateId;
+		
+		private string _Orientation;
+		
+		private string _PageSize;
+		
+		private System.Nullable<int> _CustomWidth;
+		
+		private System.Nullable<int> _CustomHeight;
+		
+		private int _GridSize;
+		
+		private int _PL;
+		
+		private int _PR;
+		
+		private int _PT;
+		
+		private int _PB;
+		
+		private string _BackgroundColor;
+		
+		private string _BackgroundImageURL;
+		
+		private System.DateTime _CreatedDate;
+		
+		private int _CreatedBy;
+		
+		private System.Nullable<System.DateTime> _ModifiedDate;
+		
+		private System.Nullable<int> _ModifiedBy;
+		
+		private System.Nullable<bool> _IsActive;
+		
+		private EntitySet<MSTPDFDesignSection> _MSTPDFDesignSections;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnLayoutIDChanging(int value);
+    partial void OnLayoutIDChanged();
+    partial void OnTemplateIdChanging(int value);
+    partial void OnTemplateIdChanged();
+    partial void OnOrientationChanging(string value);
+    partial void OnOrientationChanged();
+    partial void OnPageSizeChanging(string value);
+    partial void OnPageSizeChanged();
+    partial void OnCustomWidthChanging(System.Nullable<int> value);
+    partial void OnCustomWidthChanged();
+    partial void OnCustomHeightChanging(System.Nullable<int> value);
+    partial void OnCustomHeightChanged();
+    partial void OnGridSizeChanging(int value);
+    partial void OnGridSizeChanged();
+    partial void OnPLChanging(int value);
+    partial void OnPLChanged();
+    partial void OnPRChanging(int value);
+    partial void OnPRChanged();
+    partial void OnPTChanging(int value);
+    partial void OnPTChanged();
+    partial void OnPBChanging(int value);
+    partial void OnPBChanged();
+    partial void OnBackgroundColorChanging(string value);
+    partial void OnBackgroundColorChanged();
+    partial void OnBackgroundImageURLChanging(string value);
+    partial void OnBackgroundImageURLChanged();
+    partial void OnCreatedDateChanging(System.DateTime value);
+    partial void OnCreatedDateChanged();
+    partial void OnCreatedByChanging(int value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnModifiedDateChanged();
+    partial void OnModifiedByChanging(System.Nullable<int> value);
+    partial void OnModifiedByChanged();
+    partial void OnIsActiveChanging(System.Nullable<bool> value);
+    partial void OnIsActiveChanged();
+    #endregion
+		
+		public MSTPDFDesignConfig()
+		{
+			this._MSTPDFDesignSections = new EntitySet<MSTPDFDesignSection>(new Action<MSTPDFDesignSection>(this.attach_MSTPDFDesignSections), new Action<MSTPDFDesignSection>(this.detach_MSTPDFDesignSections));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LayoutID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int LayoutID
+		{
+			get
+			{
+				return this._LayoutID;
+			}
+			set
+			{
+				if ((this._LayoutID != value))
+				{
+					this.OnLayoutIDChanging(value);
+					this.SendPropertyChanging();
+					this._LayoutID = value;
+					this.SendPropertyChanged("LayoutID");
+					this.OnLayoutIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemplateId", DbType="Int NOT NULL")]
+		public int TemplateId
+		{
+			get
+			{
+				return this._TemplateId;
+			}
+			set
+			{
+				if ((this._TemplateId != value))
+				{
+					this.OnTemplateIdChanging(value);
+					this.SendPropertyChanging();
+					this._TemplateId = value;
+					this.SendPropertyChanged("TemplateId");
+					this.OnTemplateIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Orientation", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string Orientation
+		{
+			get
+			{
+				return this._Orientation;
+			}
+			set
+			{
+				if ((this._Orientation != value))
+				{
+					this.OnOrientationChanging(value);
+					this.SendPropertyChanging();
+					this._Orientation = value;
+					this.SendPropertyChanged("Orientation");
+					this.OnOrientationChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PageSize", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string PageSize
+		{
+			get
+			{
+				return this._PageSize;
+			}
+			set
+			{
+				if ((this._PageSize != value))
+				{
+					this.OnPageSizeChanging(value);
+					this.SendPropertyChanging();
+					this._PageSize = value;
+					this.SendPropertyChanged("PageSize");
+					this.OnPageSizeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomWidth", DbType="Int")]
+		public System.Nullable<int> CustomWidth
+		{
+			get
+			{
+				return this._CustomWidth;
+			}
+			set
+			{
+				if ((this._CustomWidth != value))
+				{
+					this.OnCustomWidthChanging(value);
+					this.SendPropertyChanging();
+					this._CustomWidth = value;
+					this.SendPropertyChanged("CustomWidth");
+					this.OnCustomWidthChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomHeight", DbType="Int")]
+		public System.Nullable<int> CustomHeight
+		{
+			get
+			{
+				return this._CustomHeight;
+			}
+			set
+			{
+				if ((this._CustomHeight != value))
+				{
+					this.OnCustomHeightChanging(value);
+					this.SendPropertyChanging();
+					this._CustomHeight = value;
+					this.SendPropertyChanged("CustomHeight");
+					this.OnCustomHeightChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GridSize", DbType="Int NOT NULL")]
+		public int GridSize
+		{
+			get
+			{
+				return this._GridSize;
+			}
+			set
+			{
+				if ((this._GridSize != value))
+				{
+					this.OnGridSizeChanging(value);
+					this.SendPropertyChanging();
+					this._GridSize = value;
+					this.SendPropertyChanged("GridSize");
+					this.OnGridSizeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PL", DbType="Int NOT NULL")]
+		public int PL
+		{
+			get
+			{
+				return this._PL;
+			}
+			set
+			{
+				if ((this._PL != value))
+				{
+					this.OnPLChanging(value);
+					this.SendPropertyChanging();
+					this._PL = value;
+					this.SendPropertyChanged("PL");
+					this.OnPLChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PR", DbType="Int NOT NULL")]
+		public int PR
+		{
+			get
+			{
+				return this._PR;
+			}
+			set
+			{
+				if ((this._PR != value))
+				{
+					this.OnPRChanging(value);
+					this.SendPropertyChanging();
+					this._PR = value;
+					this.SendPropertyChanged("PR");
+					this.OnPRChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PT", DbType="Int NOT NULL")]
+		public int PT
+		{
+			get
+			{
+				return this._PT;
+			}
+			set
+			{
+				if ((this._PT != value))
+				{
+					this.OnPTChanging(value);
+					this.SendPropertyChanging();
+					this._PT = value;
+					this.SendPropertyChanged("PT");
+					this.OnPTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PB", DbType="Int NOT NULL")]
+		public int PB
+		{
+			get
+			{
+				return this._PB;
+			}
+			set
+			{
+				if ((this._PB != value))
+				{
+					this.OnPBChanging(value);
+					this.SendPropertyChanging();
+					this._PB = value;
+					this.SendPropertyChanged("PB");
+					this.OnPBChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BackgroundColor", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string BackgroundColor
+		{
+			get
+			{
+				return this._BackgroundColor;
+			}
+			set
+			{
+				if ((this._BackgroundColor != value))
+				{
+					this.OnBackgroundColorChanging(value);
+					this.SendPropertyChanging();
+					this._BackgroundColor = value;
+					this.SendPropertyChanged("BackgroundColor");
+					this.OnBackgroundColorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BackgroundImageURL", DbType="NVarChar(500) NOT NULL", CanBeNull=false)]
+		public string BackgroundImageURL
+		{
+			get
+			{
+				return this._BackgroundImageURL;
+			}
+			set
+			{
+				if ((this._BackgroundImageURL != value))
+				{
+					this.OnBackgroundImageURLChanging(value);
+					this.SendPropertyChanging();
+					this._BackgroundImageURL = value;
+					this.SendPropertyChanged("BackgroundImageURL");
+					this.OnBackgroundImageURLChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime NOT NULL")]
+		public System.DateTime CreatedDate
+		{
+			get
+			{
+				return this._CreatedDate;
+			}
+			set
+			{
+				if ((this._CreatedDate != value))
+				{
+					this.OnCreatedDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedDate = value;
+					this.SendPropertyChanged("CreatedDate");
+					this.OnCreatedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int NOT NULL")]
+		public int CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ModifiedDate
+		{
+			get
+			{
+				return this._ModifiedDate;
+			}
+			set
+			{
+				if ((this._ModifiedDate != value))
+				{
+					this.OnModifiedDateChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedDate = value;
+					this.SendPropertyChanged("ModifiedDate");
+					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
+		public System.Nullable<int> ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsActive", DbType="Bit")]
+		public System.Nullable<bool> IsActive
+		{
+			get
+			{
+				return this._IsActive;
+			}
+			set
+			{
+				if ((this._IsActive != value))
+				{
+					this.OnIsActiveChanging(value);
+					this.SendPropertyChanging();
+					this._IsActive = value;
+					this.SendPropertyChanged("IsActive");
+					this.OnIsActiveChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTPDFDesignConfig_MSTPDFDesignSection", Storage="_MSTPDFDesignSections", ThisKey="LayoutID", OtherKey="LayoutID")]
+		public EntitySet<MSTPDFDesignSection> MSTPDFDesignSections
+		{
+			get
+			{
+				return this._MSTPDFDesignSections;
+			}
+			set
+			{
+				this._MSTPDFDesignSections.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_MSTPDFDesignSections(MSTPDFDesignSection entity)
+		{
+			this.SendPropertyChanging();
+			entity.MSTPDFDesignConfig = this;
+		}
+		
+		private void detach_MSTPDFDesignSections(MSTPDFDesignSection entity)
+		{
+			this.SendPropertyChanging();
+			entity.MSTPDFDesignConfig = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTPDFDesignItem")]
+	public partial class MSTPDFDesignItem : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ItemID;
+		
+		private int _SectionID;
+		
+		private System.Nullable<int> _ControlKey;
+		
+		private System.Nullable<int> _MemoInfro;
+		
+		private string _Type;
+		
+		private int _x;
+		
+		private int _y;
+		
+		private int _w;
+		
+		private int _h;
+		
+		private System.Nullable<int> _Rotate;
+		
+		private string _LinkURL;
+		
+		private string _Value;
+		
+		private string _Font;
+		
+		private System.Nullable<int> _FontSize;
+		
+		private bool _IsBold;
+		
+		private bool _IsItalic;
+		
+		private string _TextJustify;
+		
+		private string _TextAlign;
+		
+		private string _TextColor;
+		
+		private string _Underline;
+		
+		private int _Layer;
+		
+		private bool _Strikethrough;
+		
+		private System.DateTime _CreatedDate;
+		
+		private int _CreatedBy;
+		
+		private System.Nullable<System.DateTime> _ModifiedDate;
+		
+		private System.Nullable<int> _ModifiedBy;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnItemIDChanging(int value);
+    partial void OnItemIDChanged();
+    partial void OnSectionIDChanging(int value);
+    partial void OnSectionIDChanged();
+    partial void OnControlKeyChanging(System.Nullable<int> value);
+    partial void OnControlKeyChanged();
+    partial void OnMemoInfroChanging(System.Nullable<int> value);
+    partial void OnMemoInfroChanged();
+    partial void OnTypeChanging(string value);
+    partial void OnTypeChanged();
+    partial void OnxChanging(int value);
+    partial void OnxChanged();
+    partial void OnyChanging(int value);
+    partial void OnyChanged();
+    partial void OnwChanging(int value);
+    partial void OnwChanged();
+    partial void OnhChanging(int value);
+    partial void OnhChanged();
+    partial void OnRotateChanging(System.Nullable<int> value);
+    partial void OnRotateChanged();
+    partial void OnLinkURLChanging(string value);
+    partial void OnLinkURLChanged();
+    partial void OnValueChanging(string value);
+    partial void OnValueChanged();
+    partial void OnFontChanging(string value);
+    partial void OnFontChanged();
+    partial void OnFontSizeChanging(System.Nullable<int> value);
+    partial void OnFontSizeChanged();
+    partial void OnIsBoldChanging(bool value);
+    partial void OnIsBoldChanged();
+    partial void OnIsItalicChanging(bool value);
+    partial void OnIsItalicChanged();
+    partial void OnTextJustifyChanging(string value);
+    partial void OnTextJustifyChanged();
+    partial void OnTextAlignChanging(string value);
+    partial void OnTextAlignChanged();
+    partial void OnTextColorChanging(string value);
+    partial void OnTextColorChanged();
+    partial void OnUnderlineChanging(string value);
+    partial void OnUnderlineChanged();
+    partial void OnLayerChanging(int value);
+    partial void OnLayerChanged();
+    partial void OnStrikethroughChanging(bool value);
+    partial void OnStrikethroughChanged();
+    partial void OnCreatedDateChanging(System.DateTime value);
+    partial void OnCreatedDateChanged();
+    partial void OnCreatedByChanging(int value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnModifiedDateChanged();
+    partial void OnModifiedByChanging(System.Nullable<int> value);
+    partial void OnModifiedByChanged();
+    #endregion
+		
+		public MSTPDFDesignItem()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ItemID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int ItemID
+		{
+			get
+			{
+				return this._ItemID;
+			}
+			set
+			{
+				if ((this._ItemID != value))
+				{
+					this.OnItemIDChanging(value);
+					this.SendPropertyChanging();
+					this._ItemID = value;
+					this.SendPropertyChanged("ItemID");
+					this.OnItemIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SectionID", DbType="Int NOT NULL")]
+		public int SectionID
+		{
+			get
+			{
+				return this._SectionID;
+			}
+			set
+			{
+				if ((this._SectionID != value))
+				{
+					this.OnSectionIDChanging(value);
+					this.SendPropertyChanging();
+					this._SectionID = value;
+					this.SendPropertyChanged("SectionID");
+					this.OnSectionIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlKey", DbType="Int")]
+		public System.Nullable<int> ControlKey
+		{
+			get
+			{
+				return this._ControlKey;
+			}
+			set
+			{
+				if ((this._ControlKey != value))
+				{
+					this.OnControlKeyChanging(value);
+					this.SendPropertyChanging();
+					this._ControlKey = value;
+					this.SendPropertyChanged("ControlKey");
+					this.OnControlKeyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoInfro", DbType="Int")]
+		public System.Nullable<int> MemoInfro
+		{
+			get
+			{
+				return this._MemoInfro;
+			}
+			set
+			{
+				if ((this._MemoInfro != value))
+				{
+					this.OnMemoInfroChanging(value);
+					this.SendPropertyChanging();
+					this._MemoInfro = value;
+					this.SendPropertyChanged("MemoInfro");
+					this.OnMemoInfroChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Type", DbType="NVarChar(250) NOT NULL", CanBeNull=false)]
+		public string Type
+		{
+			get
+			{
+				return this._Type;
+			}
+			set
+			{
+				if ((this._Type != value))
+				{
+					this.OnTypeChanging(value);
+					this.SendPropertyChanging();
+					this._Type = value;
+					this.SendPropertyChanged("Type");
+					this.OnTypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_x", DbType="Int NOT NULL")]
+		public int x
+		{
+			get
+			{
+				return this._x;
+			}
+			set
+			{
+				if ((this._x != value))
+				{
+					this.OnxChanging(value);
+					this.SendPropertyChanging();
+					this._x = value;
+					this.SendPropertyChanged("x");
+					this.OnxChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_y", DbType="Int NOT NULL")]
+		public int y
+		{
+			get
+			{
+				return this._y;
+			}
+			set
+			{
+				if ((this._y != value))
+				{
+					this.OnyChanging(value);
+					this.SendPropertyChanging();
+					this._y = value;
+					this.SendPropertyChanged("y");
+					this.OnyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_w", DbType="Int NOT NULL")]
+		public int w
+		{
+			get
+			{
+				return this._w;
+			}
+			set
+			{
+				if ((this._w != value))
+				{
+					this.OnwChanging(value);
+					this.SendPropertyChanging();
+					this._w = value;
+					this.SendPropertyChanged("w");
+					this.OnwChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_h", DbType="Int NOT NULL")]
+		public int h
+		{
+			get
+			{
+				return this._h;
+			}
+			set
+			{
+				if ((this._h != value))
+				{
+					this.OnhChanging(value);
+					this.SendPropertyChanging();
+					this._h = value;
+					this.SendPropertyChanged("h");
+					this.OnhChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Rotate", DbType="Int")]
+		public System.Nullable<int> Rotate
+		{
+			get
+			{
+				return this._Rotate;
+			}
+			set
+			{
+				if ((this._Rotate != value))
+				{
+					this.OnRotateChanging(value);
+					this.SendPropertyChanging();
+					this._Rotate = value;
+					this.SendPropertyChanged("Rotate");
+					this.OnRotateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LinkURL", DbType="NVarChar(500)")]
+		public string LinkURL
+		{
+			get
+			{
+				return this._LinkURL;
+			}
+			set
+			{
+				if ((this._LinkURL != value))
+				{
+					this.OnLinkURLChanging(value);
+					this.SendPropertyChanging();
+					this._LinkURL = value;
+					this.SendPropertyChanged("LinkURL");
+					this.OnLinkURLChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Value", DbType="NVarChar(500)")]
+		public string Value
+		{
+			get
+			{
+				return this._Value;
+			}
+			set
+			{
+				if ((this._Value != value))
+				{
+					this.OnValueChanging(value);
+					this.SendPropertyChanging();
+					this._Value = value;
+					this.SendPropertyChanged("Value");
+					this.OnValueChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Font", DbType="NVarChar(250)")]
+		public string Font
+		{
+			get
+			{
+				return this._Font;
+			}
+			set
+			{
+				if ((this._Font != value))
+				{
+					this.OnFontChanging(value);
+					this.SendPropertyChanging();
+					this._Font = value;
+					this.SendPropertyChanged("Font");
+					this.OnFontChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FontSize", DbType="Int")]
+		public System.Nullable<int> FontSize
+		{
+			get
+			{
+				return this._FontSize;
+			}
+			set
+			{
+				if ((this._FontSize != value))
+				{
+					this.OnFontSizeChanging(value);
+					this.SendPropertyChanging();
+					this._FontSize = value;
+					this.SendPropertyChanged("FontSize");
+					this.OnFontSizeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsBold", DbType="Bit NOT NULL")]
+		public bool IsBold
+		{
+			get
+			{
+				return this._IsBold;
+			}
+			set
+			{
+				if ((this._IsBold != value))
+				{
+					this.OnIsBoldChanging(value);
+					this.SendPropertyChanging();
+					this._IsBold = value;
+					this.SendPropertyChanged("IsBold");
+					this.OnIsBoldChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsItalic", DbType="Bit NOT NULL")]
+		public bool IsItalic
+		{
+			get
+			{
+				return this._IsItalic;
+			}
+			set
+			{
+				if ((this._IsItalic != value))
+				{
+					this.OnIsItalicChanging(value);
+					this.SendPropertyChanging();
+					this._IsItalic = value;
+					this.SendPropertyChanged("IsItalic");
+					this.OnIsItalicChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TextJustify", DbType="NVarChar(250)")]
+		public string TextJustify
+		{
+			get
+			{
+				return this._TextJustify;
+			}
+			set
+			{
+				if ((this._TextJustify != value))
+				{
+					this.OnTextJustifyChanging(value);
+					this.SendPropertyChanging();
+					this._TextJustify = value;
+					this.SendPropertyChanged("TextJustify");
+					this.OnTextJustifyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TextAlign", DbType="NVarChar(250)")]
+		public string TextAlign
+		{
+			get
+			{
+				return this._TextAlign;
+			}
+			set
+			{
+				if ((this._TextAlign != value))
+				{
+					this.OnTextAlignChanging(value);
+					this.SendPropertyChanging();
+					this._TextAlign = value;
+					this.SendPropertyChanged("TextAlign");
+					this.OnTextAlignChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TextColor", DbType="VarChar(20)")]
+		public string TextColor
+		{
+			get
+			{
+				return this._TextColor;
+			}
+			set
+			{
+				if ((this._TextColor != value))
+				{
+					this.OnTextColorChanging(value);
+					this.SendPropertyChanging();
+					this._TextColor = value;
+					this.SendPropertyChanged("TextColor");
+					this.OnTextColorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Underline", DbType="NVarChar(250)")]
+		public string Underline
+		{
+			get
+			{
+				return this._Underline;
+			}
+			set
+			{
+				if ((this._Underline != value))
+				{
+					this.OnUnderlineChanging(value);
+					this.SendPropertyChanging();
+					this._Underline = value;
+					this.SendPropertyChanged("Underline");
+					this.OnUnderlineChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Layer", DbType="Int NOT NULL")]
+		public int Layer
+		{
+			get
+			{
+				return this._Layer;
+			}
+			set
+			{
+				if ((this._Layer != value))
+				{
+					this.OnLayerChanging(value);
+					this.SendPropertyChanging();
+					this._Layer = value;
+					this.SendPropertyChanged("Layer");
+					this.OnLayerChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Strikethrough", DbType="Bit NOT NULL")]
+		public bool Strikethrough
+		{
+			get
+			{
+				return this._Strikethrough;
+			}
+			set
+			{
+				if ((this._Strikethrough != value))
+				{
+					this.OnStrikethroughChanging(value);
+					this.SendPropertyChanging();
+					this._Strikethrough = value;
+					this.SendPropertyChanged("Strikethrough");
+					this.OnStrikethroughChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime NOT NULL")]
+		public System.DateTime CreatedDate
+		{
+			get
+			{
+				return this._CreatedDate;
+			}
+			set
+			{
+				if ((this._CreatedDate != value))
+				{
+					this.OnCreatedDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedDate = value;
+					this.SendPropertyChanged("CreatedDate");
+					this.OnCreatedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int NOT NULL")]
+		public int CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ModifiedDate
+		{
+			get
+			{
+				return this._ModifiedDate;
+			}
+			set
+			{
+				if ((this._ModifiedDate != value))
+				{
+					this.OnModifiedDateChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedDate = value;
+					this.SendPropertyChanged("ModifiedDate");
+					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
+		public System.Nullable<int> ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTPDFDesignSection")]
+	public partial class MSTPDFDesignSection : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _SectionID;
+		
+		private System.Nullable<int> _LayoutID;
+		
+		private string _SectionName;
+		
+		private int _h;
+		
+		private string _BackgroundColor;
+		
+		private string _BackgroundImageURL;
+		
+		private System.DateTime _CreatedDate;
+		
+		private int _CreatedBy;
+		
+		private System.Nullable<System.DateTime> _ModifiedDate;
+		
+		private System.Nullable<int> _ModifiedBy;
+		
+		private EntitySet<MSTPDFDesignSystemConfig> _MSTPDFDesignSystemConfigs;
+		
+		private EntitySet<MSTPDFDesignSystemConfig> _MSTPDFDesignSystemConfigs1;
+		
+		private EntityRef<MSTPDFDesignConfig> _MSTPDFDesignConfig;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnSectionIDChanging(int value);
+    partial void OnSectionIDChanged();
+    partial void OnLayoutIDChanging(System.Nullable<int> value);
+    partial void OnLayoutIDChanged();
+    partial void OnSectionNameChanging(string value);
+    partial void OnSectionNameChanged();
+    partial void OnhChanging(int value);
+    partial void OnhChanged();
+    partial void OnBackgroundColorChanging(string value);
+    partial void OnBackgroundColorChanged();
+    partial void OnBackgroundImageURLChanging(string value);
+    partial void OnBackgroundImageURLChanged();
+    partial void OnCreatedDateChanging(System.DateTime value);
+    partial void OnCreatedDateChanged();
+    partial void OnCreatedByChanging(int value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnModifiedDateChanged();
+    partial void OnModifiedByChanging(System.Nullable<int> value);
+    partial void OnModifiedByChanged();
+    #endregion
+		
+		public MSTPDFDesignSection()
+		{
+			this._MSTPDFDesignSystemConfigs = new EntitySet<MSTPDFDesignSystemConfig>(new Action<MSTPDFDesignSystemConfig>(this.attach_MSTPDFDesignSystemConfigs), new Action<MSTPDFDesignSystemConfig>(this.detach_MSTPDFDesignSystemConfigs));
+			this._MSTPDFDesignSystemConfigs1 = new EntitySet<MSTPDFDesignSystemConfig>(new Action<MSTPDFDesignSystemConfig>(this.attach_MSTPDFDesignSystemConfigs1), new Action<MSTPDFDesignSystemConfig>(this.detach_MSTPDFDesignSystemConfigs1));
+			this._MSTPDFDesignConfig = default(EntityRef<MSTPDFDesignConfig>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SectionID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int SectionID
+		{
+			get
+			{
+				return this._SectionID;
+			}
+			set
+			{
+				if ((this._SectionID != value))
+				{
+					this.OnSectionIDChanging(value);
+					this.SendPropertyChanging();
+					this._SectionID = value;
+					this.SendPropertyChanged("SectionID");
+					this.OnSectionIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LayoutID", DbType="Int")]
+		public System.Nullable<int> LayoutID
+		{
+			get
+			{
+				return this._LayoutID;
+			}
+			set
+			{
+				if ((this._LayoutID != value))
+				{
+					if (this._MSTPDFDesignConfig.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnLayoutIDChanging(value);
+					this.SendPropertyChanging();
+					this._LayoutID = value;
+					this.SendPropertyChanged("LayoutID");
+					this.OnLayoutIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SectionName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string SectionName
+		{
+			get
+			{
+				return this._SectionName;
+			}
+			set
+			{
+				if ((this._SectionName != value))
+				{
+					this.OnSectionNameChanging(value);
+					this.SendPropertyChanging();
+					this._SectionName = value;
+					this.SendPropertyChanged("SectionName");
+					this.OnSectionNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_h", DbType="Int NOT NULL")]
+		public int h
+		{
+			get
+			{
+				return this._h;
+			}
+			set
+			{
+				if ((this._h != value))
+				{
+					this.OnhChanging(value);
+					this.SendPropertyChanging();
+					this._h = value;
+					this.SendPropertyChanged("h");
+					this.OnhChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BackgroundColor", DbType="NVarChar(20)")]
+		public string BackgroundColor
+		{
+			get
+			{
+				return this._BackgroundColor;
+			}
+			set
+			{
+				if ((this._BackgroundColor != value))
+				{
+					this.OnBackgroundColorChanging(value);
+					this.SendPropertyChanging();
+					this._BackgroundColor = value;
+					this.SendPropertyChanged("BackgroundColor");
+					this.OnBackgroundColorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BackgroundImageURL", DbType="NVarChar(500)")]
+		public string BackgroundImageURL
+		{
+			get
+			{
+				return this._BackgroundImageURL;
+			}
+			set
+			{
+				if ((this._BackgroundImageURL != value))
+				{
+					this.OnBackgroundImageURLChanging(value);
+					this.SendPropertyChanging();
+					this._BackgroundImageURL = value;
+					this.SendPropertyChanged("BackgroundImageURL");
+					this.OnBackgroundImageURLChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime NOT NULL")]
+		public System.DateTime CreatedDate
+		{
+			get
+			{
+				return this._CreatedDate;
+			}
+			set
+			{
+				if ((this._CreatedDate != value))
+				{
+					this.OnCreatedDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedDate = value;
+					this.SendPropertyChanged("CreatedDate");
+					this.OnCreatedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int NOT NULL")]
+		public int CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ModifiedDate
+		{
+			get
+			{
+				return this._ModifiedDate;
+			}
+			set
+			{
+				if ((this._ModifiedDate != value))
+				{
+					this.OnModifiedDateChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedDate = value;
+					this.SendPropertyChanged("ModifiedDate");
+					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
+		public System.Nullable<int> ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTPDFDesignSection_MSTPDFDesignSystemConfig", Storage="_MSTPDFDesignSystemConfigs", ThisKey="SectionID", OtherKey="MasterFooterId")]
+		public EntitySet<MSTPDFDesignSystemConfig> MSTPDFDesignSystemConfigs
+		{
+			get
+			{
+				return this._MSTPDFDesignSystemConfigs;
+			}
+			set
+			{
+				this._MSTPDFDesignSystemConfigs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTPDFDesignSection_MSTPDFDesignSystemConfig1", Storage="_MSTPDFDesignSystemConfigs1", ThisKey="SectionID", OtherKey="MasterHeaderId")]
+		public EntitySet<MSTPDFDesignSystemConfig> MSTPDFDesignSystemConfigs1
+		{
+			get
+			{
+				return this._MSTPDFDesignSystemConfigs1;
+			}
+			set
+			{
+				this._MSTPDFDesignSystemConfigs1.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTPDFDesignConfig_MSTPDFDesignSection", Storage="_MSTPDFDesignConfig", ThisKey="LayoutID", OtherKey="LayoutID", IsForeignKey=true, DeleteRule="CASCADE")]
+		public MSTPDFDesignConfig MSTPDFDesignConfig
+		{
+			get
+			{
+				return this._MSTPDFDesignConfig.Entity;
+			}
+			set
+			{
+				MSTPDFDesignConfig previousValue = this._MSTPDFDesignConfig.Entity;
+				if (((previousValue != value) 
+							|| (this._MSTPDFDesignConfig.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._MSTPDFDesignConfig.Entity = null;
+						previousValue.MSTPDFDesignSections.Remove(this);
+					}
+					this._MSTPDFDesignConfig.Entity = value;
+					if ((value != null))
+					{
+						value.MSTPDFDesignSections.Add(this);
+						this._LayoutID = value.LayoutID;
+					}
+					else
+					{
+						this._LayoutID = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("MSTPDFDesignConfig");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_MSTPDFDesignSystemConfigs(MSTPDFDesignSystemConfig entity)
+		{
+			this.SendPropertyChanging();
+			entity.MSTPDFDesignSection = this;
+		}
+		
+		private void detach_MSTPDFDesignSystemConfigs(MSTPDFDesignSystemConfig entity)
+		{
+			this.SendPropertyChanging();
+			entity.MSTPDFDesignSection = null;
+		}
+		
+		private void attach_MSTPDFDesignSystemConfigs1(MSTPDFDesignSystemConfig entity)
+		{
+			this.SendPropertyChanging();
+			entity.MSTPDFDesignSection1 = this;
+		}
+		
+		private void detach_MSTPDFDesignSystemConfigs1(MSTPDFDesignSystemConfig entity)
+		{
+			this.SendPropertyChanging();
+			entity.MSTPDFDesignSection1 = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTPDFDesignSystemConfig")]
+	public partial class MSTPDFDesignSystemConfig : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _PdfDesignId;
+		
+		private string _Waterrmark;
+		
+		private System.Nullable<int> _MasterHeaderId;
+		
+		private System.Nullable<int> _MasterFooterId;
+		
+		private string _Orientation;
+		
+		private string _PageSize;
+		
+		private System.Nullable<int> _CustomWidth;
+		
+		private System.Nullable<int> _CustomHeight;
+		
+		private System.Nullable<int> _GridSize;
+		
+		private System.Nullable<int> _PL;
+		
+		private System.Nullable<int> _PR;
+		
+		private System.Nullable<int> _PT;
+		
+		private System.Nullable<int> _PB;
+		
+		private string _BackgroundColor;
+		
+		private string _BackgroundImageURL;
+		
+		private System.Nullable<System.DateTime> _CreatedDate;
+		
+		private System.Nullable<int> _CreatedBy;
+		
+		private System.Nullable<System.DateTime> _ModifiedDate;
+		
+		private System.Nullable<int> _ModifiedBy;
+		
+		private EntityRef<MSTPDFDesignSection> _MSTPDFDesignSection;
+		
+		private EntityRef<MSTPDFDesignSection> _MSTPDFDesignSection1;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnPdfDesignIdChanging(int value);
+    partial void OnPdfDesignIdChanged();
+    partial void OnWaterrmarkChanging(string value);
+    partial void OnWaterrmarkChanged();
+    partial void OnMasterHeaderIdChanging(System.Nullable<int> value);
+    partial void OnMasterHeaderIdChanged();
+    partial void OnMasterFooterIdChanging(System.Nullable<int> value);
+    partial void OnMasterFooterIdChanged();
+    partial void OnOrientationChanging(string value);
+    partial void OnOrientationChanged();
+    partial void OnPageSizeChanging(string value);
+    partial void OnPageSizeChanged();
+    partial void OnCustomWidthChanging(System.Nullable<int> value);
+    partial void OnCustomWidthChanged();
+    partial void OnCustomHeightChanging(System.Nullable<int> value);
+    partial void OnCustomHeightChanged();
+    partial void OnGridSizeChanging(System.Nullable<int> value);
+    partial void OnGridSizeChanged();
+    partial void OnPLChanging(System.Nullable<int> value);
+    partial void OnPLChanged();
+    partial void OnPRChanging(System.Nullable<int> value);
+    partial void OnPRChanged();
+    partial void OnPTChanging(System.Nullable<int> value);
+    partial void OnPTChanged();
+    partial void OnPBChanging(System.Nullable<int> value);
+    partial void OnPBChanged();
+    partial void OnBackgroundColorChanging(string value);
+    partial void OnBackgroundColorChanged();
+    partial void OnBackgroundImageURLChanging(string value);
+    partial void OnBackgroundImageURLChanged();
+    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreatedDateChanged();
+    partial void OnCreatedByChanging(System.Nullable<int> value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnModifiedDateChanged();
+    partial void OnModifiedByChanging(System.Nullable<int> value);
+    partial void OnModifiedByChanged();
+    #endregion
+		
+		public MSTPDFDesignSystemConfig()
+		{
+			this._MSTPDFDesignSection = default(EntityRef<MSTPDFDesignSection>);
+			this._MSTPDFDesignSection1 = default(EntityRef<MSTPDFDesignSection>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PdfDesignId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int PdfDesignId
+		{
+			get
+			{
+				return this._PdfDesignId;
+			}
+			set
+			{
+				if ((this._PdfDesignId != value))
+				{
+					this.OnPdfDesignIdChanging(value);
+					this.SendPropertyChanging();
+					this._PdfDesignId = value;
+					this.SendPropertyChanged("PdfDesignId");
+					this.OnPdfDesignIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Waterrmark", DbType="NVarChar(500)")]
+		public string Waterrmark
+		{
+			get
+			{
+				return this._Waterrmark;
+			}
+			set
+			{
+				if ((this._Waterrmark != value))
+				{
+					this.OnWaterrmarkChanging(value);
+					this.SendPropertyChanging();
+					this._Waterrmark = value;
+					this.SendPropertyChanged("Waterrmark");
+					this.OnWaterrmarkChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MasterHeaderId", DbType="Int")]
+		public System.Nullable<int> MasterHeaderId
+		{
+			get
+			{
+				return this._MasterHeaderId;
+			}
+			set
+			{
+				if ((this._MasterHeaderId != value))
+				{
+					if (this._MSTPDFDesignSection1.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMasterHeaderIdChanging(value);
+					this.SendPropertyChanging();
+					this._MasterHeaderId = value;
+					this.SendPropertyChanged("MasterHeaderId");
+					this.OnMasterHeaderIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MasterFooterId", DbType="Int")]
+		public System.Nullable<int> MasterFooterId
+		{
+			get
+			{
+				return this._MasterFooterId;
+			}
+			set
+			{
+				if ((this._MasterFooterId != value))
+				{
+					if (this._MSTPDFDesignSection.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMasterFooterIdChanging(value);
+					this.SendPropertyChanging();
+					this._MasterFooterId = value;
+					this.SendPropertyChanged("MasterFooterId");
+					this.OnMasterFooterIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Orientation", DbType="NVarChar(50)")]
+		public string Orientation
+		{
+			get
+			{
+				return this._Orientation;
+			}
+			set
+			{
+				if ((this._Orientation != value))
+				{
+					this.OnOrientationChanging(value);
+					this.SendPropertyChanging();
+					this._Orientation = value;
+					this.SendPropertyChanged("Orientation");
+					this.OnOrientationChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PageSize", DbType="NVarChar(20)")]
+		public string PageSize
+		{
+			get
+			{
+				return this._PageSize;
+			}
+			set
+			{
+				if ((this._PageSize != value))
+				{
+					this.OnPageSizeChanging(value);
+					this.SendPropertyChanging();
+					this._PageSize = value;
+					this.SendPropertyChanged("PageSize");
+					this.OnPageSizeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomWidth", DbType="Int")]
+		public System.Nullable<int> CustomWidth
+		{
+			get
+			{
+				return this._CustomWidth;
+			}
+			set
+			{
+				if ((this._CustomWidth != value))
+				{
+					this.OnCustomWidthChanging(value);
+					this.SendPropertyChanging();
+					this._CustomWidth = value;
+					this.SendPropertyChanged("CustomWidth");
+					this.OnCustomWidthChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomHeight", DbType="Int")]
+		public System.Nullable<int> CustomHeight
+		{
+			get
+			{
+				return this._CustomHeight;
+			}
+			set
+			{
+				if ((this._CustomHeight != value))
+				{
+					this.OnCustomHeightChanging(value);
+					this.SendPropertyChanging();
+					this._CustomHeight = value;
+					this.SendPropertyChanged("CustomHeight");
+					this.OnCustomHeightChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GridSize", DbType="Int")]
+		public System.Nullable<int> GridSize
+		{
+			get
+			{
+				return this._GridSize;
+			}
+			set
+			{
+				if ((this._GridSize != value))
+				{
+					this.OnGridSizeChanging(value);
+					this.SendPropertyChanging();
+					this._GridSize = value;
+					this.SendPropertyChanged("GridSize");
+					this.OnGridSizeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PL", DbType="Int")]
+		public System.Nullable<int> PL
+		{
+			get
+			{
+				return this._PL;
+			}
+			set
+			{
+				if ((this._PL != value))
+				{
+					this.OnPLChanging(value);
+					this.SendPropertyChanging();
+					this._PL = value;
+					this.SendPropertyChanged("PL");
+					this.OnPLChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PR", DbType="Int")]
+		public System.Nullable<int> PR
+		{
+			get
+			{
+				return this._PR;
+			}
+			set
+			{
+				if ((this._PR != value))
+				{
+					this.OnPRChanging(value);
+					this.SendPropertyChanging();
+					this._PR = value;
+					this.SendPropertyChanged("PR");
+					this.OnPRChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PT", DbType="Int")]
+		public System.Nullable<int> PT
+		{
+			get
+			{
+				return this._PT;
+			}
+			set
+			{
+				if ((this._PT != value))
+				{
+					this.OnPTChanging(value);
+					this.SendPropertyChanging();
+					this._PT = value;
+					this.SendPropertyChanged("PT");
+					this.OnPTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PB", DbType="Int")]
+		public System.Nullable<int> PB
+		{
+			get
+			{
+				return this._PB;
+			}
+			set
+			{
+				if ((this._PB != value))
+				{
+					this.OnPBChanging(value);
+					this.SendPropertyChanging();
+					this._PB = value;
+					this.SendPropertyChanged("PB");
+					this.OnPBChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BackgroundColor", DbType="NVarChar(20)")]
+		public string BackgroundColor
+		{
+			get
+			{
+				return this._BackgroundColor;
+			}
+			set
+			{
+				if ((this._BackgroundColor != value))
+				{
+					this.OnBackgroundColorChanging(value);
+					this.SendPropertyChanging();
+					this._BackgroundColor = value;
+					this.SendPropertyChanged("BackgroundColor");
+					this.OnBackgroundColorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BackgroundImageURL", DbType="NVarChar(500)")]
+		public string BackgroundImageURL
+		{
+			get
+			{
+				return this._BackgroundImageURL;
+			}
+			set
+			{
+				if ((this._BackgroundImageURL != value))
+				{
+					this.OnBackgroundImageURLChanging(value);
+					this.SendPropertyChanging();
+					this._BackgroundImageURL = value;
+					this.SendPropertyChanged("BackgroundImageURL");
+					this.OnBackgroundImageURLChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CreatedDate
+		{
+			get
+			{
+				return this._CreatedDate;
+			}
+			set
+			{
+				if ((this._CreatedDate != value))
+				{
+					this.OnCreatedDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedDate = value;
+					this.SendPropertyChanged("CreatedDate");
+					this.OnCreatedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
+		public System.Nullable<int> CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ModifiedDate
+		{
+			get
+			{
+				return this._ModifiedDate;
+			}
+			set
+			{
+				if ((this._ModifiedDate != value))
+				{
+					this.OnModifiedDateChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedDate = value;
+					this.SendPropertyChanged("ModifiedDate");
+					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
+		public System.Nullable<int> ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTPDFDesignSection_MSTPDFDesignSystemConfig", Storage="_MSTPDFDesignSection", ThisKey="MasterFooterId", OtherKey="SectionID", IsForeignKey=true)]
+		public MSTPDFDesignSection MSTPDFDesignSection
+		{
+			get
+			{
+				return this._MSTPDFDesignSection.Entity;
+			}
+			set
+			{
+				MSTPDFDesignSection previousValue = this._MSTPDFDesignSection.Entity;
+				if (((previousValue != value) 
+							|| (this._MSTPDFDesignSection.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._MSTPDFDesignSection.Entity = null;
+						previousValue.MSTPDFDesignSystemConfigs.Remove(this);
+					}
+					this._MSTPDFDesignSection.Entity = value;
+					if ((value != null))
+					{
+						value.MSTPDFDesignSystemConfigs.Add(this);
+						this._MasterFooterId = value.SectionID;
+					}
+					else
+					{
+						this._MasterFooterId = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("MSTPDFDesignSection");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTPDFDesignSection_MSTPDFDesignSystemConfig1", Storage="_MSTPDFDesignSection1", ThisKey="MasterHeaderId", OtherKey="SectionID", IsForeignKey=true)]
+		public MSTPDFDesignSection MSTPDFDesignSection1
+		{
+			get
+			{
+				return this._MSTPDFDesignSection1.Entity;
+			}
+			set
+			{
+				MSTPDFDesignSection previousValue = this._MSTPDFDesignSection1.Entity;
+				if (((previousValue != value) 
+							|| (this._MSTPDFDesignSection1.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._MSTPDFDesignSection1.Entity = null;
+						previousValue.MSTPDFDesignSystemConfigs1.Remove(this);
+					}
+					this._MSTPDFDesignSection1.Entity = value;
+					if ((value != null))
+					{
+						value.MSTPDFDesignSystemConfigs1.Add(this);
+						this._MasterHeaderId = value.SectionID;
+					}
+					else
+					{
+						this._MasterHeaderId = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("MSTPDFDesignSection1");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTPDFTemplate")]
 	public partial class MSTPDFTemplate : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -22555,17 +22182,21 @@ namespace DbR3
 		
 		private int _ProjectId;
 		
+		private string _ProjectName;
+		
 		private string _ProjectCode;
 		
 		private System.Nullable<bool> _IsActive;
 		
-		private System.Nullable<int> _CreatedBy;
+		private string _CreatedBy;
 		
 		private System.Nullable<System.DateTime> _CreatedDate;
 		
-		private System.Nullable<int> _ModifiedBy;
+		private string _ModifiedBy;
 		
 		private System.Nullable<System.DateTime> _ModifiedDate;
+		
+		private System.Nullable<int> _AccountId;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -22573,18 +22204,22 @@ namespace DbR3
     partial void OnCreated();
     partial void OnProjectIdChanging(int value);
     partial void OnProjectIdChanged();
+    partial void OnProjectNameChanging(string value);
+    partial void OnProjectNameChanged();
     partial void OnProjectCodeChanging(string value);
     partial void OnProjectCodeChanged();
     partial void OnIsActiveChanging(System.Nullable<bool> value);
     partial void OnIsActiveChanged();
-    partial void OnCreatedByChanging(System.Nullable<int> value);
+    partial void OnCreatedByChanging(string value);
     partial void OnCreatedByChanged();
     partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
     partial void OnCreatedDateChanged();
-    partial void OnModifiedByChanging(System.Nullable<int> value);
+    partial void OnModifiedByChanging(string value);
     partial void OnModifiedByChanged();
     partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
     partial void OnModifiedDateChanged();
+    partial void OnAccountIdChanging(System.Nullable<int> value);
+    partial void OnAccountIdChanged();
     #endregion
 		
 		public MSTProject()
@@ -22608,6 +22243,26 @@ namespace DbR3
 					this._ProjectId = value;
 					this.SendPropertyChanged("ProjectId");
 					this.OnProjectIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProjectName", DbType="NVarChar(500)")]
+		public string ProjectName
+		{
+			get
+			{
+				return this._ProjectName;
+			}
+			set
+			{
+				if ((this._ProjectName != value))
+				{
+					this.OnProjectNameChanging(value);
+					this.SendPropertyChanging();
+					this._ProjectName = value;
+					this.SendPropertyChanged("ProjectName");
+					this.OnProjectNameChanged();
 				}
 			}
 		}
@@ -22652,8 +22307,8 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
-		public System.Nullable<int> CreatedBy
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="VarChar(500)")]
+		public string CreatedBy
 		{
 			get
 			{
@@ -22692,8 +22347,8 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
-		public System.Nullable<int> ModifiedBy
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="NVarChar(500)")]
+		public string ModifiedBy
 		{
 			get
 			{
@@ -22728,6 +22383,26 @@ namespace DbR3
 					this._ModifiedDate = value;
 					this.SendPropertyChanged("ModifiedDate");
 					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountId", DbType="Int")]
+		public System.Nullable<int> AccountId
+		{
+			get
+			{
+				return this._AccountId;
+			}
+			set
+			{
+				if ((this._AccountId != value))
+				{
+					this.OnAccountIdChanging(value);
+					this.SendPropertyChanging();
+					this._AccountId = value;
+					this.SendPropertyChanged("AccountId");
+					this.OnAccountIdChanged();
 				}
 			}
 		}
@@ -22770,8 +22445,6 @@ namespace DbR3
 		private string _Tambonthai;
 		
 		private System.Nullable<int> _Postcode;
-		
-		private System.Nullable<System.DateTime> _TransferredDate;
 		
 		public MSTProvince()
 		{
@@ -22885,22 +22558,6 @@ namespace DbR3
 				if ((this._Postcode != value))
 				{
 					this._Postcode = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TransferredDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> TransferredDate
-		{
-			get
-			{
-				return this._TransferredDate;
-			}
-			set
-			{
-				if ((this._TransferredDate != value))
-				{
-					this._TransferredDate = value;
 				}
 			}
 		}
@@ -24102,6 +23759,8 @@ namespace DbR3
 		
 		private System.Nullable<int> _Seq;
 		
+		private System.Nullable<int> _ControlKey;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -24112,6 +23771,8 @@ namespace DbR3
     partial void OnControlIdChanged();
     partial void OnSeqChanging(System.Nullable<int> value);
     partial void OnSeqChanged();
+    partial void OnControlKeyChanging(System.Nullable<int> value);
+    partial void OnControlKeyChanged();
     #endregion
 		
 		public MSTRevisionCondition()
@@ -24175,6 +23836,26 @@ namespace DbR3
 					this._Seq = value;
 					this.SendPropertyChanged("Seq");
 					this.OnSeqChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlKey", DbType="Int")]
+		public System.Nullable<int> ControlKey
+		{
+			get
+			{
+				return this._ControlKey;
+			}
+			set
+			{
+				if ((this._ControlKey != value))
+				{
+					this.OnControlKeyChanging(value);
+					this.SendPropertyChanging();
+					this._ControlKey = value;
+					this.SendPropertyChanged("ControlKey");
+					this.OnControlKeyChanged();
 				}
 			}
 		}
@@ -24588,6 +24269,188 @@ namespace DbR3
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTSpecificType")]
+	public partial class MSTSpecificType : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _SpecificTypeId;
+		
+		private string _SpecificTypeCode;
+		
+		private System.Nullable<int> _CreatedBy;
+		
+		private System.Nullable<System.DateTime> _CreatedDate;
+		
+		private System.Nullable<int> _ModifiedBy;
+		
+		private System.Nullable<System.DateTime> _ModifiedDate;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnSpecificTypeIdChanging(int value);
+    partial void OnSpecificTypeIdChanged();
+    partial void OnSpecificTypeCodeChanging(string value);
+    partial void OnSpecificTypeCodeChanged();
+    partial void OnCreatedByChanging(System.Nullable<int> value);
+    partial void OnCreatedByChanged();
+    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreatedDateChanged();
+    partial void OnModifiedByChanging(System.Nullable<int> value);
+    partial void OnModifiedByChanged();
+    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnModifiedDateChanged();
+    #endregion
+		
+		public MSTSpecificType()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SpecificTypeId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int SpecificTypeId
+		{
+			get
+			{
+				return this._SpecificTypeId;
+			}
+			set
+			{
+				if ((this._SpecificTypeId != value))
+				{
+					this.OnSpecificTypeIdChanging(value);
+					this.SendPropertyChanging();
+					this._SpecificTypeId = value;
+					this.SendPropertyChanged("SpecificTypeId");
+					this.OnSpecificTypeIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SpecificTypeCode", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string SpecificTypeCode
+		{
+			get
+			{
+				return this._SpecificTypeCode;
+			}
+			set
+			{
+				if ((this._SpecificTypeCode != value))
+				{
+					this.OnSpecificTypeCodeChanging(value);
+					this.SendPropertyChanging();
+					this._SpecificTypeCode = value;
+					this.SendPropertyChanged("SpecificTypeCode");
+					this.OnSpecificTypeCodeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
+		public System.Nullable<int> CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CreatedDate
+		{
+			get
+			{
+				return this._CreatedDate;
+			}
+			set
+			{
+				if ((this._CreatedDate != value))
+				{
+					this.OnCreatedDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedDate = value;
+					this.SendPropertyChanged("CreatedDate");
+					this.OnCreatedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
+		public System.Nullable<int> ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ModifiedDate
+		{
+			get
+			{
+				return this._ModifiedDate;
+			}
+			set
+			{
+				if ((this._ModifiedDate != value))
+				{
+					this.OnModifiedDateChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedDate = value;
+					this.SendPropertyChanged("ModifiedDate");
+					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTTableColumn")]
 	public partial class MSTTableColumn : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -24722,9 +24585,591 @@ namespace DbR3
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTTemLineApprove")]
-	public partial class MSTTemLineApprove
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTTemConditionLogic")]
+	public partial class MSTTemConditionLogic : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _TemConditionLogicId;
+		
+		private System.Nullable<int> _TemplateId;
+		
+		private System.Nullable<int> _TemLineApproveId;
+		
+		private System.Nullable<int> _Seq;
+		
+		private string _LogicCondition;
+		
+		private System.Nullable<int> _CreatedBy;
+		
+		private System.Nullable<System.DateTime> _CreatedDate;
+		
+		private System.Nullable<int> _ModifiedBy;
+		
+		private System.Nullable<System.DateTime> _ModifiedDate;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnTemConditionLogicIdChanging(int value);
+    partial void OnTemConditionLogicIdChanged();
+    partial void OnTemplateIdChanging(System.Nullable<int> value);
+    partial void OnTemplateIdChanged();
+    partial void OnTemLineApproveIdChanging(System.Nullable<int> value);
+    partial void OnTemLineApproveIdChanged();
+    partial void OnSeqChanging(System.Nullable<int> value);
+    partial void OnSeqChanged();
+    partial void OnLogicConditionChanging(string value);
+    partial void OnLogicConditionChanged();
+    partial void OnCreatedByChanging(System.Nullable<int> value);
+    partial void OnCreatedByChanged();
+    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreatedDateChanged();
+    partial void OnModifiedByChanging(System.Nullable<int> value);
+    partial void OnModifiedByChanged();
+    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnModifiedDateChanged();
+    #endregion
+		
+		public MSTTemConditionLogic()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemConditionLogicId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int TemConditionLogicId
+		{
+			get
+			{
+				return this._TemConditionLogicId;
+			}
+			set
+			{
+				if ((this._TemConditionLogicId != value))
+				{
+					this.OnTemConditionLogicIdChanging(value);
+					this.SendPropertyChanging();
+					this._TemConditionLogicId = value;
+					this.SendPropertyChanged("TemConditionLogicId");
+					this.OnTemConditionLogicIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemplateId", DbType="Int")]
+		public System.Nullable<int> TemplateId
+		{
+			get
+			{
+				return this._TemplateId;
+			}
+			set
+			{
+				if ((this._TemplateId != value))
+				{
+					this.OnTemplateIdChanging(value);
+					this.SendPropertyChanging();
+					this._TemplateId = value;
+					this.SendPropertyChanged("TemplateId");
+					this.OnTemplateIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemLineApproveId", DbType="Int")]
+		public System.Nullable<int> TemLineApproveId
+		{
+			get
+			{
+				return this._TemLineApproveId;
+			}
+			set
+			{
+				if ((this._TemLineApproveId != value))
+				{
+					this.OnTemLineApproveIdChanging(value);
+					this.SendPropertyChanging();
+					this._TemLineApproveId = value;
+					this.SendPropertyChanged("TemLineApproveId");
+					this.OnTemLineApproveIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Seq", DbType="Int")]
+		public System.Nullable<int> Seq
+		{
+			get
+			{
+				return this._Seq;
+			}
+			set
+			{
+				if ((this._Seq != value))
+				{
+					this.OnSeqChanging(value);
+					this.SendPropertyChanging();
+					this._Seq = value;
+					this.SendPropertyChanged("Seq");
+					this.OnSeqChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LogicCondition", DbType="NVarChar(500)")]
+		public string LogicCondition
+		{
+			get
+			{
+				return this._LogicCondition;
+			}
+			set
+			{
+				if ((this._LogicCondition != value))
+				{
+					this.OnLogicConditionChanging(value);
+					this.SendPropertyChanging();
+					this._LogicCondition = value;
+					this.SendPropertyChanged("LogicCondition");
+					this.OnLogicConditionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
+		public System.Nullable<int> CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CreatedDate
+		{
+			get
+			{
+				return this._CreatedDate;
+			}
+			set
+			{
+				if ((this._CreatedDate != value))
+				{
+					this.OnCreatedDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedDate = value;
+					this.SendPropertyChanged("CreatedDate");
+					this.OnCreatedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
+		public System.Nullable<int> ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ModifiedDate
+		{
+			get
+			{
+				return this._ModifiedDate;
+			}
+			set
+			{
+				if ((this._ModifiedDate != value))
+				{
+					this.OnModifiedDateChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedDate = value;
+					this.SendPropertyChanged("ModifiedDate");
+					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTTemConditionLogicItem")]
+	public partial class MSTTemConditionLogicItem : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _TemConditionLogicItemId;
+		
+		private System.Nullable<int> _TemConditionLogicId;
+		
+		private string _ConditionName;
+		
+		private System.Nullable<int> _Seq;
+		
+		private System.Nullable<int> _ControlKey;
+		
+		private System.Nullable<int> _ComparisonOperateId;
+		
+		private string _Value;
+		
+		private string _NextRowRelation;
+		
+		private System.Nullable<int> _CreatedBy;
+		
+		private System.Nullable<System.DateTime> _CreatedDate;
+		
+		private System.Nullable<int> _ModifiedBy;
+		
+		private System.Nullable<System.DateTime> _ModifiedDate;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnTemConditionLogicItemIdChanging(int value);
+    partial void OnTemConditionLogicItemIdChanged();
+    partial void OnTemConditionLogicIdChanging(System.Nullable<int> value);
+    partial void OnTemConditionLogicIdChanged();
+    partial void OnConditionNameChanging(string value);
+    partial void OnConditionNameChanged();
+    partial void OnSeqChanging(System.Nullable<int> value);
+    partial void OnSeqChanged();
+    partial void OnControlKeyChanging(System.Nullable<int> value);
+    partial void OnControlKeyChanged();
+    partial void OnComparisonOperateIdChanging(System.Nullable<int> value);
+    partial void OnComparisonOperateIdChanged();
+    partial void OnValueChanging(string value);
+    partial void OnValueChanged();
+    partial void OnNextRowRelationChanging(string value);
+    partial void OnNextRowRelationChanged();
+    partial void OnCreatedByChanging(System.Nullable<int> value);
+    partial void OnCreatedByChanged();
+    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreatedDateChanged();
+    partial void OnModifiedByChanging(System.Nullable<int> value);
+    partial void OnModifiedByChanged();
+    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnModifiedDateChanged();
+    #endregion
+		
+		public MSTTemConditionLogicItem()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemConditionLogicItemId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int TemConditionLogicItemId
+		{
+			get
+			{
+				return this._TemConditionLogicItemId;
+			}
+			set
+			{
+				if ((this._TemConditionLogicItemId != value))
+				{
+					this.OnTemConditionLogicItemIdChanging(value);
+					this.SendPropertyChanging();
+					this._TemConditionLogicItemId = value;
+					this.SendPropertyChanged("TemConditionLogicItemId");
+					this.OnTemConditionLogicItemIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemConditionLogicId", DbType="Int")]
+		public System.Nullable<int> TemConditionLogicId
+		{
+			get
+			{
+				return this._TemConditionLogicId;
+			}
+			set
+			{
+				if ((this._TemConditionLogicId != value))
+				{
+					this.OnTemConditionLogicIdChanging(value);
+					this.SendPropertyChanging();
+					this._TemConditionLogicId = value;
+					this.SendPropertyChanged("TemConditionLogicId");
+					this.OnTemConditionLogicIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ConditionName", DbType="NVarChar(100)")]
+		public string ConditionName
+		{
+			get
+			{
+				return this._ConditionName;
+			}
+			set
+			{
+				if ((this._ConditionName != value))
+				{
+					this.OnConditionNameChanging(value);
+					this.SendPropertyChanging();
+					this._ConditionName = value;
+					this.SendPropertyChanged("ConditionName");
+					this.OnConditionNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Seq", DbType="Int")]
+		public System.Nullable<int> Seq
+		{
+			get
+			{
+				return this._Seq;
+			}
+			set
+			{
+				if ((this._Seq != value))
+				{
+					this.OnSeqChanging(value);
+					this.SendPropertyChanging();
+					this._Seq = value;
+					this.SendPropertyChanged("Seq");
+					this.OnSeqChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlKey", DbType="Int")]
+		public System.Nullable<int> ControlKey
+		{
+			get
+			{
+				return this._ControlKey;
+			}
+			set
+			{
+				if ((this._ControlKey != value))
+				{
+					this.OnControlKeyChanging(value);
+					this.SendPropertyChanging();
+					this._ControlKey = value;
+					this.SendPropertyChanged("ControlKey");
+					this.OnControlKeyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ComparisonOperateId", DbType="Int")]
+		public System.Nullable<int> ComparisonOperateId
+		{
+			get
+			{
+				return this._ComparisonOperateId;
+			}
+			set
+			{
+				if ((this._ComparisonOperateId != value))
+				{
+					this.OnComparisonOperateIdChanging(value);
+					this.SendPropertyChanging();
+					this._ComparisonOperateId = value;
+					this.SendPropertyChanged("ComparisonOperateId");
+					this.OnComparisonOperateIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Value", DbType="NVarChar(200)")]
+		public string Value
+		{
+			get
+			{
+				return this._Value;
+			}
+			set
+			{
+				if ((this._Value != value))
+				{
+					this.OnValueChanging(value);
+					this.SendPropertyChanging();
+					this._Value = value;
+					this.SendPropertyChanged("Value");
+					this.OnValueChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NextRowRelation", DbType="NVarChar(20)")]
+		public string NextRowRelation
+		{
+			get
+			{
+				return this._NextRowRelation;
+			}
+			set
+			{
+				if ((this._NextRowRelation != value))
+				{
+					this.OnNextRowRelationChanging(value);
+					this.SendPropertyChanging();
+					this._NextRowRelation = value;
+					this.SendPropertyChanged("NextRowRelation");
+					this.OnNextRowRelationChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
+		public System.Nullable<int> CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CreatedDate
+		{
+			get
+			{
+				return this._CreatedDate;
+			}
+			set
+			{
+				if ((this._CreatedDate != value))
+				{
+					this.OnCreatedDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedDate = value;
+					this.SendPropertyChanged("CreatedDate");
+					this.OnCreatedDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
+		public System.Nullable<int> ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ModifiedDate
+		{
+			get
+			{
+				return this._ModifiedDate;
+			}
+			set
+			{
+				if ((this._ModifiedDate != value))
+				{
+					this.OnModifiedDateChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedDate = value;
+					this.SendPropertyChanged("ModifiedDate");
+					this.OnModifiedDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTTemLineApprove")]
+	public partial class MSTTemLineApprove : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _TemLineId;
 		
@@ -24758,11 +25203,50 @@ namespace DbR3
 		
 		private System.Nullable<System.DateTime> _ModifiedDate;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnTemLineIdChanging(int value);
+    partial void OnTemLineIdChanged();
+    partial void OnTemplateIdChanging(System.Nullable<int> value);
+    partial void OnTemplateIdChanged();
+    partial void OnMaxPositionLevelIdChanging(System.Nullable<int> value);
+    partial void OnMaxPositionLevelIdChanged();
+    partial void OnPositionIdChanging(System.Nullable<int> value);
+    partial void OnPositionIdChanged();
+    partial void OnDOAIdChanging(System.Nullable<int> value);
+    partial void OnDOAIdChanged();
+    partial void OnApproveTypeIdChanging(System.Nullable<int> value);
+    partial void OnApproveTypeIdChanged();
+    partial void OnIsActiveChanging(System.Nullable<bool> value);
+    partial void OnIsActiveChanged();
+    partial void OnCompanyIdChanging(System.Nullable<int> value);
+    partial void OnCompanyIdChanged();
+    partial void OnIsParallelChanging(System.Nullable<bool> value);
+    partial void OnIsParallelChanged();
+    partial void OnIsApproveAllChanging(System.Nullable<bool> value);
+    partial void OnIsApproveAllChanged();
+    partial void OnApproveRequireChanging(System.Nullable<int> value);
+    partial void OnApproveRequireChanged();
+    partial void OnSeqChanging(System.Nullable<int> value);
+    partial void OnSeqChanged();
+    partial void OnCreatedByChanging(System.Nullable<int> value);
+    partial void OnCreatedByChanged();
+    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreatedDateChanged();
+    partial void OnModifiedByChanging(System.Nullable<int> value);
+    partial void OnModifiedByChanged();
+    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnModifiedDateChanged();
+    #endregion
+		
 		public MSTTemLineApprove()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemLineId", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TemLineId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int TemLineId
 		{
 			get
@@ -24773,7 +25257,11 @@ namespace DbR3
 			{
 				if ((this._TemLineId != value))
 				{
+					this.OnTemLineIdChanging(value);
+					this.SendPropertyChanging();
 					this._TemLineId = value;
+					this.SendPropertyChanged("TemLineId");
+					this.OnTemLineIdChanged();
 				}
 			}
 		}
@@ -24789,7 +25277,11 @@ namespace DbR3
 			{
 				if ((this._TemplateId != value))
 				{
+					this.OnTemplateIdChanging(value);
+					this.SendPropertyChanging();
 					this._TemplateId = value;
+					this.SendPropertyChanged("TemplateId");
+					this.OnTemplateIdChanged();
 				}
 			}
 		}
@@ -24805,7 +25297,11 @@ namespace DbR3
 			{
 				if ((this._MaxPositionLevelId != value))
 				{
+					this.OnMaxPositionLevelIdChanging(value);
+					this.SendPropertyChanging();
 					this._MaxPositionLevelId = value;
+					this.SendPropertyChanged("MaxPositionLevelId");
+					this.OnMaxPositionLevelIdChanged();
 				}
 			}
 		}
@@ -24821,7 +25317,11 @@ namespace DbR3
 			{
 				if ((this._PositionId != value))
 				{
+					this.OnPositionIdChanging(value);
+					this.SendPropertyChanging();
 					this._PositionId = value;
+					this.SendPropertyChanged("PositionId");
+					this.OnPositionIdChanged();
 				}
 			}
 		}
@@ -24837,7 +25337,11 @@ namespace DbR3
 			{
 				if ((this._DOAId != value))
 				{
+					this.OnDOAIdChanging(value);
+					this.SendPropertyChanging();
 					this._DOAId = value;
+					this.SendPropertyChanged("DOAId");
+					this.OnDOAIdChanged();
 				}
 			}
 		}
@@ -24853,7 +25357,11 @@ namespace DbR3
 			{
 				if ((this._ApproveTypeId != value))
 				{
+					this.OnApproveTypeIdChanging(value);
+					this.SendPropertyChanging();
 					this._ApproveTypeId = value;
+					this.SendPropertyChanged("ApproveTypeId");
+					this.OnApproveTypeIdChanged();
 				}
 			}
 		}
@@ -24869,7 +25377,11 @@ namespace DbR3
 			{
 				if ((this._IsActive != value))
 				{
+					this.OnIsActiveChanging(value);
+					this.SendPropertyChanging();
 					this._IsActive = value;
+					this.SendPropertyChanged("IsActive");
+					this.OnIsActiveChanged();
 				}
 			}
 		}
@@ -24885,7 +25397,11 @@ namespace DbR3
 			{
 				if ((this._CompanyId != value))
 				{
+					this.OnCompanyIdChanging(value);
+					this.SendPropertyChanging();
 					this._CompanyId = value;
+					this.SendPropertyChanged("CompanyId");
+					this.OnCompanyIdChanged();
 				}
 			}
 		}
@@ -24901,7 +25417,11 @@ namespace DbR3
 			{
 				if ((this._IsParallel != value))
 				{
+					this.OnIsParallelChanging(value);
+					this.SendPropertyChanging();
 					this._IsParallel = value;
+					this.SendPropertyChanged("IsParallel");
+					this.OnIsParallelChanged();
 				}
 			}
 		}
@@ -24917,7 +25437,11 @@ namespace DbR3
 			{
 				if ((this._IsApproveAll != value))
 				{
+					this.OnIsApproveAllChanging(value);
+					this.SendPropertyChanging();
 					this._IsApproveAll = value;
+					this.SendPropertyChanged("IsApproveAll");
+					this.OnIsApproveAllChanged();
 				}
 			}
 		}
@@ -24933,7 +25457,11 @@ namespace DbR3
 			{
 				if ((this._ApproveRequire != value))
 				{
+					this.OnApproveRequireChanging(value);
+					this.SendPropertyChanging();
 					this._ApproveRequire = value;
+					this.SendPropertyChanged("ApproveRequire");
+					this.OnApproveRequireChanged();
 				}
 			}
 		}
@@ -24949,7 +25477,11 @@ namespace DbR3
 			{
 				if ((this._Seq != value))
 				{
+					this.OnSeqChanging(value);
+					this.SendPropertyChanging();
 					this._Seq = value;
+					this.SendPropertyChanged("Seq");
+					this.OnSeqChanged();
 				}
 			}
 		}
@@ -24965,7 +25497,11 @@ namespace DbR3
 			{
 				if ((this._CreatedBy != value))
 				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
 					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
 				}
 			}
 		}
@@ -24981,7 +25517,11 @@ namespace DbR3
 			{
 				if ((this._CreatedDate != value))
 				{
+					this.OnCreatedDateChanging(value);
+					this.SendPropertyChanging();
 					this._CreatedDate = value;
+					this.SendPropertyChanged("CreatedDate");
+					this.OnCreatedDateChanged();
 				}
 			}
 		}
@@ -24997,7 +25537,11 @@ namespace DbR3
 			{
 				if ((this._ModifiedBy != value))
 				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
 					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
 				}
 			}
 		}
@@ -25013,8 +25557,32 @@ namespace DbR3
 			{
 				if ((this._ModifiedDate != value))
 				{
+					this.OnModifiedDateChanging(value);
+					this.SendPropertyChanging();
 					this._ModifiedDate = value;
+					this.SendPropertyChanged("ModifiedDate");
+					this.OnModifiedDateChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -27096,9 +27664,9 @@ namespace DbR3
 		
 		private System.Nullable<int> _Infold;
 		
-		private System.Nullable<int> _ControlId;
+		private System.Nullable<int> _ControlKey;
 		
-		private System.Nullable<int> _ControlRefId;
+		private System.Nullable<int> _ControlRefKey;
 		
 		private bool _IsTableType;
 		
@@ -27122,10 +27690,10 @@ namespace DbR3
     partial void OnTemplateRefIdChanged();
     partial void OnInfoldChanging(System.Nullable<int> value);
     partial void OnInfoldChanged();
-    partial void OnControlIdChanging(System.Nullable<int> value);
-    partial void OnControlIdChanged();
-    partial void OnControlRefIdChanging(System.Nullable<int> value);
-    partial void OnControlRefIdChanged();
+    partial void OnControlKeyChanging(System.Nullable<int> value);
+    partial void OnControlKeyChanged();
+    partial void OnControlRefKeyChanging(System.Nullable<int> value);
+    partial void OnControlRefKeyChanged();
     partial void OnIsTableTypeChanging(bool value);
     partial void OnIsTableTypeChanged();
     partial void OnCreatedByChanging(System.Nullable<int> value);
@@ -27223,42 +27791,42 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlId", DbType="Int")]
-		public System.Nullable<int> ControlId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlKey", DbType="Int")]
+		public System.Nullable<int> ControlKey
 		{
 			get
 			{
-				return this._ControlId;
+				return this._ControlKey;
 			}
 			set
 			{
-				if ((this._ControlId != value))
+				if ((this._ControlKey != value))
 				{
-					this.OnControlIdChanging(value);
+					this.OnControlKeyChanging(value);
 					this.SendPropertyChanging();
-					this._ControlId = value;
-					this.SendPropertyChanged("ControlId");
-					this.OnControlIdChanged();
+					this._ControlKey = value;
+					this.SendPropertyChanged("ControlKey");
+					this.OnControlKeyChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlRefId", DbType="Int")]
-		public System.Nullable<int> ControlRefId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlRefKey", DbType="Int")]
+		public System.Nullable<int> ControlRefKey
 		{
 			get
 			{
-				return this._ControlRefId;
+				return this._ControlRefKey;
 			}
 			set
 			{
-				if ((this._ControlRefId != value))
+				if ((this._ControlRefKey != value))
 				{
-					this.OnControlRefIdChanging(value);
+					this.OnControlRefKeyChanging(value);
 					this.SendPropertyChanging();
-					this._ControlRefId = value;
-					this.SendPropertyChanged("ControlRefId");
-					this.OnControlRefIdChanged();
+					this._ControlRefKey = value;
+					this.SendPropertyChanged("ControlRefKey");
+					this.OnControlRefKeyChanged();
 				}
 			}
 		}
@@ -27396,11 +27964,11 @@ namespace DbR3
 		
 		private int _TemplateRefId;
 		
-		private int _TableControlId;
+		private int _TableControlKey;
 		
-		private System.Nullable<int> _ControlId;
+		private System.Nullable<int> _ControlKey;
 		
-		private int _ControlRefId;
+		private int _ControlRefKey;
 		
 		private System.Nullable<int> _CreatedBy;
 		
@@ -27420,12 +27988,12 @@ namespace DbR3
     partial void OnRefDocConfigIdChanged();
     partial void OnTemplateRefIdChanging(int value);
     partial void OnTemplateRefIdChanged();
-    partial void OnTableControlIdChanging(int value);
-    partial void OnTableControlIdChanged();
-    partial void OnControlIdChanging(System.Nullable<int> value);
-    partial void OnControlIdChanged();
-    partial void OnControlRefIdChanging(int value);
-    partial void OnControlRefIdChanged();
+    partial void OnTableControlKeyChanging(int value);
+    partial void OnTableControlKeyChanged();
+    partial void OnControlKeyChanging(System.Nullable<int> value);
+    partial void OnControlKeyChanged();
+    partial void OnControlRefKeyChanging(int value);
+    partial void OnControlRefKeyChanged();
     partial void OnCreatedByChanging(System.Nullable<int> value);
     partial void OnCreatedByChanged();
     partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
@@ -27501,62 +28069,62 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TableControlId", DbType="Int NOT NULL")]
-		public int TableControlId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TableControlKey", DbType="Int NOT NULL")]
+		public int TableControlKey
 		{
 			get
 			{
-				return this._TableControlId;
+				return this._TableControlKey;
 			}
 			set
 			{
-				if ((this._TableControlId != value))
+				if ((this._TableControlKey != value))
 				{
-					this.OnTableControlIdChanging(value);
+					this.OnTableControlKeyChanging(value);
 					this.SendPropertyChanging();
-					this._TableControlId = value;
-					this.SendPropertyChanged("TableControlId");
-					this.OnTableControlIdChanged();
+					this._TableControlKey = value;
+					this.SendPropertyChanged("TableControlKey");
+					this.OnTableControlKeyChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlId", DbType="Int")]
-		public System.Nullable<int> ControlId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlKey", DbType="Int")]
+		public System.Nullable<int> ControlKey
 		{
 			get
 			{
-				return this._ControlId;
+				return this._ControlKey;
 			}
 			set
 			{
-				if ((this._ControlId != value))
+				if ((this._ControlKey != value))
 				{
-					this.OnControlIdChanging(value);
+					this.OnControlKeyChanging(value);
 					this.SendPropertyChanging();
-					this._ControlId = value;
-					this.SendPropertyChanged("ControlId");
-					this.OnControlIdChanged();
+					this._ControlKey = value;
+					this.SendPropertyChanged("ControlKey");
+					this.OnControlKeyChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlRefId", DbType="Int NOT NULL")]
-		public int ControlRefId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ControlRefKey", DbType="Int NOT NULL")]
+		public int ControlRefKey
 		{
 			get
 			{
-				return this._ControlRefId;
+				return this._ControlRefKey;
 			}
 			set
 			{
-				if ((this._ControlRefId != value))
+				if ((this._ControlRefKey != value))
 				{
-					this.OnControlRefIdChanging(value);
+					this.OnControlRefKeyChanging(value);
 					this.SendPropertyChanging();
-					this._ControlRefId = value;
-					this.SendPropertyChanged("ControlRefId");
-					this.OnControlRefIdChanged();
+					this._ControlRefKey = value;
+					this.SendPropertyChanged("ControlRefKey");
+					this.OnControlRefKeyChanged();
 				}
 			}
 		}
@@ -28098,836 +28666,6 @@ namespace DbR3
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MSTVendor")]
-	public partial class MSTVendor : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _V_Id;
-		
-		private string _companyCode;
-		
-		private string _businessPartner;
-		
-		private string _searchTerm1;
-		
-		private string _searchTerm2;
-		
-		private string _bpCategory;
-		
-		private string _bpType;
-		
-		private string _grouping;
-		
-		private string _vendorCode;
-		
-		private string _country;
-		
-		private string _name;
-		
-		private string _name2;
-		
-		private string _taxNumber3;
-		
-		private System.Nullable<System.DateTime> _createdOn;
-		
-		private System.Nullable<System.DateTime> _changedOn;
-		
-		private string _branchCode;
-		
-		private string _description;
-		
-		private string _address;
-		
-		private string _street;
-		
-		private string _street4;
-		
-		private string _street5;
-		
-		private string _name3;
-		
-		private string _name4;
-		
-		private string _city;
-		
-		private string _postalCode;
-		
-		private string _CreatedBy;
-		
-		private System.Nullable<System.DateTime> _CreatedDate;
-		
-		private string _ModifiedBy;
-		
-		private System.Nullable<System.DateTime> _ModifiedDate;
-		
-		private System.Nullable<bool> _IsActive;
-		
-		private string _block;
-		
-		private string _Vendor_Code_Name;
-		
-		private System.Nullable<System.DateTime> _TransferredDate;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnV_IdChanging(int value);
-    partial void OnV_IdChanged();
-    partial void OncompanyCodeChanging(string value);
-    partial void OncompanyCodeChanged();
-    partial void OnbusinessPartnerChanging(string value);
-    partial void OnbusinessPartnerChanged();
-    partial void OnsearchTerm1Changing(string value);
-    partial void OnsearchTerm1Changed();
-    partial void OnsearchTerm2Changing(string value);
-    partial void OnsearchTerm2Changed();
-    partial void OnbpCategoryChanging(string value);
-    partial void OnbpCategoryChanged();
-    partial void OnbpTypeChanging(string value);
-    partial void OnbpTypeChanged();
-    partial void OngroupingChanging(string value);
-    partial void OngroupingChanged();
-    partial void OnvendorCodeChanging(string value);
-    partial void OnvendorCodeChanged();
-    partial void OncountryChanging(string value);
-    partial void OncountryChanged();
-    partial void OnnameChanging(string value);
-    partial void OnnameChanged();
-    partial void Onname2Changing(string value);
-    partial void Onname2Changed();
-    partial void OntaxNumber3Changing(string value);
-    partial void OntaxNumber3Changed();
-    partial void OncreatedOnChanging(System.Nullable<System.DateTime> value);
-    partial void OncreatedOnChanged();
-    partial void OnchangedOnChanging(System.Nullable<System.DateTime> value);
-    partial void OnchangedOnChanged();
-    partial void OnbranchCodeChanging(string value);
-    partial void OnbranchCodeChanged();
-    partial void OndescriptionChanging(string value);
-    partial void OndescriptionChanged();
-    partial void OnaddressChanging(string value);
-    partial void OnaddressChanged();
-    partial void OnstreetChanging(string value);
-    partial void OnstreetChanged();
-    partial void Onstreet4Changing(string value);
-    partial void Onstreet4Changed();
-    partial void Onstreet5Changing(string value);
-    partial void Onstreet5Changed();
-    partial void Onname3Changing(string value);
-    partial void Onname3Changed();
-    partial void Onname4Changing(string value);
-    partial void Onname4Changed();
-    partial void OncityChanging(string value);
-    partial void OncityChanged();
-    partial void OnpostalCodeChanging(string value);
-    partial void OnpostalCodeChanged();
-    partial void OnCreatedByChanging(string value);
-    partial void OnCreatedByChanged();
-    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreatedDateChanged();
-    partial void OnModifiedByChanging(string value);
-    partial void OnModifiedByChanged();
-    partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnModifiedDateChanged();
-    partial void OnIsActiveChanging(System.Nullable<bool> value);
-    partial void OnIsActiveChanged();
-    partial void OnblockChanging(string value);
-    partial void OnblockChanged();
-    partial void OnVendor_Code_NameChanging(string value);
-    partial void OnVendor_Code_NameChanged();
-    partial void OnTransferredDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnTransferredDateChanged();
-    #endregion
-		
-		public MSTVendor()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_V_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int V_Id
-		{
-			get
-			{
-				return this._V_Id;
-			}
-			set
-			{
-				if ((this._V_Id != value))
-				{
-					this.OnV_IdChanging(value);
-					this.SendPropertyChanging();
-					this._V_Id = value;
-					this.SendPropertyChanged("V_Id");
-					this.OnV_IdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_companyCode", DbType="VarChar(4) NOT NULL", CanBeNull=false)]
-		public string companyCode
-		{
-			get
-			{
-				return this._companyCode;
-			}
-			set
-			{
-				if ((this._companyCode != value))
-				{
-					this.OncompanyCodeChanging(value);
-					this.SendPropertyChanging();
-					this._companyCode = value;
-					this.SendPropertyChanged("companyCode");
-					this.OncompanyCodeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_businessPartner", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
-		public string businessPartner
-		{
-			get
-			{
-				return this._businessPartner;
-			}
-			set
-			{
-				if ((this._businessPartner != value))
-				{
-					this.OnbusinessPartnerChanging(value);
-					this.SendPropertyChanging();
-					this._businessPartner = value;
-					this.SendPropertyChanged("businessPartner");
-					this.OnbusinessPartnerChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_searchTerm1", DbType="VarChar(20)")]
-		public string searchTerm1
-		{
-			get
-			{
-				return this._searchTerm1;
-			}
-			set
-			{
-				if ((this._searchTerm1 != value))
-				{
-					this.OnsearchTerm1Changing(value);
-					this.SendPropertyChanging();
-					this._searchTerm1 = value;
-					this.SendPropertyChanged("searchTerm1");
-					this.OnsearchTerm1Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_searchTerm2", DbType="VarChar(20)")]
-		public string searchTerm2
-		{
-			get
-			{
-				return this._searchTerm2;
-			}
-			set
-			{
-				if ((this._searchTerm2 != value))
-				{
-					this.OnsearchTerm2Changing(value);
-					this.SendPropertyChanging();
-					this._searchTerm2 = value;
-					this.SendPropertyChanged("searchTerm2");
-					this.OnsearchTerm2Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_bpCategory", DbType="VarChar(1) NOT NULL", CanBeNull=false)]
-		public string bpCategory
-		{
-			get
-			{
-				return this._bpCategory;
-			}
-			set
-			{
-				if ((this._bpCategory != value))
-				{
-					this.OnbpCategoryChanging(value);
-					this.SendPropertyChanging();
-					this._bpCategory = value;
-					this.SendPropertyChanged("bpCategory");
-					this.OnbpCategoryChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_bpType", DbType="VarChar(4)")]
-		public string bpType
-		{
-			get
-			{
-				return this._bpType;
-			}
-			set
-			{
-				if ((this._bpType != value))
-				{
-					this.OnbpTypeChanging(value);
-					this.SendPropertyChanging();
-					this._bpType = value;
-					this.SendPropertyChanged("bpType");
-					this.OnbpTypeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_grouping", DbType="VarChar(4)")]
-		public string grouping
-		{
-			get
-			{
-				return this._grouping;
-			}
-			set
-			{
-				if ((this._grouping != value))
-				{
-					this.OngroupingChanging(value);
-					this.SendPropertyChanging();
-					this._grouping = value;
-					this.SendPropertyChanged("grouping");
-					this.OngroupingChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_vendorCode", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
-		public string vendorCode
-		{
-			get
-			{
-				return this._vendorCode;
-			}
-			set
-			{
-				if ((this._vendorCode != value))
-				{
-					this.OnvendorCodeChanging(value);
-					this.SendPropertyChanging();
-					this._vendorCode = value;
-					this.SendPropertyChanged("vendorCode");
-					this.OnvendorCodeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_country", DbType="VarChar(3)")]
-		public string country
-		{
-			get
-			{
-				return this._country;
-			}
-			set
-			{
-				if ((this._country != value))
-				{
-					this.OncountryChanging(value);
-					this.SendPropertyChanging();
-					this._country = value;
-					this.SendPropertyChanged("country");
-					this.OncountryChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="VarChar(35)")]
-		public string name
-		{
-			get
-			{
-				return this._name;
-			}
-			set
-			{
-				if ((this._name != value))
-				{
-					this.OnnameChanging(value);
-					this.SendPropertyChanging();
-					this._name = value;
-					this.SendPropertyChanged("name");
-					this.OnnameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name2", DbType="VarChar(35)")]
-		public string name2
-		{
-			get
-			{
-				return this._name2;
-			}
-			set
-			{
-				if ((this._name2 != value))
-				{
-					this.Onname2Changing(value);
-					this.SendPropertyChanging();
-					this._name2 = value;
-					this.SendPropertyChanged("name2");
-					this.Onname2Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_taxNumber3", DbType="VarChar(18)")]
-		public string taxNumber3
-		{
-			get
-			{
-				return this._taxNumber3;
-			}
-			set
-			{
-				if ((this._taxNumber3 != value))
-				{
-					this.OntaxNumber3Changing(value);
-					this.SendPropertyChanging();
-					this._taxNumber3 = value;
-					this.SendPropertyChanged("taxNumber3");
-					this.OntaxNumber3Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createdOn", DbType="Date")]
-		public System.Nullable<System.DateTime> createdOn
-		{
-			get
-			{
-				return this._createdOn;
-			}
-			set
-			{
-				if ((this._createdOn != value))
-				{
-					this.OncreatedOnChanging(value);
-					this.SendPropertyChanging();
-					this._createdOn = value;
-					this.SendPropertyChanged("createdOn");
-					this.OncreatedOnChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_changedOn", DbType="Date")]
-		public System.Nullable<System.DateTime> changedOn
-		{
-			get
-			{
-				return this._changedOn;
-			}
-			set
-			{
-				if ((this._changedOn != value))
-				{
-					this.OnchangedOnChanging(value);
-					this.SendPropertyChanging();
-					this._changedOn = value;
-					this.SendPropertyChanged("changedOn");
-					this.OnchangedOnChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_branchCode", DbType="VarChar(5)")]
-		public string branchCode
-		{
-			get
-			{
-				return this._branchCode;
-			}
-			set
-			{
-				if ((this._branchCode != value))
-				{
-					this.OnbranchCodeChanging(value);
-					this.SendPropertyChanging();
-					this._branchCode = value;
-					this.SendPropertyChanged("branchCode");
-					this.OnbranchCodeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_description", DbType="VarChar(40)")]
-		public string description
-		{
-			get
-			{
-				return this._description;
-			}
-			set
-			{
-				if ((this._description != value))
-				{
-					this.OndescriptionChanging(value);
-					this.SendPropertyChanging();
-					this._description = value;
-					this.SendPropertyChanged("description");
-					this.OndescriptionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_address", DbType="VarChar(10)")]
-		public string address
-		{
-			get
-			{
-				return this._address;
-			}
-			set
-			{
-				if ((this._address != value))
-				{
-					this.OnaddressChanging(value);
-					this.SendPropertyChanging();
-					this._address = value;
-					this.SendPropertyChanged("address");
-					this.OnaddressChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_street", DbType="VarChar(60)")]
-		public string street
-		{
-			get
-			{
-				return this._street;
-			}
-			set
-			{
-				if ((this._street != value))
-				{
-					this.OnstreetChanging(value);
-					this.SendPropertyChanging();
-					this._street = value;
-					this.SendPropertyChanged("street");
-					this.OnstreetChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_street4", DbType="VarChar(40)")]
-		public string street4
-		{
-			get
-			{
-				return this._street4;
-			}
-			set
-			{
-				if ((this._street4 != value))
-				{
-					this.Onstreet4Changing(value);
-					this.SendPropertyChanging();
-					this._street4 = value;
-					this.SendPropertyChanged("street4");
-					this.Onstreet4Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_street5", DbType="VarChar(40)")]
-		public string street5
-		{
-			get
-			{
-				return this._street5;
-			}
-			set
-			{
-				if ((this._street5 != value))
-				{
-					this.Onstreet5Changing(value);
-					this.SendPropertyChanging();
-					this._street5 = value;
-					this.SendPropertyChanged("street5");
-					this.Onstreet5Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name3", DbType="VarChar(35)")]
-		public string name3
-		{
-			get
-			{
-				return this._name3;
-			}
-			set
-			{
-				if ((this._name3 != value))
-				{
-					this.Onname3Changing(value);
-					this.SendPropertyChanging();
-					this._name3 = value;
-					this.SendPropertyChanged("name3");
-					this.Onname3Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name4", DbType="VarChar(35)")]
-		public string name4
-		{
-			get
-			{
-				return this._name4;
-			}
-			set
-			{
-				if ((this._name4 != value))
-				{
-					this.Onname4Changing(value);
-					this.SendPropertyChanging();
-					this._name4 = value;
-					this.SendPropertyChanged("name4");
-					this.Onname4Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_city", DbType="VarChar(40)")]
-		public string city
-		{
-			get
-			{
-				return this._city;
-			}
-			set
-			{
-				if ((this._city != value))
-				{
-					this.OncityChanging(value);
-					this.SendPropertyChanging();
-					this._city = value;
-					this.SendPropertyChanged("city");
-					this.OncityChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_postalCode", DbType="VarChar(10)")]
-		public string postalCode
-		{
-			get
-			{
-				return this._postalCode;
-			}
-			set
-			{
-				if ((this._postalCode != value))
-				{
-					this.OnpostalCodeChanging(value);
-					this.SendPropertyChanging();
-					this._postalCode = value;
-					this.SendPropertyChanged("postalCode");
-					this.OnpostalCodeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="NVarChar(50)")]
-		public string CreatedBy
-		{
-			get
-			{
-				return this._CreatedBy;
-			}
-			set
-			{
-				if ((this._CreatedBy != value))
-				{
-					this.OnCreatedByChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedBy = value;
-					this.SendPropertyChanged("CreatedBy");
-					this.OnCreatedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CreatedDate
-		{
-			get
-			{
-				return this._CreatedDate;
-			}
-			set
-			{
-				if ((this._CreatedDate != value))
-				{
-					this.OnCreatedDateChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedDate = value;
-					this.SendPropertyChanged("CreatedDate");
-					this.OnCreatedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="NVarChar(50)")]
-		public string ModifiedBy
-		{
-			get
-			{
-				return this._ModifiedBy;
-			}
-			set
-			{
-				if ((this._ModifiedBy != value))
-				{
-					this.OnModifiedByChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedBy = value;
-					this.SendPropertyChanged("ModifiedBy");
-					this.OnModifiedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> ModifiedDate
-		{
-			get
-			{
-				return this._ModifiedDate;
-			}
-			set
-			{
-				if ((this._ModifiedDate != value))
-				{
-					this.OnModifiedDateChanging(value);
-					this.SendPropertyChanging();
-					this._ModifiedDate = value;
-					this.SendPropertyChanged("ModifiedDate");
-					this.OnModifiedDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsActive", DbType="Bit")]
-		public System.Nullable<bool> IsActive
-		{
-			get
-			{
-				return this._IsActive;
-			}
-			set
-			{
-				if ((this._IsActive != value))
-				{
-					this.OnIsActiveChanging(value);
-					this.SendPropertyChanging();
-					this._IsActive = value;
-					this.SendPropertyChanged("IsActive");
-					this.OnIsActiveChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_block", DbType="NVarChar(1)")]
-		public string block
-		{
-			get
-			{
-				return this._block;
-			}
-			set
-			{
-				if ((this._block != value))
-				{
-					this.OnblockChanging(value);
-					this.SendPropertyChanging();
-					this._block = value;
-					this.SendPropertyChanged("block");
-					this.OnblockChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Vendor_Code_Name", AutoSync=AutoSync.Always, DbType="VarChar(46)", IsDbGenerated=true, UpdateCheck=UpdateCheck.Never)]
-		public string Vendor_Code_Name
-		{
-			get
-			{
-				return this._Vendor_Code_Name;
-			}
-			set
-			{
-				if ((this._Vendor_Code_Name != value))
-				{
-					this.OnVendor_Code_NameChanging(value);
-					this.SendPropertyChanging();
-					this._Vendor_Code_Name = value;
-					this.SendPropertyChanged("Vendor_Code_Name");
-					this.OnVendor_Code_NameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TransferredDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> TransferredDate
-		{
-			get
-			{
-				return this._TransferredDate;
-			}
-			set
-			{
-				if ((this._TransferredDate != value))
-				{
-					this.OnTransferredDateChanging(value);
-					this.SendPropertyChanging();
-					this._TransferredDate = value;
-					this.SendPropertyChanged("TransferredDate");
-					this.OnTransferredDateChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNActionHistory")]
 	public partial class TRNActionHistory : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -28950,13 +28688,9 @@ namespace DbR3
 		
 		private string _Comment;
 		
-		private string _ActionStatus;
-		
 		private System.Nullable<int> _SignatureId;
 		
 		private System.Nullable<bool> _IsActive;
-		
-		private System.Nullable<int> _AccountId;
 		
 		private string _Platform;
 		
@@ -28970,15 +28704,11 @@ namespace DbR3
 		
 		private System.Nullable<int> _DelegateActorId;
 		
-		private string _HAdvancveForm;
-		
 		private System.Nullable<int> _ProcessMinute;
 		
 		private System.Nullable<int> _LineApproveSeq;
 		
-		private System.Nullable<int> _CreatedBy;
-		
-		private System.Nullable<System.DateTime> _CreatedDate;
+		private System.Nullable<int> _MemoStatusId;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -29000,14 +28730,10 @@ namespace DbR3
     partial void OnActionDateChanged();
     partial void OnCommentChanging(string value);
     partial void OnCommentChanged();
-    partial void OnActionStatusChanging(string value);
-    partial void OnActionStatusChanged();
     partial void OnSignatureIdChanging(System.Nullable<int> value);
     partial void OnSignatureIdChanged();
     partial void OnIsActiveChanging(System.Nullable<bool> value);
     partial void OnIsActiveChanged();
-    partial void OnAccountIdChanging(System.Nullable<int> value);
-    partial void OnAccountIdChanged();
     partial void OnPlatformChanging(string value);
     partial void OnPlatformChanged();
     partial void OnIPAddressChanging(string value);
@@ -29020,16 +28746,12 @@ namespace DbR3
     partial void OnListFilePathChanged();
     partial void OnDelegateActorIdChanging(System.Nullable<int> value);
     partial void OnDelegateActorIdChanged();
-    partial void OnHAdvancveFormChanging(string value);
-    partial void OnHAdvancveFormChanged();
     partial void OnProcessMinuteChanging(System.Nullable<int> value);
     partial void OnProcessMinuteChanged();
     partial void OnLineApproveSeqChanging(System.Nullable<int> value);
     partial void OnLineApproveSeqChanged();
-    partial void OnCreatedByChanging(System.Nullable<int> value);
-    partial void OnCreatedByChanged();
-    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreatedDateChanged();
+    partial void OnMemoStatusIdChanging(System.Nullable<int> value);
+    partial void OnMemoStatusIdChanged();
     #endregion
 		
 		public TRNActionHistory()
@@ -29197,26 +28919,6 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ActionStatus", DbType="NVarChar(100)")]
-		public string ActionStatus
-		{
-			get
-			{
-				return this._ActionStatus;
-			}
-			set
-			{
-				if ((this._ActionStatus != value))
-				{
-					this.OnActionStatusChanging(value);
-					this.SendPropertyChanging();
-					this._ActionStatus = value;
-					this.SendPropertyChanged("ActionStatus");
-					this.OnActionStatusChanged();
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SignatureId", DbType="Int")]
 		public System.Nullable<int> SignatureId
 		{
@@ -29253,26 +28955,6 @@ namespace DbR3
 					this._IsActive = value;
 					this.SendPropertyChanged("IsActive");
 					this.OnIsActiveChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountId", DbType="Int")]
-		public System.Nullable<int> AccountId
-		{
-			get
-			{
-				return this._AccountId;
-			}
-			set
-			{
-				if ((this._AccountId != value))
-				{
-					this.OnAccountIdChanging(value);
-					this.SendPropertyChanging();
-					this._AccountId = value;
-					this.SendPropertyChanged("AccountId");
-					this.OnAccountIdChanged();
 				}
 			}
 		}
@@ -29397,26 +29079,6 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HAdvancveForm", DbType="NVarChar(MAX)")]
-		public string HAdvancveForm
-		{
-			get
-			{
-				return this._HAdvancveForm;
-			}
-			set
-			{
-				if ((this._HAdvancveForm != value))
-				{
-					this.OnHAdvancveFormChanging(value);
-					this.SendPropertyChanging();
-					this._HAdvancveForm = value;
-					this.SendPropertyChanged("HAdvancveForm");
-					this.OnHAdvancveFormChanged();
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProcessMinute", DbType="Int")]
 		public System.Nullable<int> ProcessMinute
 		{
@@ -29457,42 +29119,22 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
-		public System.Nullable<int> CreatedBy
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoStatusId", DbType="Int")]
+		public System.Nullable<int> MemoStatusId
 		{
 			get
 			{
-				return this._CreatedBy;
+				return this._MemoStatusId;
 			}
 			set
 			{
-				if ((this._CreatedBy != value))
+				if ((this._MemoStatusId != value))
 				{
-					this.OnCreatedByChanging(value);
+					this.OnMemoStatusIdChanging(value);
 					this.SendPropertyChanging();
-					this._CreatedBy = value;
-					this.SendPropertyChanged("CreatedBy");
-					this.OnCreatedByChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CreatedDate
-		{
-			get
-			{
-				return this._CreatedDate;
-			}
-			set
-			{
-				if ((this._CreatedDate != value))
-				{
-					this.OnCreatedDateChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedDate = value;
-					this.SendPropertyChanged("CreatedDate");
-					this.OnCreatedDateChanged();
+					this._MemoStatusId = value;
+					this.SendPropertyChanged("MemoStatusId");
+					this.OnMemoStatusIdChanged();
 				}
 			}
 		}
@@ -29519,7 +29161,7 @@ namespace DbR3
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNAttachFile")]
-	public partial class TRNAttachFile1 : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TRNAttachFile : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -29543,6 +29185,8 @@ namespace DbR3
 		private System.Nullable<int> _MimeTypeId;
 		
 		private System.Nullable<int> _MemoId;
+		
+		private System.Nullable<int> _DelegateId;
 		
 		private bool _IsMergePDF;
 		
@@ -29580,6 +29224,8 @@ namespace DbR3
     partial void OnMimeTypeIdChanged();
     partial void OnMemoIdChanging(System.Nullable<int> value);
     partial void OnMemoIdChanged();
+    partial void OnDelegateIdChanging(System.Nullable<int> value);
+    partial void OnDelegateIdChanged();
     partial void OnIsMergePDFChanging(bool value);
     partial void OnIsMergePDFChanged();
     partial void OnMergeSeqChanging(int value);
@@ -29594,7 +29240,7 @@ namespace DbR3
     partial void OnModifiedDateChanged();
     #endregion
 		
-		public TRNAttachFile1()
+		public TRNAttachFile()
 		{
 			OnCreated();
 		}
@@ -29795,6 +29441,26 @@ namespace DbR3
 					this._MemoId = value;
 					this.SendPropertyChanged("MemoId");
 					this.OnMemoIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DelegateId", DbType="Int")]
+		public System.Nullable<int> DelegateId
+		{
+			get
+			{
+				return this._DelegateId;
+			}
+			set
+			{
+				if ((this._DelegateId != value))
+				{
+					this.OnDelegateIdChanging(value);
+					this.SendPropertyChanging();
+					this._DelegateId = value;
+					this.SendPropertyChanged("DelegateId");
+					this.OnDelegateIdChanged();
 				}
 			}
 		}
@@ -30195,7 +29861,7 @@ namespace DbR3
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNDelegate")]
-	public partial class TRNDelegate1 : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TRNDelegate : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -30214,11 +29880,11 @@ namespace DbR3
 		
 		private System.Nullable<System.DateTime> _CreatedDate;
 		
-		private string _CreatedBy;
+		private System.Nullable<int> _CreatedBy;
 		
 		private System.Nullable<System.DateTime> _ModifiedDate;
 		
-		private string _ModifiedBy;
+		private System.Nullable<int> _ModifiedBy;
 		
 		private System.Nullable<bool> _IsActive;
 		
@@ -30227,8 +29893,6 @@ namespace DbR3
 		private System.Nullable<int> _DelegateToRole;
 		
 		private System.Nullable<bool> _IsApplySomeForm;
-		
-		private System.Nullable<System.DateTime> _TransferredDate;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -30248,11 +29912,11 @@ namespace DbR3
     partial void OnRemarkChanged();
     partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
     partial void OnCreatedDateChanged();
-    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanging(System.Nullable<int> value);
     partial void OnCreatedByChanged();
     partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
     partial void OnModifiedDateChanged();
-    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanging(System.Nullable<int> value);
     partial void OnModifiedByChanged();
     partial void OnIsActiveChanging(System.Nullable<bool> value);
     partial void OnIsActiveChanged();
@@ -30262,11 +29926,9 @@ namespace DbR3
     partial void OnDelegateToRoleChanged();
     partial void OnIsApplySomeFormChanging(System.Nullable<bool> value);
     partial void OnIsApplySomeFormChanged();
-    partial void OnTransferredDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnTransferredDateChanged();
     #endregion
 		
-		public TRNDelegate1()
+		public TRNDelegate()
 		{
 			OnCreated();
 		}
@@ -30411,8 +30073,8 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="NVarChar(500)")]
-		public string CreatedBy
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
+		public System.Nullable<int> CreatedBy
 		{
 			get
 			{
@@ -30451,8 +30113,8 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="NVarChar(500)")]
-		public string ModifiedBy
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
+		public System.Nullable<int> ModifiedBy
 		{
 			get
 			{
@@ -30551,26 +30213,6 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TransferredDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> TransferredDate
-		{
-			get
-			{
-				return this._TransferredDate;
-			}
-			set
-			{
-				if ((this._TransferredDate != value))
-				{
-					this.OnTransferredDateChanging(value);
-					this.SendPropertyChanging();
-					this._TransferredDate = value;
-					this.SendPropertyChanged("TransferredDate");
-					this.OnTransferredDateChanged();
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -30593,7 +30235,7 @@ namespace DbR3
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNDelegateDetail")]
-	public partial class TRNDelegateDetail1 : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TRNDelegateDetail : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -30610,15 +30252,13 @@ namespace DbR3
 		
 		private System.Nullable<System.DateTime> _CreatedDate;
 		
-		private string _CreatedBy;
+		private System.Nullable<int> _CreatedBy;
 		
 		private System.Nullable<System.DateTime> _ModifiedDate;
 		
-		private string _ModifiedBy;
+		private System.Nullable<int> _ModifiedBy;
 		
 		private System.Nullable<int> _AccountId;
-		
-		private System.Nullable<System.DateTime> _TransferredDate;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -30636,19 +30276,17 @@ namespace DbR3
     partial void OnIsActiveChanged();
     partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
     partial void OnCreatedDateChanged();
-    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanging(System.Nullable<int> value);
     partial void OnCreatedByChanged();
     partial void OnModifiedDateChanging(System.Nullable<System.DateTime> value);
     partial void OnModifiedDateChanged();
-    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanging(System.Nullable<int> value);
     partial void OnModifiedByChanged();
     partial void OnAccountIdChanging(System.Nullable<int> value);
     partial void OnAccountIdChanged();
-    partial void OnTransferredDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnTransferredDateChanged();
     #endregion
 		
-		public TRNDelegateDetail1()
+		public TRNDelegateDetail()
 		{
 			OnCreated();
 		}
@@ -30773,8 +30411,8 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="NVarChar(500)")]
-		public string CreatedBy
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
+		public System.Nullable<int> CreatedBy
 		{
 			get
 			{
@@ -30813,8 +30451,8 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="NVarChar(500)")]
-		public string ModifiedBy
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModifiedBy", DbType="Int")]
+		public System.Nullable<int> ModifiedBy
 		{
 			get
 			{
@@ -30849,26 +30487,6 @@ namespace DbR3
 					this._AccountId = value;
 					this.SendPropertyChanged("AccountId");
 					this.OnAccountIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TransferredDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> TransferredDate
-		{
-			get
-			{
-				return this._TransferredDate;
-			}
-			set
-			{
-				if ((this._TransferredDate != value))
-				{
-					this.OnTransferredDateChanging(value);
-					this.SendPropertyChanging();
-					this._TransferredDate = value;
-					this.SendPropertyChanged("TransferredDate");
-					this.OnTransferredDateChanged();
 				}
 			}
 		}
@@ -31667,12 +31285,12 @@ namespace DbR3
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNMemo")]
-	public partial class TRNMemo1 : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TRNMemo : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private long _MemoId;
+		private int _MemoId;
 		
 		private string _DocumentNo;
 		
@@ -31740,6 +31358,14 @@ namespace DbR3
 		
 		private System.Nullable<int> _LastActionBy;
 		
+		private System.Nullable<int> _CPositionId;
+		
+		private System.Nullable<int> _CDepartmentId;
+		
+		private System.Nullable<int> _RPositionId;
+		
+		private System.Nullable<int> _RDepartmentId;
+		
 		private EntitySet<TRNMemoData> _TRNMemoDatas;
 		
 		private EntitySet<TRNMemoDataHistory> _TRNMemoDataHistories;
@@ -31748,19 +31374,11 @@ namespace DbR3
 		
 		private EntitySet<TRNMemoTableDataHistory> _TRNMemoTableDataHistories;
 		
-		private EntitySet<TRNMemoData1> _TRNMemoData1s;
-		
-		private EntitySet<TRNMemoDataHistory1> _TRNMemoDataHistory1s;
-		
-		private EntitySet<TRNMemoTableData1> _TRNMemoTableData1s;
-		
-		private EntitySet<TRNMemoTableDataHistory1> _TRNMemoTableDataHistory1s;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMemoIdChanging(long value);
+    partial void OnMemoIdChanging(int value);
     partial void OnMemoIdChanged();
     partial void OnDocumentNoChanging(string value);
     partial void OnDocumentNoChanged();
@@ -31828,23 +31446,27 @@ namespace DbR3
     partial void OnModifiedDateChanged();
     partial void OnLastActionByChanging(System.Nullable<int> value);
     partial void OnLastActionByChanged();
+    partial void OnCPositionIdChanging(System.Nullable<int> value);
+    partial void OnCPositionIdChanged();
+    partial void OnCDepartmentIdChanging(System.Nullable<int> value);
+    partial void OnCDepartmentIdChanged();
+    partial void OnRPositionIdChanging(System.Nullable<int> value);
+    partial void OnRPositionIdChanged();
+    partial void OnRDepartmentIdChanging(System.Nullable<int> value);
+    partial void OnRDepartmentIdChanged();
     #endregion
 		
-		public TRNMemo1()
+		public TRNMemo()
 		{
 			this._TRNMemoDatas = new EntitySet<TRNMemoData>(new Action<TRNMemoData>(this.attach_TRNMemoDatas), new Action<TRNMemoData>(this.detach_TRNMemoDatas));
 			this._TRNMemoDataHistories = new EntitySet<TRNMemoDataHistory>(new Action<TRNMemoDataHistory>(this.attach_TRNMemoDataHistories), new Action<TRNMemoDataHistory>(this.detach_TRNMemoDataHistories));
 			this._TRNMemoTableDatas = new EntitySet<TRNMemoTableData>(new Action<TRNMemoTableData>(this.attach_TRNMemoTableDatas), new Action<TRNMemoTableData>(this.detach_TRNMemoTableDatas));
 			this._TRNMemoTableDataHistories = new EntitySet<TRNMemoTableDataHistory>(new Action<TRNMemoTableDataHistory>(this.attach_TRNMemoTableDataHistories), new Action<TRNMemoTableDataHistory>(this.detach_TRNMemoTableDataHistories));
-			this._TRNMemoData1s = new EntitySet<TRNMemoData1>(new Action<TRNMemoData1>(this.attach_TRNMemoData1s), new Action<TRNMemoData1>(this.detach_TRNMemoData1s));
-			this._TRNMemoDataHistory1s = new EntitySet<TRNMemoDataHistory1>(new Action<TRNMemoDataHistory1>(this.attach_TRNMemoDataHistory1s), new Action<TRNMemoDataHistory1>(this.detach_TRNMemoDataHistory1s));
-			this._TRNMemoTableData1s = new EntitySet<TRNMemoTableData1>(new Action<TRNMemoTableData1>(this.attach_TRNMemoTableData1s), new Action<TRNMemoTableData1>(this.detach_TRNMemoTableData1s));
-			this._TRNMemoTableDataHistory1s = new EntitySet<TRNMemoTableDataHistory1>(new Action<TRNMemoTableDataHistory1>(this.attach_TRNMemoTableDataHistory1s), new Action<TRNMemoTableDataHistory1>(this.detach_TRNMemoTableDataHistory1s));
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long MemoId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MemoId
 		{
 			get
 			{
@@ -32523,7 +32145,87 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoData", Storage="_TRNMemoDatas", ThisKey="MemoId", OtherKey="MemoId")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CPositionId", DbType="Int")]
+		public System.Nullable<int> CPositionId
+		{
+			get
+			{
+				return this._CPositionId;
+			}
+			set
+			{
+				if ((this._CPositionId != value))
+				{
+					this.OnCPositionIdChanging(value);
+					this.SendPropertyChanging();
+					this._CPositionId = value;
+					this.SendPropertyChanged("CPositionId");
+					this.OnCPositionIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CDepartmentId", DbType="Int")]
+		public System.Nullable<int> CDepartmentId
+		{
+			get
+			{
+				return this._CDepartmentId;
+			}
+			set
+			{
+				if ((this._CDepartmentId != value))
+				{
+					this.OnCDepartmentIdChanging(value);
+					this.SendPropertyChanging();
+					this._CDepartmentId = value;
+					this.SendPropertyChanged("CDepartmentId");
+					this.OnCDepartmentIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RPositionId", DbType="Int")]
+		public System.Nullable<int> RPositionId
+		{
+			get
+			{
+				return this._RPositionId;
+			}
+			set
+			{
+				if ((this._RPositionId != value))
+				{
+					this.OnRPositionIdChanging(value);
+					this.SendPropertyChanging();
+					this._RPositionId = value;
+					this.SendPropertyChanged("RPositionId");
+					this.OnRPositionIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RDepartmentId", DbType="Int")]
+		public System.Nullable<int> RDepartmentId
+		{
+			get
+			{
+				return this._RDepartmentId;
+			}
+			set
+			{
+				if ((this._RDepartmentId != value))
+				{
+					this.OnRDepartmentIdChanging(value);
+					this.SendPropertyChanging();
+					this._RDepartmentId = value;
+					this.SendPropertyChanged("RDepartmentId");
+					this.OnRDepartmentIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoData", Storage="_TRNMemoDatas", ThisKey="MemoId", OtherKey="MemoId")]
 		public EntitySet<TRNMemoData> TRNMemoDatas
 		{
 			get
@@ -32536,7 +32238,7 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoDataHistory", Storage="_TRNMemoDataHistories", ThisKey="MemoId", OtherKey="MemoId")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoDataHistory", Storage="_TRNMemoDataHistories", ThisKey="MemoId", OtherKey="MemoId")]
 		public EntitySet<TRNMemoDataHistory> TRNMemoDataHistories
 		{
 			get
@@ -32549,7 +32251,7 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoTableData", Storage="_TRNMemoTableDatas", ThisKey="MemoId", OtherKey="MemoId")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableData", Storage="_TRNMemoTableDatas", ThisKey="MemoId", OtherKey="MemoId")]
 		public EntitySet<TRNMemoTableData> TRNMemoTableDatas
 		{
 			get
@@ -32562,7 +32264,7 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoTableDataHistory", Storage="_TRNMemoTableDataHistories", ThisKey="MemoId", OtherKey="MemoId")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableDataHistory", Storage="_TRNMemoTableDataHistories", ThisKey="MemoId", OtherKey="MemoId")]
 		public EntitySet<TRNMemoTableDataHistory> TRNMemoTableDataHistories
 		{
 			get
@@ -32572,58 +32274,6 @@ namespace DbR3
 			set
 			{
 				this._TRNMemoTableDataHistories.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoData1", Storage="_TRNMemoData1s", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoData1> TRNMemoData1s
-		{
-			get
-			{
-				return this._TRNMemoData1s;
-			}
-			set
-			{
-				this._TRNMemoData1s.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoDataHistory1", Storage="_TRNMemoDataHistory1s", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoDataHistory1> TRNMemoDataHistory1s
-		{
-			get
-			{
-				return this._TRNMemoDataHistory1s;
-			}
-			set
-			{
-				this._TRNMemoDataHistory1s.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoTableData1", Storage="_TRNMemoTableData1s", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoTableData1> TRNMemoTableData1s
-		{
-			get
-			{
-				return this._TRNMemoTableData1s;
-			}
-			set
-			{
-				this._TRNMemoTableData1s.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoTableDataHistory1", Storage="_TRNMemoTableDataHistory1s", ThisKey="MemoId", OtherKey="MemoId")]
-		public EntitySet<TRNMemoTableDataHistory1> TRNMemoTableDataHistory1s
-		{
-			get
-			{
-				return this._TRNMemoTableDataHistory1s;
-			}
-			set
-			{
-				this._TRNMemoTableDataHistory1s.Assign(value);
 			}
 		}
 		
@@ -32650,109 +32300,61 @@ namespace DbR3
 		private void attach_TRNMemoDatas(TRNMemoData entity)
 		{
 			this.SendPropertyChanging();
-			entity.TRNMemo1 = this;
+			entity.TRNMemo = this;
 		}
 		
 		private void detach_TRNMemoDatas(TRNMemoData entity)
 		{
 			this.SendPropertyChanging();
-			entity.TRNMemo1 = null;
+			entity.TRNMemo = null;
 		}
 		
 		private void attach_TRNMemoDataHistories(TRNMemoDataHistory entity)
 		{
 			this.SendPropertyChanging();
-			entity.TRNMemo1 = this;
+			entity.TRNMemo = this;
 		}
 		
 		private void detach_TRNMemoDataHistories(TRNMemoDataHistory entity)
 		{
 			this.SendPropertyChanging();
-			entity.TRNMemo1 = null;
+			entity.TRNMemo = null;
 		}
 		
 		private void attach_TRNMemoTableDatas(TRNMemoTableData entity)
 		{
 			this.SendPropertyChanging();
-			entity.TRNMemo1 = this;
+			entity.TRNMemo = this;
 		}
 		
 		private void detach_TRNMemoTableDatas(TRNMemoTableData entity)
 		{
 			this.SendPropertyChanging();
-			entity.TRNMemo1 = null;
+			entity.TRNMemo = null;
 		}
 		
 		private void attach_TRNMemoTableDataHistories(TRNMemoTableDataHistory entity)
 		{
 			this.SendPropertyChanging();
-			entity.TRNMemo1 = this;
+			entity.TRNMemo = this;
 		}
 		
 		private void detach_TRNMemoTableDataHistories(TRNMemoTableDataHistory entity)
 		{
 			this.SendPropertyChanging();
-			entity.TRNMemo1 = null;
-		}
-		
-		private void attach_TRNMemoData1s(TRNMemoData1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo1 = this;
-		}
-		
-		private void detach_TRNMemoData1s(TRNMemoData1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo1 = null;
-		}
-		
-		private void attach_TRNMemoDataHistory1s(TRNMemoDataHistory1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo1 = this;
-		}
-		
-		private void detach_TRNMemoDataHistory1s(TRNMemoDataHistory1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo1 = null;
-		}
-		
-		private void attach_TRNMemoTableData1s(TRNMemoTableData1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo1 = this;
-		}
-		
-		private void detach_TRNMemoTableData1s(TRNMemoTableData1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo1 = null;
-		}
-		
-		private void attach_TRNMemoTableDataHistory1s(TRNMemoTableDataHistory1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo1 = this;
-		}
-		
-		private void detach_TRNMemoTableDataHistory1s(TRNMemoTableDataHistory1 entity)
-		{
-			this.SendPropertyChanging();
-			entity.TRNMemo1 = null;
+			entity.TRNMemo = null;
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNMemoData")]
-	public partial class TRNMemoData1 : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TRNMemoData : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private long _MemoDataId;
 		
-		private long _MemoId;
+		private int _MemoId;
 		
 		private System.Nullable<int> _ControlId;
 		
@@ -32760,15 +32362,13 @@ namespace DbR3
 		
 		private EntityRef<TRNMemo> _TRNMemo;
 		
-		private EntityRef<TRNMemo1> _TRNMemo1;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
     partial void OnMemoDataIdChanging(long value);
     partial void OnMemoDataIdChanged();
-    partial void OnMemoIdChanging(long value);
+    partial void OnMemoIdChanging(int value);
     partial void OnMemoIdChanged();
     partial void OnControlIdChanging(System.Nullable<int> value);
     partial void OnControlIdChanged();
@@ -32776,10 +32376,9 @@ namespace DbR3
     partial void OnValueChanged();
     #endregion
 		
-		public TRNMemoData1()
+		public TRNMemoData()
 		{
 			this._TRNMemo = default(EntityRef<TRNMemo>);
-			this._TRNMemo1 = default(EntityRef<TRNMemo1>);
 			OnCreated();
 		}
 		
@@ -32803,8 +32402,8 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="BigInt NOT NULL")]
-		public long MemoId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="Int NOT NULL")]
+		public int MemoId
 		{
 			get
 			{
@@ -32814,7 +32413,7 @@ namespace DbR3
 			{
 				if ((this._MemoId != value))
 				{
-					if ((this._TRNMemo.HasLoadedOrAssignedValue || this._TRNMemo1.HasLoadedOrAssignedValue))
+					if (this._TRNMemo.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -32867,7 +32466,7 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoData1", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoData", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
 		public TRNMemo TRNMemo
 		{
 			get
@@ -32884,53 +32483,19 @@ namespace DbR3
 					if ((previousValue != null))
 					{
 						this._TRNMemo.Entity = null;
-						previousValue.TRNMemoData1s.Remove(this);
+						previousValue.TRNMemoDatas.Remove(this);
 					}
 					this._TRNMemo.Entity = value;
 					if ((value != null))
 					{
-						value.TRNMemoData1s.Add(this);
+						value.TRNMemoDatas.Add(this);
 						this._MemoId = value.MemoId;
 					}
 					else
 					{
-						this._MemoId = default(long);
+						this._MemoId = default(int);
 					}
 					this.SendPropertyChanged("TRNMemo");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoData1", Storage="_TRNMemo1", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo1 TRNMemo1
-		{
-			get
-			{
-				return this._TRNMemo1.Entity;
-			}
-			set
-			{
-				TRNMemo1 previousValue = this._TRNMemo1.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo1.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo1.Entity = null;
-						previousValue.TRNMemoData1s.Remove(this);
-					}
-					this._TRNMemo1.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoData1s.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo1");
 				}
 			}
 		}
@@ -32957,7 +32522,7 @@ namespace DbR3
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNMemoDataHistory")]
-	public partial class TRNMemoDataHistory1 : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TRNMemoDataHistory : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -32966,7 +32531,7 @@ namespace DbR3
 		
 		private int _ActionId;
 		
-		private long _MemoId;
+		private int _MemoId;
 		
 		private System.Nullable<int> _ControlId;
 		
@@ -32980,8 +32545,6 @@ namespace DbR3
 		
 		private EntityRef<TRNMemo> _TRNMemo;
 		
-		private EntityRef<TRNMemo1> _TRNMemo1;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -32990,7 +32553,7 @@ namespace DbR3
     partial void OnMemoDataHisIdChanged();
     partial void OnActionIdChanging(int value);
     partial void OnActionIdChanged();
-    partial void OnMemoIdChanging(long value);
+    partial void OnMemoIdChanging(int value);
     partial void OnMemoIdChanged();
     partial void OnControlIdChanging(System.Nullable<int> value);
     partial void OnControlIdChanged();
@@ -33002,11 +32565,10 @@ namespace DbR3
     partial void OnIsEditedChanged();
     #endregion
 		
-		public TRNMemoDataHistory1()
+		public TRNMemoDataHistory()
 		{
 			this._MSTControl = default(EntityRef<MSTControl>);
 			this._TRNMemo = default(EntityRef<TRNMemo>);
-			this._TRNMemo1 = default(EntityRef<TRNMemo1>);
 			OnCreated();
 		}
 		
@@ -33050,8 +32612,8 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="BigInt NOT NULL")]
-		public long MemoId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="Int NOT NULL")]
+		public int MemoId
 		{
 			get
 			{
@@ -33061,7 +32623,7 @@ namespace DbR3
 			{
 				if ((this._MemoId != value))
 				{
-					if ((this._TRNMemo.HasLoadedOrAssignedValue || this._TRNMemo1.HasLoadedOrAssignedValue))
+					if (this._TRNMemo.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -33158,7 +32720,7 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTControl_TRNMemoDataHistory1", Storage="_MSTControl", ThisKey="ControlId", OtherKey="ControlId", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MSTControl_TRNMemoDataHistory", Storage="_MSTControl", ThisKey="ControlId", OtherKey="ControlId", IsForeignKey=true)]
 		public MSTControl MSTControl
 		{
 			get
@@ -33175,12 +32737,12 @@ namespace DbR3
 					if ((previousValue != null))
 					{
 						this._MSTControl.Entity = null;
-						previousValue.TRNMemoDataHistory1s.Remove(this);
+						previousValue.TRNMemoDataHistories.Remove(this);
 					}
 					this._MSTControl.Entity = value;
 					if ((value != null))
 					{
-						value.TRNMemoDataHistory1s.Add(this);
+						value.TRNMemoDataHistories.Add(this);
 						this._ControlId = value.ControlId;
 					}
 					else
@@ -33192,7 +32754,7 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoDataHistory1", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoDataHistory", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
 		public TRNMemo TRNMemo
 		{
 			get
@@ -33209,53 +32771,19 @@ namespace DbR3
 					if ((previousValue != null))
 					{
 						this._TRNMemo.Entity = null;
-						previousValue.TRNMemoDataHistory1s.Remove(this);
+						previousValue.TRNMemoDataHistories.Remove(this);
 					}
 					this._TRNMemo.Entity = value;
 					if ((value != null))
 					{
-						value.TRNMemoDataHistory1s.Add(this);
+						value.TRNMemoDataHistories.Add(this);
 						this._MemoId = value.MemoId;
 					}
 					else
 					{
-						this._MemoId = default(long);
+						this._MemoId = default(int);
 					}
 					this.SendPropertyChanged("TRNMemo");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoDataHistory1", Storage="_TRNMemo1", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo1 TRNMemo1
-		{
-			get
-			{
-				return this._TRNMemo1.Entity;
-			}
-			set
-			{
-				TRNMemo1 previousValue = this._TRNMemo1.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo1.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo1.Entity = null;
-						previousValue.TRNMemoDataHistory1s.Remove(this);
-					}
-					this._TRNMemo1.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoDataHistory1s.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo1");
 				}
 			}
 		}
@@ -33282,14 +32810,14 @@ namespace DbR3
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNMemoTableData")]
-	public partial class TRNMemoTableData1 : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TRNMemoTableData : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private long _MemoTableDataId;
 		
-		private long _MemoId;
+		private int _MemoId;
 		
 		private int _ColumnControlId;
 		
@@ -33301,15 +32829,13 @@ namespace DbR3
 		
 		private EntityRef<TRNMemo> _TRNMemo;
 		
-		private EntityRef<TRNMemo1> _TRNMemo1;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
     partial void OnMemoTableDataIdChanging(long value);
     partial void OnMemoTableDataIdChanged();
-    partial void OnMemoIdChanging(long value);
+    partial void OnMemoIdChanging(int value);
     partial void OnMemoIdChanged();
     partial void OnColumnControlIdChanging(int value);
     partial void OnColumnControlIdChanged();
@@ -33321,10 +32847,9 @@ namespace DbR3
     partial void OnRowNumberChanged();
     #endregion
 		
-		public TRNMemoTableData1()
+		public TRNMemoTableData()
 		{
 			this._TRNMemo = default(EntityRef<TRNMemo>);
-			this._TRNMemo1 = default(EntityRef<TRNMemo1>);
 			OnCreated();
 		}
 		
@@ -33348,8 +32873,8 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="BigInt NOT NULL")]
-		public long MemoId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="Int NOT NULL")]
+		public int MemoId
 		{
 			get
 			{
@@ -33359,7 +32884,7 @@ namespace DbR3
 			{
 				if ((this._MemoId != value))
 				{
-					if ((this._TRNMemo.HasLoadedOrAssignedValue || this._TRNMemo1.HasLoadedOrAssignedValue))
+					if (this._TRNMemo.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -33452,7 +32977,7 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableData1", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableData", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
 		public TRNMemo TRNMemo
 		{
 			get
@@ -33469,53 +32994,19 @@ namespace DbR3
 					if ((previousValue != null))
 					{
 						this._TRNMemo.Entity = null;
-						previousValue.TRNMemoTableData1s.Remove(this);
+						previousValue.TRNMemoTableDatas.Remove(this);
 					}
 					this._TRNMemo.Entity = value;
 					if ((value != null))
 					{
-						value.TRNMemoTableData1s.Add(this);
+						value.TRNMemoTableDatas.Add(this);
 						this._MemoId = value.MemoId;
 					}
 					else
 					{
-						this._MemoId = default(long);
+						this._MemoId = default(int);
 					}
 					this.SendPropertyChanged("TRNMemo");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoTableData1", Storage="_TRNMemo1", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo1 TRNMemo1
-		{
-			get
-			{
-				return this._TRNMemo1.Entity;
-			}
-			set
-			{
-				TRNMemo1 previousValue = this._TRNMemo1.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo1.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo1.Entity = null;
-						previousValue.TRNMemoTableData1s.Remove(this);
-					}
-					this._TRNMemo1.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoTableData1s.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo1");
 				}
 			}
 		}
@@ -33542,7 +33033,7 @@ namespace DbR3
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TRNMemoTableDataHistory")]
-	public partial class TRNMemoTableDataHistory1 : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TRNMemoTableDataHistory : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -33551,7 +33042,7 @@ namespace DbR3
 		
 		private int _ActionId;
 		
-		private long _MemoId;
+		private int _MemoId;
 		
 		private int _ColumnControlId;
 		
@@ -33569,8 +33060,6 @@ namespace DbR3
 		
 		private EntityRef<TRNMemo> _TRNMemo;
 		
-		private EntityRef<TRNMemo1> _TRNMemo1;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -33579,7 +33068,7 @@ namespace DbR3
     partial void OnMemoTableDataHisIdChanged();
     partial void OnActionIdChanging(int value);
     partial void OnActionIdChanged();
-    partial void OnMemoIdChanging(long value);
+    partial void OnMemoIdChanging(int value);
     partial void OnMemoIdChanged();
     partial void OnColumnControlIdChanging(int value);
     partial void OnColumnControlIdChanged();
@@ -33597,10 +33086,9 @@ namespace DbR3
     partial void OnIsDeletedChanged();
     #endregion
 		
-		public TRNMemoTableDataHistory1()
+		public TRNMemoTableDataHistory()
 		{
 			this._TRNMemo = default(EntityRef<TRNMemo>);
-			this._TRNMemo1 = default(EntityRef<TRNMemo1>);
 			OnCreated();
 		}
 		
@@ -33644,8 +33132,8 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="BigInt NOT NULL")]
-		public long MemoId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemoId", DbType="Int NOT NULL")]
+		public int MemoId
 		{
 			get
 			{
@@ -33655,7 +33143,7 @@ namespace DbR3
 			{
 				if ((this._MemoId != value))
 				{
-					if ((this._TRNMemo.HasLoadedOrAssignedValue || this._TRNMemo1.HasLoadedOrAssignedValue))
+					if (this._TRNMemo.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -33808,7 +33296,7 @@ namespace DbR3
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableDataHistory1", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo_TRNMemoTableDataHistory", Storage="_TRNMemo", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
 		public TRNMemo TRNMemo
 		{
 			get
@@ -33825,53 +33313,19 @@ namespace DbR3
 					if ((previousValue != null))
 					{
 						this._TRNMemo.Entity = null;
-						previousValue.TRNMemoTableDataHistory1s.Remove(this);
+						previousValue.TRNMemoTableDataHistories.Remove(this);
 					}
 					this._TRNMemo.Entity = value;
 					if ((value != null))
 					{
-						value.TRNMemoTableDataHistory1s.Add(this);
+						value.TRNMemoTableDataHistories.Add(this);
 						this._MemoId = value.MemoId;
 					}
 					else
 					{
-						this._MemoId = default(long);
+						this._MemoId = default(int);
 					}
 					this.SendPropertyChanged("TRNMemo");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TRNMemo1_TRNMemoTableDataHistory1", Storage="_TRNMemo1", ThisKey="MemoId", OtherKey="MemoId", IsForeignKey=true)]
-		public TRNMemo1 TRNMemo1
-		{
-			get
-			{
-				return this._TRNMemo1.Entity;
-			}
-			set
-			{
-				TRNMemo1 previousValue = this._TRNMemo1.Entity;
-				if (((previousValue != value) 
-							|| (this._TRNMemo1.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TRNMemo1.Entity = null;
-						previousValue.TRNMemoTableDataHistory1s.Remove(this);
-					}
-					this._TRNMemo1.Entity = value;
-					if ((value != null))
-					{
-						value.TRNMemoTableDataHistory1s.Add(this);
-						this._MemoId = value.MemoId;
-					}
-					else
-					{
-						this._MemoId = default(long);
-					}
-					this.SendPropertyChanged("TRNMemo1");
 				}
 			}
 		}

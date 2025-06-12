@@ -88,7 +88,7 @@ namespace FileR2ToR3
                 var appCodeR2 = dbR2.MSTEmployees.FirstOrDefault(x => x.EmployeeId == delegator.ApproverId)?.EmployeeCode;
                 var deleCodeR2 = dbR2.MSTEmployees.FirstOrDefault(x => x.EmployeeId == delegator.DelegateToId)?.EmployeeCode;
 
-                var newDelegate = new TRNDelegate1
+                var newDelegate = new DbR3.TRNDelegate
                 {
                     ApproverId = dbR3.MSTEmployees.FirstOrDefault(x => x.EmployeeCode == appCodeR2)?.EmployeeId,
                     DelegateToId = dbR3.MSTEmployees.FirstOrDefault(x => x.EmployeeCode == deleCodeR2)?.EmployeeId,
@@ -101,7 +101,7 @@ namespace FileR2ToR3
                     DelegateToRole = delegator.DelegateToRole,
                     IsApplySomeForm = delegator.IsApplySomeForm,
                 };
-                dbR3.TRNDelegate1s.InsertOnSubmit(newDelegate);
+                dbR3.TRNDelegates.InsertOnSubmit(newDelegate);
                 dbR3.SubmitChanges();
                 // Copy TRNDelegateDetails
                 var deleDetails = dbR2.TRNDelegateDetails.Where(x => x.DelegateId == delegator.DelegateId).ToList();
@@ -109,9 +109,9 @@ namespace FileR2ToR3
                 {
                     var memoDoc = dbR2.TRNMemos.FirstOrDefault(x => x.MemoId == dele.MemoId)?.DocumentNo;
                     var memoIdR3 = dbR3.TRNMemos.FirstOrDefault(x => x.DocumentNo == memoDoc)?.MemoId;
-                    var temp = dbR2.MSTTemplates.FirstOrDefault(x => x.TemplateId == dele.TemplateId).DocumentCode;
-                    var tempR3 = dbR3.MSTTemplates.FirstOrDefault(x => x.TemplateCode == temp).TemplateId;
-                    var newDelegateDetail = new TRNDelegateDetail1
+                    var temp = dbR2.MSTTemplates.FirstOrDefault(x => x.TemplateId == dele.TemplateId)?.DocumentCode;
+                    var tempR3 = dbR3.MSTTemplates.FirstOrDefault(x => x.TemplateCode == temp)?.TemplateId;
+                    var newDelegateDetail = new DbR3.TRNDelegateDetail
                     {
                         DelegateId = newDelegate.DelegateId,
                         CreatedDate = DateTime.Now,
@@ -119,7 +119,7 @@ namespace FileR2ToR3
                         MemoId = (int?)memoIdR3,
                         TemplateId = tempR3,
                     };
-                    dbR3.TRNDelegateDetail1s.InsertOnSubmit(newDelegateDetail);
+                    dbR3.TRNDelegateDetails.InsertOnSubmit(newDelegateDetail);
                 }
                 ShowProgress(current, total);
             }
